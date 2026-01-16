@@ -1,117 +1,877 @@
-<!DOCTYPE html><html lang="zxx"><head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Link of CSS files -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="css/scrollcue.min.css">
-        <link rel="stylesheet" href="css/remixicon.css">
-        <link rel="stylesheet" href="css/services.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/dark-theme.css">
-        
-        <title>Renius - Building Construction & Renovation Company HTML Template</title>
-        <link rel="icon" type="image/png" href="images/favicon.png">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/scrollcue.min.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    
+    <title>Renius - Building Construction & Renovation Company HTML Template</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
 
-       <!--  Preloader Start -->
-        <div class="preloader-area" id="preloader">
-            <div class="spinner">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+   <!--  Preloader Start -->
+    <div class="preloader-area" id="preloader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <!--  Preloader End -->
+    </div>
+    <!--  Preloader End -->
 
+    <!-- Custom Cursor -->
+    <div class="cursor"><span class="cursor-text"></span></div>
+    <div class="cursor-inner"></div>
 
-        <!-- Custom Cursor -->
-        <div class="cursor"><span class="cursor-text"></span></div>
-        <div class="cursor-inner"></div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
 
-        <div id="smooth-wrapper">
-            <div id="smooth-content">
-
-                <!-- Navbar Start -->
-                <div class="navbar-area style-one position-relative" id="navbar">
-                    <div class="container-fluid">
-                        <div class="navbar-wrapper d-flex justify-content-between align-items-center">
-                            <a href="index.html" class="navbar-brand">
-                                <img src="images/logo-white.png" alt="Logo">
-                            </a>
-                            <div class="menu-area me-auto">
-                                <div class="overlay"></div>
-                                <nav class="menu">
-                                    <div class="menu-mobile-header">
-                                        <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
-                                        <div class="menu-mobile-title"></div>
-                                        <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
-                                    </div>
-                                    <ul class="menu-section p-0 mb-0 lh-1">
-                                        <li class="menu-item-has-children">
-                                            <a href="javascript:void(0)" class="active">Home</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="services.html">Services</a>
-                                        </li>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="services.html">About Us</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Projects</a>
-
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="javascript:void(0)">Blog</a>
-                                        </li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
-                                <div class="option-item d-flex flex-wrap align-items-center">
-                                    <div class="mobile-options position-relative d-lg-none">
-                                        <button class="dropdown-toggle  text-center bg-transparent border-0 p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
-                                            <i class="ri-more-fill"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0" data-bs-popper="static">
-                                            <div class="dropdown-item">
-                                                <div class="contact-link d-flex flex-wrap align-items-center position-relative transition">
-                                                    <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/phone.svg" alt="Icon" class="transition"></span>
-                                                    <div>
-                                                        <span class="text-white d-block">Call Us:</span>
-                                                        <span class="text_primary fw-semibold">+6857 886 960</span>
-                                                    </div>
-                                                    <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+            <!-- Navbar Start -->
+            <div class="navbar-area style-one position-relative" id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper d-flex justify-content-between align-items-center">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="images/logo-white.png" alt="Logo">
+                        </a>
+                        <div class="menu-area me-auto">
+                            <div class="overlay"></div>
+                            <nav class="menu">
+                                <div class="menu-mobile-header">
+                                    <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                    <div class="menu-mobile-title"></div>
+                                    <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                </div>
+                                <ul class="menu-section p-0 mb-0 lh-1">
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0)" class="active">Home</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="services.html">About Us</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0)">Blog</a>
+                                    </li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                            <div class="option-item d-flex flex-wrap align-items-center">
+                                <div class="mobile-options position-relative d-lg-none">
+                                    <button class="dropdown-toggle text-center bg-transparent border-0 p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                        <i class="ri-more-fill"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0" data-bs-popper="static">
+                                        <div class="dropdown-item">
+                                            <div class="contact-link d-flex flex-wrap align-items-center position-relative transition">
+                                                <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/phone.svg" alt="Icon" class="transition"></span>
+                                                <div>
+                                                    <span class="text-white d-block">Call Us:</span>
+                                                    <span class="text_primary fw-semibold">+6857 886 960</span>
                                                 </div>
-                                            </div>
-                                            <div class="dropdown-item">
-                                                <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Get In Touch</span><span class="btn-icon position-relative d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/up-right-arrow-black.svg" alt="Image"></span></a>
+                                                <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="contact-link d-lg-flex flex-wrap align-items-center position-relative d-none transition">
-                                        <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/phone.svg" alt="Icon" class="transition"></span>
-                                        <div class="d-xl-inline d-none">
-                                            <span class="text-white d-block">Call Us:</span>
-                                            <span class="text_primary fw-semibold">+6857 886 960</span>
+                                        <div class="dropdown-item">
+                                            <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Get In Touch</span><span class="btn-icon position-relative d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/up-right-arrow-black.svg" alt="Image"></span></a>
                                         </div>
-                                        <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
                                     </div>
                                 </div>
-                                <div class="option-item d-lg-block d-none">
-                                    <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Get In Touch</span><span class="btn-icon position-relative d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/up-right-arrow-black.svg" alt="Image"></span></a>
+                                <div class="contact-link d-lg-flex flex-wrap align-items-center position-relative d-none transition">
+                                    <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/phone.svg" alt="Icon" class="transition"></span>
+                                    <div class="d-xl-inline d-none">
+                                        <span class="text-white d-block">Call Us:</span>
+                                        <span class="text_primary fw-semibold">+6857 886 960</span>
+                                    </div>
+                                    <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                            <div class="option-item d-lg-block d-none">
+                                <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Get In Touch</span><span class="btn-icon position-relative d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/up-right-arrow-black.svg" alt="Image"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar End -->
+
+            <!-- Page Header Section Start -->
+            <div class="page-header parallaxie">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Page Header Box Start -->
+                            <div class="page-header-box">
+                                <h1 class="text-anime-style-3" data-cursor="-opaque">Joint Venture & Development Partnerships</h1>
+                                <nav class="wow fadeInUp">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="./">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Joint Venture & Development Partnerships</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <!-- Page Header Box End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header Section End -->
+
+            <!-- Service Content Section Start -->
+            <div class="service-detail-section py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Overview Section -->
+                            <div class="service-overview mb-80">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="service-image-box mb-4 mb-lg-0 wow fadeInUp">
+                                            <img src="images/blog-2.jpg" alt="Joint Venture Partnership" class="img-fluid rounded-3">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2 class="section-title mb-4 text-anime-style-3">Strategic Partnerships for Premium Developments</h2>
+                                        <p class="lead mb-4 wow fadeInUp" data-wow-delay="0.2s">At Fusion 4 Construction, our Joint Venture & Development Partnerships are built on trust, transparency, and long-term value creation. We collaborate with landowners and investors to transform high-potential properties into well-planned, premium developments that deliver consistent returns.</p>
+                                        <p class="wow fadeInUp" data-wow-delay="0.3s">With decades of experience and a strong execution-driven approach, we take complete responsibility—from planning and approvals to construction and delivery—ensuring every project is executed with precision, quality, and strict adherence to timelines.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Why Partner with Us Section -->
+                            <div class="why-partner-section mb-80">
+                                <h2 class="section-title mb-5 text-center text-anime-style-3">Why Partner with Us</h2>
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="partner-feature-card p-4 h-100 wow fadeInUp">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-shake-hands-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">Strong Execution Partner</h4>
+                                            <p class="mb-0">Backed by 28+ years of industry experience, we bring reliability and execution strength to every partnership.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="partner-feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-folder-chart-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">End-to-End Responsibility</h4>
+                                            <p class="mb-0">From feasibility studies to final handover, we manage the entire development lifecycle.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="partner-feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-time-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">Timely Project Delivery</h4>
+                                            <p class="mb-0">Project duration is a non-negotiable priority—on-time or before-time delivery is our standard.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="partner-feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-eye-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">Transparent Partnership Model</h4>
+                                            <p class="mb-0">Clear communication, honest processes, and no hidden costs at any stage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="partner-feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.4s">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-medal-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">Premium Quality Focus</h4>
+                                            <p class="mb-0">Every development reflects high construction standards and superior material quality.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="partner-feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-team-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">Selective Collaboration</h4>
+                                            <p class="mb-0">We partner with select clients to ensure focused attention and premium execution standards.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- What We Offer Section -->
+                            <div class="services-offered mb-80">
+                                <h2 class="section-title mb-5 text-anime-style-3">Our Partnership Services</h2>
+                                <p class="mb-5 wow fadeInUp">Our Joint Venture & Development Partnership services are carefully structured to create mutual growth, long-term value, and risk-balanced development, ensuring clarity and confidence for every partner involved.</p>
+                                
+                                <div class="row g-4">
+                                    <div class="col-lg-6">
+                                        <div class="service-phase-card p-4 h-100 wow fadeInUp">
+                                            <div class="phase-number mb-3">01</div>
+                                            <h4 class="mb-3">Land Evaluation & Feasibility Analysis</h4>
+                                            <p class="mb-0">We begin with a comprehensive assessment of the land, including location potential, zoning regulations, and development feasibility. This ensures the project is planned on a strong foundation of market viability and long-term value.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-phase-card p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="phase-number mb-3">02</div>
+                                            <h4 class="mb-3">Project Planning & Concept Development</h4>
+                                            <p class="mb-0">Based on feasibility insights, we develop a strategic project concept that aligns market demand, design efficiency, and development potential, creating projects that are both commercially viable and aesthetically strong.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-phase-card p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                                            <div class="phase-number mb-3">03</div>
+                                            <h4 class="mb-3">Approval & Compliance Management</h4>
+                                            <p class="mb-0">Our team manages all statutory, legal, and government approvals, coordinating with authorities to minimise delays, reduce risks, and keep the project on a clear execution path.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-phase-card p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="phase-number mb-3">04</div>
+                                            <h4 class="mb-3">Construction & Execution</h4>
+                                            <p class="mb-0">With strict quality benchmarks and disciplined project management, we execute construction with precision, safety, and timeline commitment, ensuring the development meets premium standards at every stage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-phase-card p-4 h-100 wow fadeInUp" data-wow-delay="0.4s">
+                                            <div class="phase-number mb-3">05</div>
+                                            <h4 class="mb-3">Interiors & Finishing (Where Applicable)</h4>
+                                            <p class="mb-0">Where required, we deliver high-quality interiors and finishes that enhance overall project appeal, usability, and market positioning, adding tangible value to the final development.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="service-phase-card p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="phase-number mb-3">06</div>
+                                            <h4 class="mb-3">Project Delivery & Handover</h4>
+                                            <p class="mb-0">We ensure smooth project completion with a structured and transparent handover process, safeguarding long-term asset value and partner confidence.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="partnership-note mt-5 p-4 bg-light rounded-3 wow fadeInUp">
+                                    <h5 class="mb-3 text-primary"><i class="ri-information-line me-2"></i> Our Partnership Philosophy</h5>
+                                    <p class="mb-0">We collaborate with select partners only, ensuring every joint venture aligns with Fusion 4 Construction's premium execution standards, ethical practices, and long-term development vision.</p>
+                                </div>
+                            </div>
+
+                            <!-- Service Workflow Section -->
+                            <div class="service-workflow mb-80">
+                                <h2 class="section-title mb-5 text-center text-anime-style-3">Our Partnership Process</h2>
+                                <p class="text-center mb-5 wow fadeInUp">How We Structure Successful Partnerships</p>
+                                
+                                <!-- Desktop Workflow Timeline -->
+                                <div class="workflow-timeline d-none d-lg-block">
+                                    <div class="timeline-path"></div>
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <div class="workflow-step vertical-step wow fadeInUp">
+                                                <div class="step-icon">
+                                                    <span class="step-number">1</span>
+                                                </div>
+                                                <div class="step-content">
+                                                    <h4>Initial Discussion & Land Assessment</h4>
+                                                    <p>We begin with detailed discussions to understand land potential, partner expectations, and project objectives.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="workflow-step vertical-step wow fadeInUp" data-wow-delay="0.1s">
+                                                <div class="step-icon">
+                                                    <span class="step-number">2</span>
+                                                </div>
+                                                <div class="step-content">
+                                                    <h4>Feasibility & Planning</h4>
+                                                    <p>A thorough feasibility study and development strategy are prepared to ensure the project is technically sound.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="workflow-step vertical-step wow fadeInUp" data-wow-delay="0.2s">
+                                                <div class="step-icon">
+                                                    <span class="step-number">3</span>
+                                                </div>
+                                                <div class="step-content">
+                                                    <h4>Approval & Documentation</h4>
+                                                    <p>We take charge of regulatory approvals, documentation, and authority coordination.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="workflow-step vertical-step wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="step-icon">
+                                                    <span class="step-number">4</span>
+                                                </div>
+                                                <div class="step-content">
+                                                    <h4>Construction & Quality Management</h4>
+                                                    <p>Construction is executed with continuous supervision, quality audits, and timeline monitoring.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="workflow-step vertical-step wow fadeInUp" data-wow-delay="0.4s">
+                                                <div class="step-icon">
+                                                    <span class="step-number">5</span>
+                                                </div>
+                                                <div class="step-content">
+                                                    <h4>Finishing & Value Enhancement</h4>
+                                                    <p>Premium finishes and final enhancements elevate the project's overall quality and market appeal.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="workflow-step vertical-step wow fadeInUp" data-wow-delay="0.5s">
+                                                <div class="step-icon">
+                                                    <span class="step-number">6</span>
+                                                </div>
+                                                <div class="step-content">
+                                                    <h4>Final Delivery & Partnership Closure</h4>
+                                                    <p>Projects are completed on time with transparent settlements and post-delivery support.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mobile Workflow Timeline -->
+                                <div class="workflow-timeline-mobile d-lg-none">
+                                    <div class="accordion" id="workflowAccordion">
+                                        <div class="accordion-item wow fadeInUp">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step1">
+                                                    <span class="step-number me-3">1</span> Initial Discussion & Land Assessment
+                                                </button>
+                                            </h3>
+                                            <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#workflowAccordion">
+                                                <div class="accordion-body">
+                                                    We begin with detailed discussions to understand land potential, partner expectations, and project objectives, laying the groundwork for a clear and aligned partnership.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step2">
+                                                    <span class="step-number me-3">2</span> Feasibility & Planning
+                                                </button>
+                                            </h3>
+                                            <div id="step2" class="accordion-collapse collapse" data-bs-parent="#workflowAccordion">
+                                                <div class="accordion-body">
+                                                    A thorough feasibility study and development strategy are prepared to ensure the project is technically sound, commercially viable, and execution-ready.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step3">
+                                                    <span class="step-number me-3">3</span> Approval & Documentation
+                                                </button>
+                                            </h3>
+                                            <div id="step3" class="accordion-collapse collapse" data-bs-parent="#workflowAccordion">
+                                                <div class="accordion-body">
+                                                    We take charge of regulatory approvals, documentation, and authority coordination, ensuring the project progresses without administrative bottlenecks.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step4">
+                                                    <span class="step-number me-3">4</span> Construction & Quality Management
+                                                </button>
+                                            </h3>
+                                            <div id="step4" class="accordion-collapse collapse" data-bs-parent="#workflowAccordion">
+                                                <div class="accordion-body">
+                                                    Construction is executed with continuous supervision, quality audits, and strict timeline monitoring, ensuring consistent progress and superior workmanship.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step5">
+                                                    <span class="step-number me-3">5</span> Finishing & Value Enhancement
+                                                </button>
+                                            </h3>
+                                            <div id="step5" class="accordion-collapse collapse" data-bs-parent="#workflowAccordion">
+                                                <div class="accordion-body">
+                                                    Premium finishes, detailing, and final enhancements are executed to elevate the project's overall quality, functionality, and market appeal.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
+                                            <h3 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#step6">
+                                                    <span class="step-number me-3">6</span> Final Delivery & Partnership Closure
+                                                </button>
+                                            </h3>
+                                            <div id="step6" class="accordion-collapse collapse" data-bs-parent="#workflowAccordion">
+                                                <div class="accordion-body">
+                                                    Projects are completed on time with transparent settlements, clear documentation, and post-delivery support, ensuring a smooth and professional partnership closure.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Section -->
+                            <div class="service-faq">
+                                <h2 class="section-title mb-5 text-anime-style-3">Partnership FAQs</h2>
+                                
+                                <div class="accordion" id="jointVentureFAQ">
+                                    <!-- FAQ Item 1 -->
+                                    <div class="accordion-item wow fadeInUp">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                What makes Fusion 4 a reliable joint venture partner?
+                                            </button>
+                                        </h3>
+                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#jointVentureFAQ">
+                                            <div class="accordion-body">
+                                                Fusion 4 Construction is recognised for its strong execution discipline, transparent working approach, and strict adherence to committed timelines. We take complete end-to-end responsibility for the project, ensuring every phase is professionally managed and delivered with clarity, quality, and accountability for our partners.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- FAQ Item 2 -->
+                                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                Do you handle approvals and statutory requirements?
+                                            </button>
+                                        </h3>
+                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#jointVentureFAQ">
+                                            <div class="accordion-body">
+                                                Yes. We manage all statutory approvals, regulatory compliances, and coordination with relevant authorities. This helps our partners avoid delays, procedural challenges, and administrative complexities, allowing the project to progress smoothly and efficiently.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- FAQ Item 3 -->
+                                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                What type of joint venture projects do you undertake?
+                                            </button>
+                                        </h3>
+                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#jointVentureFAQ">
+                                            <div class="accordion-body">
+                                                We focus on premium residential developments, select commercial projects, and strategic joint developments that demand careful planning, strong execution capability, and high construction standards. Our preference is for projects where quality, timeline commitment, and long-term value are key priorities.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- FAQ Item 4 -->
+                                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                How do you ensure transparency in joint ventures?
+                                            </button>
+                                        </h3>
+                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#jointVentureFAQ">
+                                            <div class="accordion-body">
+                                                Transparency is built into our partnership model through clear communication, well-defined roles and responsibilities, and complete cost clarity at every stage. We maintain open discussions throughout the project lifecycle, ensuring partners are always informed and confident in the progress and decisions made.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Navbar End -->
+            </div>
+            <!-- Service Content Section End -->
+
+
+            <!-- Footer Section Start -->
+            <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
+                <div class="container">
+                    <div class="row justify-content-center pb-90">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget mb-30" data-cue="slideInUp">
+                                <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
+                                <ul class="footer-menu style-one list-unstyled mb-0">
+                                    <li><a href="services.html">Service</a></li>
+                                    <li><a href="pricing-plan.html">Pricing</a></li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6 ps-xxl-5">
+                            <div class="footer-widget mb-30" data-cue="slideInUp">
+                                <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Explore</h4>
+                                <ul class="footer-menu style-one list-unstyled mb-0">
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-conditions.html">Terms of Service</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6 ps-xxl-5">
+                            <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Company</h4>
+                                <ul class="footer-menu style-one list-unstyled mb-0">
+                                    <li><a href="location.html">Location</a></li>
+                                    <li><a href="projects.html">Works</a></li>
+                                    <li><a href="projects.html">Studio</a></li>
+                                    <li><a href="blog-right-sidebar.html">News</a></li>
+                                    <li><a href="properties.html">Categories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6 ps-xxl-5">
+                            <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
+                                <ul class="contact-info-list list-unstyled mb-0">
+                                    <li><span class="fw-bold text-white me-1">Address:</span> 952 Bad Hill St, Asheville, NC 28, USA</li>
+                                    <li><span class="fw-bold text-white me-1">Email:</span><a href="/cdn-cgi/l/email-protection#fe969b929291be8c9b90978b8dd09d9193"><span class="__cf_email__" data-cfemail="91f9f4fdfdfed1e3f4fff8e4e2bff2fefc">[email protected]</span></a></li>
+                                    <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:96768678869">+96 76867 8869</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-large-text font-optional fw-black round-10">
+                                <span>F</span>
+                                <span>U</span>
+                                <span>S</span>
+                                <span>I</span>
+                                <span>O</span>
+                                <span>N</span>
+                                <span>4</span>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10">
+                                <span class="text-alto fw-semibold me-2">Follow Us: </span>
+                                <ul class="social-profile style-two list-unstyled mb-0">
+                                    <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
+                                    <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7 text-md-end text-center">
+                            <p class="copyright-text mb-0 text-white"><i class="ri-copyright-line"></i><span class="text_secondary fw-medium">Renius</span> is Proudly Owned by <a href="https://support.envytheme.com/" class="link style-three fw-medium">EnvyTheme</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <div id="progress-wrap" class="progress-wrap style-one">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+
+    <!-- Link of JS files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/megamenu.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/scrollTrigger.min.js"></script>
+    <script src="js/lenis.min.js"></script>
+    <script src="js/scrollToPlugin.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/customEase.js"></script>
+    <script src="js/scrollcue.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Add CSS for Joint Venture Service Page -->
+    <style>
+        .service-detail-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 60px;
+            height: 3px;
+            background: #D4A574;
+        }
+        
+        .section-title.text-center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .lead {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #666;
+        }
+        
+        /* Partner Feature Cards */
+        .partner-feature-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background: white;
+            text-align: center;
+        }
+        
+        .partner-feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(212, 165, 116, 0.15);
+            border-color: #D4A574;
+        }
+        
+        .feature-icon {
+            color: #D4A574;
+        }
+        
+        /* Service Phase Cards */
+        .service-phase-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-phase-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #D4A574;
+        }
+        
+        .phase-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: rgba(212, 165, 116, 0.1);
+            line-height: 1;
+        }
+        
+        .partnership-note {
+            border-left: 4px solid #D4A574;
+            background: rgba(212, 165, 116, 0.05);
+        }
+        
+        /* Workflow Timeline for Desktop */
+        .workflow-timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+        
+        .timeline-path {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #D4A574;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        
+        .workflow-step.vertical-step {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 15px;
+        }
+        
+        .step-icon {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border: 2px solid #D4A574;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .step-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #D4A574;
+        }
+        
+        .step-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .step-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .step-content p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0;
+        }
+        
+        /* Mobile Workflow */
+        .workflow-timeline-mobile .accordion-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .workflow-timeline-mobile .accordion-button {
+            background: white;
+            font-weight: 600;
+            color: #333;
+            padding: 1rem 1.25rem;
+        }
+        
+        .workflow-timeline-mobile .accordion-button:not(.collapsed) {
+            background: rgba(212, 165, 116, 0.1);
+            color: #D4A574;
+        }
+        
+        .workflow-timeline-mobile .step-number {
+            width: 30px;
+            height: 30px;
+            background: #D4A574;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .workflow-summary {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+        }
+        
+        /* FAQ Section */
+        .service-faq .accordion-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .service-faq .accordion-button {
+            font-weight: 600;
+            padding: 1.25rem 1.5rem;
+            background: white;
+        }
+        
+        .service-faq .accordion-button:not(.collapsed) {
+            background: rgba(212, 165, 116, 0.1);
+            color: #D4A574;
+        }
+        
+        .service-faq .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23D4A574'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        
+        .service-faq .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23D4A574'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+        
+        /* Partnership CTA */
+        .partnership-cta {
+            background: linear-gradient(135deg, #D4A574 0%, #C09565 100%);
+        }
+        
+        .btn-primary {
+            background-color: #2c3e50;
+            border-color: #2c3e50;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1a252f;
+            border-color: #1a252f;
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 991px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .service-detail-section {
+                padding: 60px 0;
+            }
+            
+            .why-partner-section .partner-feature-card {
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .service-overview .row {
+                flex-direction: column;
+            }
+            
+            .service-image-box {
+                margin-bottom: 30px;
+            }
+            
+            .workflow-step.vertical-step {
+                margin-bottom: 40px;
+            }
+            
+            .timeline-path {
+                display: none;
+            }
+        }
+    </style>
+
+</body>
+</html>

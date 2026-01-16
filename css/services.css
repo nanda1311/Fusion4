@@ -43,7 +43,7 @@
   filter: brightness(0) invert(1);
 }
 .navbar-area.style-one.sticky, .navbar-area.style-three.sticky {
-  background-color: var(--optionalColor);
+  background-color: #18455c;
 }
 .navbar-area.style-one .menu > ul > li > a, .navbar-area.style-three .menu > ul > li > a {
   color: var(--whiteColor);
@@ -577,7 +577,7 @@
 }
 @media only screen and (min-width: 1400px) {
   .navbar-area.style-one {
-     background-color: black;
+     background-color: #18455c;
   }
   .navbar-area.style-one .container-fluid {
     padding: 0 36px;
@@ -705,9 +705,9 @@
                 background: #f7f7f7;
                 }
 
-                .services-grid {
+                .services-grid1 {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
                 gap: 26px;
                 }
 

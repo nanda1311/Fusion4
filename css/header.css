@@ -43,7 +43,7 @@
   filter: brightness(0) invert(1);
 }
 .navbar-area.style-one.sticky, .navbar-area.style-three.sticky {
-  background-color: var(--optionalColor);
+  background-color: #18455c;
 }
 .navbar-area.style-one .menu > ul > li > a, .navbar-area.style-three .menu > ul > li > a {
   color: var(--whiteColor);

@@ -1,495 +1,661 @@
-<!DOCTYPE html><html lang="zxx"><head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Link of CSS files -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="css/scrollcue.min.css">
-        <link rel="stylesheet" href="css/remixicon.css">
-        <link rel="stylesheet" href="css/services.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/dark-theme.css">
-        
-        <title>Renius - Building Construction & Renovation Company HTML Template</title>
-        <link rel="icon" type="image/png" href="images/favicon.png">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/scrollcue.min.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    
+    <title>Renius - Building Construction & Renovation Company HTML Template</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
 
-       <!--  Preloader Start -->
-        <div class="preloader-area" id="preloader">
-            <div class="spinner">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+   <!--  Preloader Start -->
+    <div class="preloader-area" id="preloader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <!--  Preloader End -->
+    </div>
+    <!--  Preloader End -->
 
+    <!-- Custom Cursor -->
+    <div class="cursor"><span class="cursor-text"></span></div>
+    <div class="cursor-inner"></div>
 
-        <!-- Custom Cursor -->
-        <div class="cursor"><span class="cursor-text"></span></div>
-        <div class="cursor-inner"></div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
 
-        <div id="smooth-wrapper">
-            <div id="smooth-content">
-
-                <!-- Navbar Start -->
-                <div class="navbar-area style-one position-relative" id="navbar">
-                    <div class="container-fluid">
-                        <div class="navbar-wrapper d-flex justify-content-between align-items-center">
-                            <a href="index.html" class="navbar-brand">
-                                <img src="images/logo-white.png" alt="Logo">
-                            </a>
-                            <div class="menu-area me-auto">
-                                <div class="overlay"></div>
-                                <nav class="menu">
-                                    <div class="menu-mobile-header">
-                                        <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
-                                        <div class="menu-mobile-title"></div>
-                                        <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+            <!-- Navbar Start -->
+            <div class="navbar-area style-one position-relative" id="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-wrapper d-flex justify-content-between align-items-center">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="images/logo-white.png" alt="Logo">
+                        </a>
+                        <div class="menu-area me-auto">
+                            <div class="overlay"></div>
+                            <nav class="menu">
+                                <div class="menu-mobile-header">
+                                    <button type="button" class="menu-mobile-arrow bg-transparent border-0"><i class="ri-arrow-left-s-line"></i></button>
+                                    <div class="menu-mobile-title"></div>
+                                    <button type="button" class="menu-mobile-close bg-transparent border-0"><i class="ri-close-line"></i></button>
+                                </div>
+                                <ul class="menu-section p-0 mb-0 lh-1">
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0)" class="active">Home</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="services.html">About Us</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="javascript:void(0)">Blog</a>
+                                    </li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+                            <div class="option-item d-flex flex-wrap align-items-center">
+                                <div class="mobile-options position-relative d-lg-none">
+                                    <button class="dropdown-toggle text-center bg-transparent border-0 p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                        <i class="ri-more-fill"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0" data-bs-popper="static">
+                                        <div class="dropdown-item">
+                                            <div class="contact-link d-flex flex-wrap align-items-center position-relative transition">
+                                                <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/phone.svg" alt="Icon" class="transition"></span>
+                                                <div>
+                                                    <span class="text-white d-block">Call Us:</span>
+                                                    <span class="text_primary fw-semibold">+6857 886 960</span>
+                                                </div>
+                                                <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item">
+                                            <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Get In Touch</span><span class="btn-icon position-relative d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/up-right-arrow-black.svg" alt="Image"></span></a>
+                                        </div>
                                     </div>
-                                    <ul class="menu-section p-0 mb-0 lh-1">
-                                        <li class="menu-item-has-children">
-                                            <a href="javascript:void(0)" class="active">Home</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="services.html">Services</a>
-                                        </li>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="services.html">About Us</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Projects</a>
+                                </div>
+                                <div class="contact-link d-lg-flex flex-wrap align-items-center position-relative d-none transition">
+                                    <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/phone.svg" alt="Icon" class="transition"></span>
+                                    <div class="d-xl-inline d-none">
+                                        <span class="text-white d-block">Call Us:</span>
+                                        <span class="text_primary fw-semibold">+6857 886 960</span>
+                                    </div>
+                                    <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                                </div>
+                            </div>
+                            <div class="option-item d-lg-block d-none">
+                                <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Get In Touch</span><span class="btn-icon position-relative d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/up-right-arrow-black.svg" alt="Image"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar End -->
 
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="javascript:void(0)">Blog</a>
-                                        </li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
+            <!-- Page Header Section Start -->
+            <div class="page-header parallaxie">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Page Header Box Start -->
+                            <div class="page-header-box">
+                                <h1 class="text-anime-style-3" data-cursor="-opaque">Turnkey Construction Solutions</h1>
+                                <nav class="wow fadeInUp">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="./">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Turnkey Construction Solutions</li>
+                                    </ol>
                                 </nav>
                             </div>
-                            <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
-                                <div class="option-item d-flex flex-wrap align-items-center">
-                                    <div class="mobile-options position-relative d-lg-none">
-                                        <button class="dropdown-toggle  text-center bg-transparent border-0 p-0 transition" type="button" data-bs-toggle="dropdown" aria-expanded="true">
-                                            <i class="ri-more-fill"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-centered mobile-option-list top-1 border-0" data-bs-popper="static">
-                                            <div class="dropdown-item">
-                                                <div class="contact-link d-flex flex-wrap align-items-center position-relative transition">
-                                                    <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/phone.svg" alt="Icon" class="transition"></span>
-                                                    <div>
-                                                        <span class="text-white d-block">Call Us:</span>
-                                                        <span class="text_primary fw-semibold">+6857 886 960</span>
-                                                    </div>
-                                                    <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
-                                                </div>
-                                            </div>
-                                            <div class="dropdown-item">
-                                                <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Get In Touch</span><span class="btn-icon position-relative d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/up-right-arrow-black.svg" alt="Image"></span></a>
-                                            </div>
-                                        </div>
+                            <!-- Page Header Box End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header Section End -->
+
+            <!-- Service Content Section Start -->
+            <div class="service-detail-section py-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Overview Section -->
+                            <div class="service-overview mb-80">
+                                <h2 class="section-title mb-4 text-anime-style-3">Comprehensive Turnkey Solutions for Premium Projects</h2>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-8">
+                                        <p class="lead mb-4 wow fadeInUp">At Fusion 4 Construction, our Turnkey Construction Solutions are designed for discerning clients who seek end-to-end excellence. From conceptualization to handing over your dream project, we take complete ownership of the construction journey.</p>
+                                        <p class="wow fadeInUp" data-wow-delay="0.2s">Our expertise ensures that every brick, every finish, and every design element reflects premium quality and timeless aesthetics. Whether it's a luxurious independent home, a high-end commercial space, or a joint venture project, we make the process smooth, transparent, and stress-free for you.</p>
                                     </div>
-                                    <div class="contact-link d-lg-flex flex-wrap align-items-center position-relative d-none transition">
-                                        <span class="contact-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/phone.svg" alt="Icon" class="transition"></span>
-                                        <div class="d-xl-inline d-none">
-                                            <span class="text-white d-block">Call Us:</span>
-                                            <span class="text_primary fw-semibold">+6857 886 960</span>
+                                    <div class="col-lg-4">
+                                        <div class="service-image-box wow fadeInUp" data-wow-delay="0.4s">
+                                            <img src="images/blog-1.jpg" alt="Turnkey Construction" class="img-fluid rounded-3">
                                         </div>
-                                        <a href="contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
                                     </div>
                                 </div>
-                                <div class="option-item d-lg-block d-none">
-                                    <a href="contact.html" class="btn style-two d-inline-flex flex-wrap align-items-center p-0"><span class="btn-text d-inline-block fw-semibold position-relative transition">Get In Touch</span><span class="btn-icon position-relative d-flex flex-column align-items-center justify-content-center rounded-circle transition"><img src="images/up-right-arrow-black.svg" alt="Image"></span></a>
+                            </div>
+
+                            <!-- Why Choose Us Section -->
+                            <div class="why-choose-section mb-80">
+                                <h2 class="section-title mb-5 text-anime-style-3">Why Choose Our Turnkey Solutions</h2>
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="feature-card p-4 h-100 wow fadeInUp">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-award-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">Experience Meets Excellence</h4>
+                                            <p class="mb-0">With over 28 years of industry expertise, we bring unmatched craftsmanship to every project.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-home-gear-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">End-to-End Ownership</h4>
+                                            <p class="mb-0">From approvals to interiors, we handle everything under one roof.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-calendar-check-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">On-Time Delivery</h4>
+                                            <p class="mb-0">Timelines are sacred — projects are completed on time or earlier.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="feature-card p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="feature-icon mb-3">
+                                                <i class="ri-shield-check-line fs-2 text-primary"></i>
+                                            </div>
+                                            <h4 class="mb-3">Transparent Process</h4>
+                                            <p class="mb-0">No hidden costs, no surprises — just honest, straightforward execution.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- What We Offer Section -->
+                            <div class="services-offered mb-80">
+                                <h2 class="section-title mb-5 text-anime-style-3">What We Offer</h2>
+                                <p class="mb-5 wow fadeInUp">Our Turnkey Construction Solutions cover every facet of your project, ensuring a seamless, end-to-end experience:</p>
+                                
+                                <div class="service-process-timeline">
+                                    <div class="timeline-item wow fadeInUp">
+                                        <div class="timeline-number">01</div>
+                                        <div class="timeline-content">
+                                            <h4>Initial Consultation & Planning</h4>
+                                            <p>We begin by understanding your vision, aspirations, and project goals, aligning them with your budget and timeline to create a robust roadmap.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="timeline-number">02</div>
+                                        <div class="timeline-content">
+                                            <h4>Design & Architecture</h4>
+                                            <p>Collaborating with renowned designers and architects, we craft spaces that are both aesthetically stunning and functionally efficient.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item wow fadeInUp" data-wow-delay="0.2s">
+                                        <div class="timeline-number">03</div>
+                                        <div class="timeline-content">
+                                            <h4>Material Sourcing</h4>
+                                            <p>Every material is carefully selected for quality, durability, and finish, ensuring your project stands the test of time.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item wow fadeInUp" data-wow-delay="0.3s">
+                                        <div class="timeline-number">04</div>
+                                        <div class="timeline-content">
+                                            <h4>Construction & Execution</h4>
+                                            <p>From foundation to finishing, each stage is meticulously managed, maintaining strict quality controls and high execution standards.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="timeline-number">05</div>
+                                        <div class="timeline-content">
+                                            <h4>Interior & Finishing</h4>
+                                            <p>Our premium interiors, fittings, and finishes are tailored to your taste, creating spaces that exude luxury and elegance.</p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item wow fadeInUp" data-wow-delay="0.5s">
+                                        <div class="timeline-number">06</div>
+                                        <div class="timeline-content">
+                                            <h4>Project Handover</h4>
+                                            <p>We deliver ready-to-use, fully functional spaces on schedule, ensuring a smooth transition from construction to occupancy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="client-note mt-5 p-4 bg-light rounded-3 wow fadeInUp">
+                                    <p class="mb-0 fst-italic"><strong>Note:</strong> We serve exclusively premium clients, ensuring that each project reflects uncompromised quality, luxury, and lasting value.</p>
+                                </div>
+                            </div>
+
+                            <!-- Service Workflow Section -->
+                            <div class="service-workflow mb-80">
+                                <h2 class="section-title mb-5 text-anime-style-3">How We Bring Your Project to Life</h2>
+                                
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="workflow-step p-4 h-100 wow fadeInUp">
+                                            <div class="step-icon mb-3">
+                                                <span class="step-number">1</span>
+                                            </div>
+                                            <h4 class="mb-3">Initial Assessment & Feasibility</h4>
+                                            <p class="mb-0">Conducting a comprehensive site analysis and feasibility study, we identify the optimal approach to bring your vision to reality.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="workflow-step p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="step-icon mb-3">
+                                                <span class="step-number">2</span>
+                                            </div>
+                                            <h4 class="mb-3">Budget Planning & Estimation</h4>
+                                            <p class="mb-0">Transparent cost planning with no hidden charges, providing you full clarity on every component of the project.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="workflow-step p-4 h-100 wow fadeInUp" data-wow-delay="0.2s">
+                                            <div class="step-icon mb-3">
+                                                <span class="step-number">3</span>
+                                            </div>
+                                            <h4 class="mb-3">Design & Layout Approval</h4>
+                                            <p class="mb-0">Engaging you collaboratively, we finalize every architectural and design detail to match your expectations perfectly.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="workflow-step p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="step-icon mb-3">
+                                                <span class="step-number">4</span>
+                                            </div>
+                                            <h4 class="mb-3">Construction & Quality Assurance</h4>
+                                            <p class="mb-0">Strict adherence to timelines and rigorous quality checks ensure flawless execution at every stage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="workflow-step p-4 h-100 wow fadeInUp" data-wow-delay="0.4s">
+                                            <div class="step-icon mb-3">
+                                                <span class="step-number">5</span>
+                                            </div>
+                                            <h4 class="mb-3">Interiors & Finishing Touches</h4>
+                                            <p class="mb-0">High-quality materials, fittings, and finishes are professionally installed to create a polished, luxurious outcome.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="workflow-step p-4 h-100 wow fadeInUp" data-wow-delay="0.5s">
+                                            <div class="step-icon mb-3">
+                                                <span class="step-number">6</span>
+                                            </div>
+                                            <h4 class="mb-3">Final Handover & Support</h4>
+                                            <p class="mb-0">Complete project delivery with comprehensive post-handover support, ensuring your space is ready for immediate use.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="summary-box mt-5 p-4 bg-primary text-white rounded-3 wow fadeInUp">
+                                    <h4 class="mb-3">Our Commitment</h4>
+                                    <p class="mb-0">Every step is strategically planned, closely monitored, and executed with precision, ensuring a hassle-free, premium construction experience.</p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Section -->
+                            <div class="service-faq">
+                                <h2 class="section-title mb-5 text-anime-style-3">Frequently Asked Questions</h2>
+                                
+                                <div class="accordion" id="turnkeyFAQ">
+                                    <!-- FAQ Item 1 -->
+                                    <div class="accordion-item wow fadeInUp">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                What makes your turnkey solutions different from others?
+                                            </button>
+                                        </h3>
+                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#turnkeyFAQ">
+                                            <div class="accordion-body">
+                                                Fusion 4 Construction's turnkey solutions stand apart because we take complete ownership of the project from start to finish. Every stage—from planning and design to execution and handover—is meticulously managed, ensuring exceptional quality, transparency, and on-time delivery, unlike others who may leave gaps or compromise on standards.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- FAQ Item 2 -->
+                                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                Can you handle joint venture or partnership projects under turnkey mode?
+                                            </button>
+                                        </h3>
+                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#turnkeyFAQ">
+                                            <div class="accordion-body">
+                                                Yes, we have significant expertise in managing joint venture and joint development projects under a turnkey model. We oversee everything from obtaining approvals and coordinating with stakeholders to executing construction and interiors, allowing partners to benefit from a streamlined, fully-managed process.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- FAQ Item 3 -->
+                                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                What kind of projects do you take up under turnkey services?
+                                            </button>
+                                        </h3>
+                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#turnkeyFAQ">
+                                            <div class="accordion-body">
+                                                We cater exclusively to premium projects, including independent luxury homes, high-end commercial spaces, and substantial joint ventures. We specialize in complex and customized projects that require meticulous planning, precision execution, and a seamless integration of design, construction, and interiors.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- FAQ Item 4 -->
+                                    <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                                        <h3 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                Do you offer interior solutions as part of turnkey projects?
+                                            </button>
+                                        </h3>
+                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#turnkeyFAQ">
+                                            <div class="accordion-body">
+                                                Absolutely. Our turnkey services include complete interior design and execution, ensuring that every space is ready-to-use, aesthetically cohesive, and aligned with your vision. This provides clients with a truly seamless end-to-end construction experience.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Navbar End -->
-
-
-
-
-
-                <!-- content for service-details1.html goes here -->
-
-
-
-
-                
-    <!-- Page Header Section Start -->
-    <div class="page-header parallaxie">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Page Header Box Start -->
-                    <div class="page-header-box">
-                        <h1 class="text-anime-style-3" data-cursor="-opaque">Project planning & consultation</h1>
-                        <nav class="wow fadeInUp">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="./">home</a></li>
-                                <li class="breadcrumb-item"><a href="services.html">Services</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Project planning & consultation</li>
-                            </ol>
-                        </nav>
-                    </div>
-                    <!-- Page Header Box End -->
-                </div>
             </div>
+            <!-- Service Content Section End -->
+
+
+            <!-- Footer Section Start -->
+            <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
+                <div class="container">
+                    <div class="row justify-content-center pb-90">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget mb-30" data-cue="slideInUp">
+                                <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
+                                <ul class="footer-menu style-one list-unstyled mb-0">
+                                    <li><a href="services.html">Service</a></li>
+                                    <li><a href="pricing-plan.html">Pricing</a></li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6 ps-xxl-5">
+                            <div class="footer-widget mb-30" data-cue="slideInUp">
+                                <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Explore</h4>
+                                <ul class="footer-menu style-one list-unstyled mb-0">
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-conditions.html">Terms of Service</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6 ps-xxl-5">
+                            <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Company</h4>
+                                <ul class="footer-menu style-one list-unstyled mb-0">
+                                    <li><a href="location.html">Location</a></li>
+                                    <li><a href="projects.html">Works</a></li>
+                                    <li><a href="projects.html">Studio</a></li>
+                                    <li><a href="blog-right-sidebar.html">News</a></li>
+                                    <li><a href="properties.html">Categories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6 ps-xxl-5">
+                            <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
+                                <ul class="contact-info-list list-unstyled mb-0">
+                                    <li><span class="fw-bold text-white me-1">Address:</span> 952 Bad Hill St, Asheville, NC 28, USA</li>
+                                    <li><span class="fw-bold text-white me-1">Email:</span><a href="/cdn-cgi/l/email-protection#fe969b929291be8c9b90978b8dd09d9193"><span class="__cf_email__" data-cfemail="91f9f4fdfdfed1e3f4fff8e4e2bff2fefc">[email protected]</span></a></li>
+                                    <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:96768678869">+96 76867 8869</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-large-text font-optional fw-black round-10">
+                                <span>F</span>
+                                <span>U</span>
+                                <span>S</span>
+                                <span>I</span>
+                                <span>O</span>
+                                <span>N</span>
+                                <span>4</span>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10">
+                                <span class="text-alto fw-semibold me-2">Follow Us: </span>
+                                <ul class="social-profile style-two list-unstyled mb-0">
+                                    <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
+                                    <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7 text-md-end text-center">
+                            <p class="copyright-text mb-0 text-white"><i class="ri-copyright-line"></i><span class="text_secondary fw-medium">Renius</span> is Proudly Owned by <a href="https://support.envytheme.com/" class="link style-three fw-medium">EnvyTheme</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer End -->
+
         </div>
     </div>
-    <!-- Page Header Section End -->
-
-    <!-- Page Service Single Start -->
-    <div class="page-service-single">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <!-- Page Single Sidebar Start -->
-                    <div class="page-single-sidebar">
-                        <!-- Page Category List Start -->
-                        <div class="page-category-list wow fadeInUp">
-                            <h3>Explore Our Services</h3>
-                            <ul>
-                                <li><a href="#">Interior Design & Detailing</a></li>
-                                <li><a href="#">Civil Infrastructure Development</a></li>
-                                <li><a href="#">Urban Development & Master Planning</a></li>
-                                <li><a href="#">Structural Engineering Solutions</a></li>
-                                <li><a href="#">Project Management & Supervision</a></li>
-                            </ul>
-                        </div>
-                        <!-- Page Category List End -->
-                        
-                        <!-- Sidebar CTA Box Start -->
-                        <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.25s">
-                            <!-- Sidebar CTA Title Start -->
-                            <div class="sidebar-cta-title">
-                                <h3>Do You Need Help!</h3>
-                            </div>
-                            <!-- Sidebar CTA Title End -->
-
-                            <!-- Sidebar CTA Body Start -->
-                            <div class="sidebar-cta-body">
-                                <div class="sidebar-cta-body-content">
-                                    <ul>
-                                        <li><img src="images/icon-phone-primary.svg" alt=""><a href="tel:+123456789">+(123) 456 789</a></li>
-                                        <li><img src="images/icon-mail-primary.svg" alt=""><a href="mailto:support@example.com">support@example.com</a></li>
-                                    </ul>
-                                </div>
-                               <div class="sidebar-cta-body-image">
-                               </div>
-                            </div>
-                            <!-- Sidebar CTA Body End -->
-                        </div>
-                        <!-- Sidebar CTA Box End -->
-                    </div>
-                    <!-- Page Single Sidebar End -->
-                </div>
-
-                <div class="col-lg-8">
-                    <!-- Service Single Content Start -->
-                    <div class="service-single-content">
-                        <!-- Page Single image Start -->
-                        <div class="page-single-image">
-                            <figure class="image-anime reveal">
-                                <img src="images/service-image-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Page Single image End -->
-                        
-                        <!-- Service Entry Start -->
-                        <div class="service-entry">
-                            <p class="wow fadeInUp">Every successful project starts with a thoughtful plan. Our Project Planning & Consultation service is designed to guide you from initial concept to a clear execution roadmap. We help you define your goals, set timelines, estimate budgets, and prepare a blueprint that ensures your project runs smoothly from start to finish.</p>
-                            <p class="wow fadeInUp">Whether you're building a new space, renovating an existing one, or planning a commercial development, our experts offer strategic direction and professional insight every step of the way.</p>
-                            
-                            <!-- Service Why Choose Box Start -->
-                            <div class="service-why-choose-box">
-                                <h2 class="text-anime-style-3">Why choose our consultation services?</h2>
-                                <p class="wow fadeInUp">We combine industry experience with thoughtful planning to deliver guidance you can trust. Our approach focuses on practical solutions, transparent communication, and strategies that help you move your project forward with confidence.</p>
-                                
-                                <!-- Service Why Choose Item List Start -->
-                                <div class="service-why-choose-item-list">
-                                    <!-- Service Why Choose Item Start -->
-                                    <div class="service-why-choose-item wow fadeInUp" data-wow-delay="0.2s">
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-why-choose-1.svg" alt="">
-                                        </div>
-                                        <div class="service-why-choose-item-content">
-                                            <h3>Experience & Skill Planner</h3>
-                                            <p>Our team brings years of hands on knowledge residential commercial, and industrial projects.</p>
-                                        </div>
-                                    </div>
-                                    <!-- Service Why Choose Item End -->
-                                    
-                                    <!-- Service Why Choose Item Start -->
-                                    <div class="service-why-choose-item wow fadeInUp" data-wow-delay="0.2s">
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-why-choose-2.svg" alt="">
-                                        </div>
-                                        <div class="service-why-choose-item-content">
-                                            <h3>Transparent Guidance</h3>
-                                            <p>Our team brings years of hands on knowledge residential commercial, and industrial projects.</p>
-                                        </div>
-                                    </div>
-                                    <!-- Service Why Choose Item End -->
-                                    
-                                    <!-- Service Why Choose Item Start -->
-                                    <div class="service-why-choose-item wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-why-choose-3.svg" alt="">
-                                        </div>
-                                        <div class="service-why-choose-item-content">
-                                            <h3>Customized Planning</h3>
-                                            <p>Our team brings years of hands on knowledge residential commercial, and industrial projects.</p>
-                                        </div>
-                                    </div>
-                                    <!-- Service Why Choose Item End -->
-                                    
-                                    <!-- Service Why Choose Item Start -->
-                                    <div class="service-why-choose-item wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="icon-box">
-                                            <img src="images/icon-service-why-choose-4.svg" alt="">
-                                        </div>
-                                        <div class="service-why-choose-item-content">
-                                            <h3>End-to-End Support</h3>
-                                            <p>Our team brings years of hands on knowledge residential commercial, and industrial projects.</p>
-                                        </div>
-                                    </div>
-                                    <!-- Service Why Choose Item End -->
-                                </div>
-                                <!-- Service Why Choose Item List End -->
-                            </div>
-                            <!-- Service Why Choose Box End -->
-                            
-                            <!-- Service Offer Box Start -->
-                            <div class="service-offer-box">
-                                <h2 class="text-anime-style-3">What we offer</h2>
-                                <p class="wow fadeInUp">We offer strategic, end-to-end project planning that aligns vision, function, timing, and cost. Every detail is considered thoughtfully, ensuring your project begins with a strong and reliable framework.</p>
-                                
-                                <!-- Service Offer List Start -->
-                                <div class="service-offer-list wow fadeInUp" data-wow-delay="0.2s">
-                                    <ul>
-                                        <li>Homeowners planning new builds or renovations</li>
-                                        <li>Business owners expanding or upgrading spaces</li>
-                                        <li>Architect & designer seeking project coordination</li>
-                                        <li>Contractors who need reliable planning support</li>
-                                    </ul>
-                                </div>
-                                <!-- Service Offer List End -->
-                                
-                                <!-- Service Offer Item List Start -->
-                                <div class="service-offer-item-list wow fadeInUp" data-wow-delay="0.4s">
-                                    <!-- Service Offer Item Start -->
-                                    <div class="service-offer-item">
-                                        <div class="service-offer-item-image">
-                                            <figure class="image-anime">
-                                                <img src="images/service-offer-item-image-1.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="service-offer-item-content">
-                                            <h3>Initial Project Assessment</h3>
-                                            <p>We begin by understanding your vision, requirements.</p>
-                                        </div>
-                                    </div>
-                                    <!-- Service Offer Item End -->
-                                    
-                                    <!-- Service Offer Item Start -->
-                                    <div class="service-offer-item">
-                                        <div class="service-offer-item-image">
-                                            <figure class="image-anime">
-                                                <img src="images/service-offer-item-image-2.jpg" alt="">
-                                            </figure>
-                                        </div>
-                                        <div class="service-offer-item-content">
-                                            <h3>Budget & Cost Estimation</h3>
-                                            <p>We begin by understanding your vision, requirements.</p>
-                                        </div>
-                                    </div>
-                                    <!-- Service Offer Item End -->
-                                </div>
-                                <!-- Service Offer Item List End -->
-                            </div>
-                            <!-- Service Offer Box End -->
-                            
-                            <!-- Service Process Box Start -->
-                            <div class="service-process-box">
-                                <h2 class="text-anime-style-3">Service process</h2>
-                                <p class="wow fadeInUp">Our project process is built to ensure clarity, efficiency, and smooth progress at every stage. We begin by understanding your goals, then move into structured planning, resource coordination.</p>
-                                
-                                <!-- Service Process Image Content Start -->
-                                <div class="service-process-image-content">
-                                    <!-- Service Process Content Start -->
-                                    <div class="service-process-content">
-                                        <!-- Service Process Item Start -->
-                                        <div class="service-process-item wow fadeInUp" data-wow-delay="0.2s">
-                                            <div class="icon-box">
-                                                <img src="images/icon-service-process-1.svg" alt="">
-                                            </div>
-                                            <div class="service-process-item-content">
-                                                <h3>Design & Technical Guidance</h3>
-                                                <p>We create a clear project timeline that outlines major milestones.</p>
-                                            </div>
-                                        </div>
-                                        <!-- Service Process Item End -->
-                                        
-                                        <!-- Service Process Item Start -->
-                                        <div class="service-process-item wow fadeInUp" data-wow-delay="0.4s">
-                                            <div class="icon-box">
-                                                <img src="images/icon-service-process-2.svg" alt="">
-                                            </div>
-                                            <div class="service-process-item-content">
-                                                <h3>Timeline & Scheduling</h3>
-                                                <p>We create a clear project timeline that outlines major milestones.</p>
-                                            </div>
-                                        </div>
-                                        <!-- Service Process Item End -->
-                                        
-                                        <!-- Service Process Item Start -->
-                                        <div class="service-process-item wow fadeInUp" data-wow-delay="0.6s">
-                                            <div class="icon-box">
-                                                <img src="images/icon-service-process-3.svg" alt="">
-                                            </div>
-                                            <div class="service-process-item-content">
-                                                <h3>Resource & Material Planning</h3>
-                                                <p>We create a clear project timeline that outlines major milestones.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-process-image">
-                                        <figure class="image-anime reveal">
-                                            <img src="images/service-process-image.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Back to Top -->
+    <div id="progress-wrap" class="progress-wrap style-one">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
     </div>
 
+    <!-- Link of JS files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/megamenu.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/scrollTrigger.min.js"></script>
+    <script src="js/lenis.min.js"></script>
+    <script src="js/scrollToPlugin.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/customEase.js"></script>
+    <script src="js/scrollcue.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Add CSS for Service Detail Page -->
+    <style>
+        .service-detail-section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        
+        .feature-icon {
+            color: #D4A574;
+        }
+        
+        .service-process-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .service-process-timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #6d6d6d;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .timeline-number {
+            position: absolute;
+            left: -45px;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background: #6d6d6d;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .timeline-content {
+            padding-left: 30px;
+        }
+        
+        .workflow-step {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
 
+        
+        .step-icon {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+        
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: #6d6d6d;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .client-note {
+            border-left: 4px solid #6d6d6d;
+        }
+        
+        .summary-box {
+            background: linear-gradient(135deg, #6d6d6d 0%, #C09565 100%);
+        }
+        
+        .accordion-button {
+            font-weight: 600;
+            padding: 1rem 1.25rem;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(212, 165, 116, 0.1);
+            color: #6d6d6d;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+        }
+        
+        .btn-primary {
+            background-color: #6d6d6d;
+            border-color: #6d6d6d;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: #6d6d6d;
+            border-color: #6d6d6d;
+            transform: translateY(-2px);
+        }
+        
+        .lead {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .service-detail-section {
+                padding: 40px 0;
+            }
+            
+            .service-overview .row {
+                flex-direction: column-reverse;
+            }
+            
+            .service-image-box {
+                margin-bottom: 30px;
+            }
+            
+            .timeline-number {
+                left: -40px;
+            }
+        }
+    </style>
 
-
-
-
-                <!-- Footer Section Start -->
-                <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
-                    <div class="container">
-                        <div class="row justify-content-center pb-90">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="footer-widget mb-30" data-cue="slideInUp">
-                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
-                                    <ul class="footer-menu style-one list-unstyled mb-0">
-                                        <li><a href="services.html">Service</a></li>
-                                        <li><a href="pricing-plan.html">Pricing</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                             <div class="col-lg-3 col-md-6 ps-xxl-5">
-                                <div class="footer-widget mb-30" data-cue="slideInUp">
-                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Explore</h4>
-                                    <ul class="footer-menu style-one list-unstyled mb-0">
-                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                        <li><a href="terms-conditions.html">Terms of Service</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="careers.html">Careers</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                             <div class="col-lg-3 col-md-6 ps-xxl-5">
-                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
-                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Company</h4>
-                                    <ul class="footer-menu style-one list-unstyled mb-0">
-                                        <li><a href="location.html">Location</a></li>
-                                        <li><a href="projects.html">Works</a></li>
-                                        <li><a href="projects.html">Studio</a></li>
-                                        <li><a href="blog-right-sidebar.html">News</a></li>
-                                        <li><a href="properties.html">Categories</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                             <div class="col-lg-3 col-md-6 ps-xxl-5">
-                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
-                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
-                                    <ul class="contact-info-list list-unstyled mb-0">
-                                        <li><span class="fw-bold text-white me-1">Address:</span> 952 Bad Hill St, Asheville, NC 28, USA</li>
-                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="/cdn-cgi/l/email-protection#fe969b929291be8c9b90978b8dd09d9193"><span class="__cf_email__" data-cfemail="91f9f4fdfdfed1e3f4fff8e4e2bff2fefc">[email protected]</span></a></li>
-                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:96768678869">+96 76867 8869</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="footer-large-text font-optional fw-black round-10">
-                                    <span>F</span>
-                                    <span>U</span>
-                                    <span>S</span>
-                                    <span>I</span>
-                                    <span>O</span>
-                                    <span>N</span>
-                                    <span>4</span>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10">
-                                    <span class="text-alto fw-semibold me-2">Follow Us: </span>
-                                    <ul class="social-profile style-two list-unstyled mb-0">
-                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-facebook-fill"></i></a></li>
-                                        <li><a href="https://x.com/?lang=en" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-twitter-x-line"></i></a></li>
-                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-instagram-line"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle"><i class="ri-linkedin-fill"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-7 text-md-end text-center">
-                                <p class="copyright-text mb-0 text-white"><i class="ri-copyright-line"></i><span class="text_secondary fw-medium">Renius</span> is Proudly Owned by <a href="https://support.envytheme.com/" class="link style-three fw-medium">EnvyTheme</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <!-- Footer End -->
-
-            </div>
-        </div>
-        <!-- Back to Top -->
-        <div id="progress-wrap" class="progress-wrap style-one">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-              <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
-            </svg>
-        </div>
-
-        <!-- Link of JS files -->
-        <script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/megamenu.js"></script>
-        <script src="js/swiper-bundle.min.js"></script>
-        <script src="js/fslightbox.js"></script>
-        <script src="js/gsap.min.js"></script>
-        <script src="js/scrollTrigger.min.js"></script>
-        <script src="js/lenis.min.js"></script>
-        <script src="js/scrollToPlugin.js"></script>
-        <script src="js/SplitText.min.js"></script>
-        <script src="js/customEase.js"></script>
-        <script src="js/scrollcue.min.js"></script>
-        <script src="js/main.js"></script>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
 </body>
 </html>
-             
