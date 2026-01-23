@@ -411,7 +411,7 @@ body {
 }
 
 .mb-80 {
-  margin-bottom: 80px;
+  margin-bottom: 43px;
 }
 
 .mb-120 {
@@ -2269,7 +2269,7 @@ body {
   content: "";
   width: 100%;
   height: calc(100% + 50px);
-  background-color: var(--optionalColor);
+  background-color: #6B6B6B;
   z-index: -1;
   border-radius: 0 0 45px 45px;
   transform: translateX(-50%);
@@ -4769,6 +4769,14 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: -28px;
+
+}
+/* this is for the services page  */
+.card-header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: -14px;
 
 }
 

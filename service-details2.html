@@ -269,11 +269,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div class="partnership-note mt-5 p-4 bg-light rounded-3 wow fadeInUp">
-                                    <h5 class="mb-3 text-primary"><i class="ri-information-line me-2"></i> Our Partnership Philosophy</h5>
-                                    <p class="mb-0">We collaborate with select partners only, ensuring every joint venture aligns with Fusion 4 Construction's premium execution standards, ethical practices, and long-term development vision.</p>
-                                </div>
                             </div>
 
                             <!-- Service Workflow Section -->
@@ -649,7 +644,7 @@
             border: 1px solid #e0e0e0;
             border-radius: 10px;
             transition: all 0.3s ease;
-            background: white;
+            background:linear-gradient(30deg, #f5bf91 0%, #898989 100%);
             text-align: center;
         }
         
@@ -664,9 +659,15 @@
             border: 1px solid #e0e0e0;
             border-radius: 10px;
             transition: all 0.3s ease;
-            background: white;
+            background:linear-gradient(30deg, #898989 0%, #f5bf91 100%);
             position: relative;
             overflow: hidden;
+        }
+
+        .service-phase-card:hover {
+
+            background:linear-gradient(30deg, #f5bf91 0%, #898989 100%);
+
         }
         
 
@@ -674,8 +675,11 @@
         .phase-number {
             font-size: 3rem;
             font-weight: 900;
-            color: rgba(212, 165, 116, 0.1);
+            color: #f5bf91;
             line-height: 1;
+        }
+        .phase-number :hover {
+            color: #898989;
         }
         
         .partnership-note {
@@ -686,7 +690,6 @@
         /* Workflow Timeline for Desktop */
         .workflow-timeline {
             position: relative;
-            padding: 40px 0;
         }
         
         .timeline-path {
@@ -710,8 +713,8 @@
         .step-icon {
             width: 60px;
             height: 60px;
-            background: white;
-            border: 2px solid #6d6d6d;
+            background:linear-gradient(182deg, #f5bf91 0%, #898989 100%);
+            border: 2px solid #ffffff;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -723,12 +726,14 @@
         .step-number {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #6d6d6d;
+            color: #ffffff;
         }
         
         .step-content {
-            background: white;
+            background:linear-gradient(182deg, #f5bf91 0%, #898989 100%);
             padding: 20px;
+            height: 262px;
+            color: #000;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
@@ -741,7 +746,7 @@
         
         .step-content p {
             font-size: 0.9rem;
-            color: #666;
+            color: #fceeee;
             margin-bottom: 0;
         }
         

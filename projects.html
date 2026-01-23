@@ -57,7 +57,7 @@
                                     </div>
                                     <ul class="menu-section p-0 mb-0 lh-1">
                                         <li class="menu-item-has-children">
-                                            <a href="index.html" class="active">Home</a>
+                                            <a href="index.html" >Home</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="services.html">Services</a>
@@ -67,7 +67,7 @@
                                             <a href="about.html">About Us</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="projects.html">Projects</a>
+                                            <a href="projects.html" class="active">Projects</a>
 
                                         </li>
                                         <li class="menu-item-has-children">
@@ -116,63 +116,587 @@
                     </div>
                 </div>
                 <!-- Navbar End -->
+<section class="projects-section">
+  <div class="projects-header">
+    <div class="header-left">
+      <span class="section-label">
+        <span class="dot"></span> OUR PROJECTS
+      </span>
+      <h2>A showcase of architecture that inspires and endures</h2>
+    </div>
 
-                <!-- HERO -->
-                <section class="services-hero">
-                <div class="hero-overlay">
-                    <h1>Our services</h1>
-                    <p>Home / Services</p>
-                </div>
-                </section>
-                    <section class="blog-grid">
-                         <article class="blog-card">
-                              <img src="images/service-image-1.jpg" alt="Top Building Designs" class="blog-image">
-                              <div class="blog-overlay">
-                                   <h3 class="blog-title">Top Building Designs</h3>
-                                   <time class="blog-date" datetime="2026-01">Expected delivery time 13 Feb 2026</time>
-                              </div>
-                         </article>
+    <div class="header-right">
+      <p>
+        Take a closer look at our work a fusion of modern aesthetics,
+        sustainable practices, and quality engineering. Every project
+        stands as proof of our passion for architectural excellence.
+      </p>
+    </div>
+  </div>
 
-                         <article class="blog-card">
-                              <img src="images/service-image-2.jpg" alt="Building Design" class="blog-image">
-                              <div class="blog-overlay">
-                                   <h3 class="blog-title">Building Design</h3>
-                                   <time class="blog-date" datetime="2025-12">Dec 2025</time>
-                              </div>
-                         </article>
+  <!-- Filters -->
+  <div class="project-filters">
+    <span class="filter-option active" data-filter="all">All</span>
+    <span class="dot-sep"></span>
+    <span class="filter-option" data-filter="residential">Residential</span>
+    <span class="dot-sep"></span>
+    <span class="filter-option" data-filter="commercial">Commercial</span>
+    <span class="dot-sep"></span>
+    <span class="filter-option" data-filter="corporate">Corporate</span>
+    <span class="dot-sep"></span>
+    <span class="filter-option" data-filter="industrial">Industrial</span>
+  </div>
 
-                         <article class="blog-card">
-                              <img src="images/service-image-3.jpg" alt="Design Trends" class="blog-image">
-                              <div class="blog-overlay">
-                                   <h3 class="blog-title">Design Trends</h3>
-                                   <time class="blog-date" datetime="2025-11">Nov 2025</time>
-                              </div>
-                         </article>
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+    <!-- Residential Projects -->
+    <a href="project-detail.html?id=1" class="project-card" data-category="residential">
+      <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Maplewood Apartments">
+      <div class="overlay">
+        <h4>Maplewood Apartments</h4>
+        <p>Residential Architecture</p>
+        <span class="project-category">Residential</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
 
-                         <article class="blog-card">
-                              <img src="images/service-image-4.jpg" alt="Gallery Design" class="blog-image">
-                              <div class="blog-overlay">
-                                   <h3 class="blog-title">Gallery Design</h3>
-                                   <time class="blog-date" datetime="2025-10">Oct 2025</time>
-                              </div>
-                         </article>
+    <a href="project-detail.html?id=2" class="project-card" data-category="residential">
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Riverside Villas">
+      <div class="overlay">
+        <h4>Riverside Villas</h4>
+        <p>Residential Architecture</p>
+        <span class="project-category">Residential</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
 
-                         <article class="blog-card">
-                              <img src="your-fifth-image.jpg" alt="Future Concepts" class="blog-image">
-                              <div class="blog-overlay">
-                                   <h3 class="blog-title">Future Concepts</h3>
-                                   <time class="blog-date" datetime="2025-09">Sep 2025</time>
-                              </div>
-                         </article>
+    <a href="project-detail.html?id=3" class="project-card" data-category="residential">
+      <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Skyline Towers">
+      <div class="overlay">
+        <h4>Skyline Towers</h4>
+        <p>Residential Architecture</p>
+        <span class="project-category">Residential</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
 
-                         <article class="blog-card">
-                              <img src="your-sixth-image.jpg" alt="Project 2020" class="blog-image">
-                              <div class="blog-overlay">
-                                   <h3 class="blog-title">Project 2020</h3>
-                                   <time class="blog-date" datetime="2025-08">Aug 2025</time>
-                              </div>
-                         </article>
-                    </section>
+    <!-- Commercial Projects -->
+    <a href="project-detail.html?id=4" class="project-card" data-category="commercial">
+      <img src="https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Downtown Mall & Plaza">
+      <div class="overlay">
+        <h4>Downtown Mall & Plaza</h4>
+        <p>Commercial Architecture</p>
+        <span class="project-category">Commercial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="project-detail.html?id=5" class="project-card" data-category="commercial">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Oceanview Resort">
+      <div class="overlay">
+        <h4>Oceanview Resort</h4>
+        <p>Commercial Architecture</p>
+        <span class="project-category">Commercial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="project-detail.html?id=6" class="project-card" data-category="commercial">
+      <img src="https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Urban Shopping Complex">
+      <div class="overlay">
+        <h4>Urban Shopping Complex</h4>
+        <p>Commercial Architecture</p>
+        <span class="project-category">Commercial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <!-- Corporate Projects -->
+    <a href="project-detail.html?id=7" class="project-card" data-category="corporate">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="The Horizon Office Park">
+      <div class="overlay">
+        <h4>The Horizon Office Park</h4>
+        <p>Corporate Architecture</p>
+        <span class="project-category">Corporate</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="project-detail.html?id=8" class="project-card" data-category="corporate">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Innovation Center">
+      <div class="overlay">
+        <h4>Tech Innovation Center</h4>
+        <p>Corporate Architecture</p>
+        <span class="project-category">Corporate</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="project-detail.html?id=9" class="project-card" data-category="corporate">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Global Finance Tower">
+      <div class="overlay">
+        <h4>Global Finance Tower</h4>
+        <p>Corporate Architecture</p>
+        <span class="project-category">Corporate</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <!-- Industrial Projects -->
+    <a href="project-detail.html?id=10" class="project-card" data-category="industrial">
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Metro Industrial Hub">
+      <div class="overlay">
+        <h4>Metro Industrial Hub</h4>
+        <p>Industrial Architecture</p>
+        <span class="project-category">Industrial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="project-detail.html?id=11" class="project-card" data-category="industrial">
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Green Energy Plant">
+      <div class="overlay">
+        <h4>Green Energy Plant</h4>
+        <p>Industrial Architecture</p>
+        <span class="project-category">Industrial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="project-detail.html?id=12" class="project-card" data-category="industrial">
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Advanced Manufacturing Center">
+      <div class="overlay">
+        <h4>Advanced Manufacturing Center</h4>
+        <p>Industrial Architecture</p>
+        <span class="project-category">Industrial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="no-projects-message" style="display: none;">
+    <p>No projects found in this category.</p>
+  </div>
+</section>
+
+<style>
+  .projects-section {
+    padding: 90px 70px;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+  }
+
+  /* Header */
+  .projects-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .header-left {
+    max-width: 600px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .section-label .dot {
+    width: 6px;
+    height: 6px;
+    background: #ffd400;
+    border-radius: 50%;
+  }
+
+  .header-left h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .header-right {
+    max-width: 420px;
+  }
+
+  .header-right p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 26px;
+  }
+
+  /* Button */
+  .projects-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: #ffd400;
+    color: #000;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .projects-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 212, 0, 0.2);
+  }
+
+  .arrow-box {
+    width: 32px;
+    height: 32px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .projects-btn:hover .arrow-box {
+    transform: translateX(4px);
+  }
+
+  /* Filters */
+  .project-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 60px 0 40px;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .project-filters span.filter-option {
+    color: #444;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .project-filters span.filter-option:hover {
+    color: #111;
+    background-color: rgba(255, 212, 0, 0.1);
+  }
+
+  .project-filters span.filter-option.active {
+    color: #111;
+    background-color: rgba(255, 212, 0, 0.15);
+    font-weight: 600;
+  }
+
+  .project-filters span.filter-option.highlight {
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .project-filters .dot-sep {
+    width: 6px;
+    height: 6px;
+    background: #ddd;
+    border-radius: 50%;
+  }
+
+  /* Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    transition: all 0.3s ease;
+  }
+
+  /* Cards */
+  .project-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 460px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Overlay */
+  .project-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 26px;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+    color: #fff;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover .overlay {
+    padding-bottom: 32px;
+  }
+
+  .overlay h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-bottom: 8px;
+  }
+
+  .project-category {
+    display: inline-block;
+    background-color: #ffd400;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  .view-project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .project-card:hover .view-project-btn {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(4px);
+  }
+
+  /* No projects message */
+  .no-projects-message {
+    text-align: center;
+    padding: 60px;
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .projects-header {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects-section {
+      padding: 60px 30px;
+    }
+    
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .header-left h2 {
+      font-size: 34px;
+    }
+    
+    .project-filters {
+      gap: 12px;
+      margin: 40px 0 30px;
+    }
+    
+    .project-filters .dot-sep {
+      display: none;
+    }
+    
+    .project-filters span.filter-option {
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+    
+    .project-card {
+      height: 380px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projects-section {
+      padding: 40px 20px;
+    }
+    
+    .header-left h2 {
+      font-size: 28px;
+    }
+    
+    .project-card {
+      height: 320px;
+    }
+    
+    .view-project-btn {
+      padding: 6px 12px;
+      font-size: 11px;
+    }
+  }
+</style>
+
+<script>
+  // Filtering functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get DOM elements
+    const filterOptions = document.querySelectorAll('.filter-option');
+    const projectCards = document.querySelectorAll('.project-card');
+    const noProjectsMessage = document.querySelector('.no-projects-message');
+    const projectsGrid = document.querySelector('.projects-grid');
+
+    // Function to filter projects
+    function filterProjects(category) {
+      let visibleCards = 0;
+      
+      // Show/hide cards based on category
+      projectCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        
+        if (category === 'all' || cardCategory === category) {
+          card.style.display = 'block';
+          visibleCards++;
+          
+          // Add a fade-in animation
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 10);
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      
+      // Show/hide no projects message
+      if (visibleCards === 0) {
+        noProjectsMessage.style.display = 'block';
+      } else {
+        noProjectsMessage.style.display = 'none';
+      }
+      
+      // Update grid layout for smooth transitions
+      projectsGrid.style.minHeight = projectsGrid.offsetHeight + 'px';
+    }
+
+    // Function to update active filter
+    function updateActiveFilter(selectedFilter) {
+      // Remove active class from all filters
+      filterOptions.forEach(option => {
+        option.classList.remove('active');
+        option.classList.remove('highlight');
+      });
+      
+      // Add active class to selected filter
+      const selectedOption = document.querySelector(`[data-filter="${selectedFilter}"]`);
+      if (selectedOption) {
+        selectedOption.classList.add('active');
+        
+        // If selected filter is residential, add highlight class
+        if (selectedFilter === 'residential') {
+          selectedOption.classList.add('highlight');
+        }
+      }
+    }
+
+    // Add event listeners to filter options
+    filterOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        const filterValue = this.getAttribute('data-filter');
+        updateActiveFilter(filterValue);
+        filterProjects(filterValue);
+      });
+    });
+
+    // Add smooth animation to all cards on page load
+    window.addEventListener('load', function() {
+      projectCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 100 + (index * 100));
+      });
+    });
+  });
+</script>
+
+
                 <!-- Footer Section Start -->
                 <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
                     <div class="container">

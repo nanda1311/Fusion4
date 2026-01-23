@@ -627,7 +627,7 @@
         .scale-feature-card {
             border: 1px solid #e2e8f0;
             border-radius: 12px;
-            background: white;
+            background: linear-gradient(30deg, #f5bf91 0%, #898989 100%);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             height: 100%;
             position: relative;
@@ -665,7 +665,7 @@
         .development-phase {
             border: 1px solid #e2e8f0;
             border-radius: 12px;
-            background: white;
+            background: #cccccc;
             transition: all 0.3s ease;
             height: 100%;
             position: relative;
@@ -721,8 +721,15 @@
         
         .timeline-step:nth-child(even) .timeline-content {
             text-align: right;
-            margin-right: 40px;
+            margin-right: 50px;
             margin-left: 0;
+        }
+        @media (max-width: 768px) {
+            .timeline-step:nth-child(even) .timeline-content {
+                text-align: left;
+                margin-right: 0;
+                margin-left: 40px;
+            }
         }
         
         .timeline-step:last-child {
@@ -751,7 +758,7 @@
         }
         
         .timeline-content {
-            background: white;
+            background: linear-gradient(173deg, #f5bf91  0%, #898989 100%);
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -931,8 +938,8 @@
             }
             
             .timeline-marker {
-                width: 50px;
-                height: 50px;
+                width: 31px;
+                height: 32px;
             }
             
             .timeline-content {
