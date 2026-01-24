@@ -626,6 +626,23 @@
 
 
 
+.services-grid1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+
+}
+.service-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin-bottom: 20px;
+}
                 * {
                 margin: 0;
                 padding: 0;
@@ -702,17 +719,8 @@
                 background: #f7f7f7;
                 }
 
-                .services-grid1 {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-                gap: 26px;
-                }
 
-                .service-card {
-                background: #fff;
-                padding: 22px;
-                border-radius: 16px;
-                }
+
 
                 .card-header {
                 display: flex;

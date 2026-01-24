@@ -1028,7 +1028,7 @@
 
         .amenity-item {
             flex: 0 0 calc(25% - 23px);
-            width: 50px;
+            width: 100px;
             background: #fff3f3;
             border-radius: 15px;
             padding: 35px 25px;
