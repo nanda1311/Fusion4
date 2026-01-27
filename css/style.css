@@ -25,8 +25,7 @@ This files table contents are outlined below>>>>>
   --primaryFont: "DM Sans", sans-serif;
   --secondaryFont: "Exo", sans-serif;
   --optionalFont: "Martian Mono", monospace;
-  --primaryColor: #FF5E14;
-  --secondaryColor: #FBBD06;
+  --primaryColor: #f28a35;
   --optionalColor: #2D1C22;
   --paraColor: #555;
   --titleColor: #000;
@@ -311,7 +310,7 @@ body {
   padding-top: 43px;
 }
 .navbar-brand{
-  width: 160px;
+  width: 185px;
 }
 .ptb-120 {
   padding-top: 40px;
@@ -488,7 +487,8 @@ body {
   color: var(--titleColor);
 }
 .btn.style-two span.btn-text, .btn.style-two span.btn-icon {
-  color: var(--titleColor);
+  color: #f28a35;
+  border: 1px solid #f28a35;
 }
 .btn.style-two span.btn-text:before, .btn.style-two span.btn-icon:before {
   background-color: var(--secondaryColor);
@@ -2269,13 +2269,13 @@ body {
   content: "";
   width: 100%;
   height: calc(100% + 50px);
-  background-color: #6B6B6B;
+  background-color: #000000;
   z-index: -1;
   border-radius: 0 0 45px 45px;
   transform: translateX(-50%);
 }
 .wh-area.style-one .wh-content p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
 }
 .wh-area.style-one .wh-content .feature-item h3 {
   line-height: 26px;
