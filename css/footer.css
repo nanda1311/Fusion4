@@ -69,7 +69,7 @@
   opacity: 1;
 }
 .footer-widget .contact-info-list li {
-  margin-bottom: 11px;
+  margin-bottom: 1px;
   color: rgba(255, 255, 255, 0.5);
 }
 .footer-widget .contact-info-list li:last-child {

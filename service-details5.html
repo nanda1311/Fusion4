@@ -119,12 +119,19 @@
 
 
 
- <div class="hero-section">
-        <div class="breadcrumb">
-            <a href="/">Home</a> &gt; <a href="/services">Services</a> &gt; Commercial Construction Excellence
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content container">
+            <div class="breadcrumb">
+                <span>Home</span>
+                <span>></span>
+                <span>Services</span>
+                <span>></span>
+                <span class="current">Turnkey Construction Solutions</span>
+            </div>
+            <h1>Turnkey Construction Solutions</h1>
         </div>
-        <h1 class="hero-title">Commercial Construction Excellence</h1>
-    </div>
+    </section>
 
     <section class="intro-section">
         <div class="container">
@@ -520,53 +527,72 @@
     
     <!-- Add CSS for Commercial Construction Excellence -->
     <style>
-   * {
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #1e293b;
+            background-color: #ffffff;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 1rem;
         }
 
-        .hero-section {
+        /* Hero Section */
+        .hero {
             position: relative;
-            height: 500px;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.pexels.com/photos/3935683/pexels-photo-3935683.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;
+            height: 400px;
+            background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover;
+            background-position: center;
             display: flex;
             align-items: center;
-            justify-content: center;
             color: white;
-            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(15, 23, 42, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
         }
 
         .breadcrumb {
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
             color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
         }
 
-        .breadcrumb a {
-            color: rgba(255, 255, 255, 0.9);
-            text-decoration: none;
-            transition: color 0.3s;
+        .breadcrumb span {
+            margin: 0 0.5rem;
         }
 
-        .breadcrumb a:hover {
+        .breadcrumb .current {
             color: #eb8023;
         }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
 
         .hero-title {
             font-size: 48px;
