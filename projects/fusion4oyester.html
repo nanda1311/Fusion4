@@ -1,0 +1,1779 @@
+<!DOCTYPE html><html lang="zxx"><head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Link of CSS files -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../css/scrollcue.min.css">
+        <link rel="stylesheet" href="../css/remixicon.css">
+        <link rel="stylesheet" href="../css/services.css">
+        <link rel="stylesheet" href="../css/projects.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="../css/dark-theme.css">
+        
+        <title>OYESTER - Fusion4</title>
+        <link rel="icon" type="image/png" href="../images/favicon.png" width="16" height="16">
+    </head>
+    <body>
+
+       <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+
+        <!-- Custom Cursor -->
+        <div class="cursor"><span class="cursor-text"></span></div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+
+<style>
+/* Navbar base */
+@media (max-width: 600px) {
+    .service-card {
+        padding: 18px;
+        width: 118%;
+        margin-left: -20px;
+        margin-right: -26px;
+    }
+}
+.navbar__section {
+    background-color: #18455c;
+}
+
+.navbar__section .navbar-brand img {
+    max-height: 65px;
+}
+
+/* Nav links */
+.navbar__section .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar__section .nav-link:hover {
+    color: #eb8023;
+}
+
+.navbar__section .nav-link.active {
+    color: #eb8023;
+    font-weight: bold;
+}
+
+/* Desktop spacing fixes */
+.navbar__section .navbar-brand {
+    margin-left: -89px;
+}
+
+.navbar__section .navbar-nav {
+    margin-left: 50px;
+    gap: 5px;
+}
+
+/* CTA button spacing */
+.navbar__section .option-item.cta-btn {
+    margin-left: 20px;
+    margin-right: -85px;
+}
+
+/* ---------------- MOBILE STYLES ---------------- */
+@media (max-width: 991px) {
+
+    /* Reset desktop offsets */
+    .navbar__section .navbar-brand {
+        margin-left: -20px;
+    }
+
+    .navbar__section .navbar-nav {
+        margin-left: 0;
+    }
+
+    /* Make mobile menu SIDE BY SIDE */
+    .navbar__section .navbar-collapse {
+        background-color: #18455c;
+        padding: 15px;
+    }
+
+    .navbar__section .navbar-nav {
+        flex-direction: row;               /* KEY PART */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;                        /* Two items per row */
+        text-align: center;
+    }
+
+    .navbar__section .nav-link {
+        padding: 12px 10px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    /* Hide desktop CTA button on mobile */
+    .navbar__section .option-item.cta-btn {
+        display: none;
+    }
+}
+/* -------- MOBILE FIX: SHOW CALL & CTA WITHOUT HTML CHANGES -------- */
+@media (max-width: 991px) {
+
+    /* Force show Call Us block */
+    .navbar__section .contact-link.d-none {
+        display: flex !important;
+        align-items: center;
+        background: rgba(255,255,255,0.08);
+        border-radius: 6px;
+    }
+
+    /* Show text inside Call Us */
+    .navbar__section .contact-link .d-xl-inline {
+        display: block !important;
+        font-size: 0.7rem;
+    }
+
+    /* Force show Get In Touch button */
+    .navbar__section .option-item.cta-btn.d-none {
+        display: block !important;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 25%;
+        text-align: center;
+    }
+
+    /* Keep mobile nav items side-by-side */
+    .navbar__section .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;
+        text-align: center;
+    }
+}
+/* ---------- COMPACT SIDE-BY-SIDE CALL & CTA ---------- */
+@media (max-width: 991px) {
+
+    .navbar__section .other-options {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        width: 75%;
+        }
+
+    .navbar__section .other-options .option-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__section .contact-link {
+        width: 100%;
+        justify-content: center;
+        padding: 6px 8px;         /* reduced padding */
+        background: rgba(255,255,255,0.08);
+        border-radius: 5px;
+    }
+
+    .navbar__section .contact-link img {
+        width: 18px;              /* slightly smaller icon */
+        margin-right: 5px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 100%;
+        padding: -1px 8px;         /* reduced padding */
+        text-align: center;
+        margin-left: 65px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: 25px;
+    }
+    .btn-text {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 375px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 400px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+
+
+</style>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mobile__offcanvas">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="../services.html">Services</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Navbar Start -->
+<div class="navbar__section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../images/FUSION 4-02 new.png" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+
+                        <div class="option-item d-flex flex-wrap align-items-center">
+                            <div class="contact-link d-lg-flex d-none flex-wrap align-items-center position-relative">
+                                <span class="contact-icon rounded-circle">
+                                    <img src="../images/phone.png" alt="Icon">
+                                </span>
+                                <div class="d-xl-inline d-none">
+                                    <span class="text-white d-block">Call Us:</span>
+                                    <span class="text_primary fw-semibold">9880055230</span>
+                                </div>
+                                <a href="../contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+
+                        <div class="option-item cta-btn d-lg-block d-none">
+                            <a href="../contact.html" class="btn style-two">
+                                <span class="btn-text fw-semibold">Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="property-container">
+    <!-- LEFT SECTION -->
+    <div class="property-left">
+        <div class="main-image">
+            <img src="../images/blog-1.jpg" alt="Modern House">
+        </div>
+
+        <div class="property-info">
+            <h2>fusion4 oyster</h2>
+            <p class="location">Attur Layout, Yelahanka New Town, Bengaluru, Karnataka 560064</p>
+            <p class="description">
+                The world of luxury real estate is an alluring realm where dreams take shape and
+                aspirations find their home. It's a symphony of exquisite designs, unparalleled
+                amenities, and prime locations, all orchestrated to create a lifestyle that surpasses
+                expectations. Whether you seek a sprawling estate nestled amidst rolling hills or a
+                penthouse perched atop a bustling metropolis, the quest for the perfect luxury
+                property is an adventure in itself.
+            </p>
+
+            <button class="brochure-button" id="downloadBrochureBtn">Download Brochure</button>
+            
+            <h3>Property Features</h3>
+            <div class="features">
+                <div class="feature-item">
+                    <span>Type</span>
+                    <strong>House</strong>
+                </div>
+                <div class="feature-item">
+                    <span>Bedrooms</span>
+                    <strong>6</strong>
+                </div>
+                <div class="feature-item">
+                    <span>Total Area</span>
+                    <strong>10,000 sq.ft</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT SECTION (unchanged) -->
+    <div class="property-right">
+        <div class="gallery">
+            <img src="../images/project-bg-3.jpg" alt="">
+            <img src="../images/project-bg-4.jpg" alt="">
+            <img src="../images/project-bg-3.jpg" alt="">
+        </div>
+
+        <div class="schedule-box">
+            <h3>Schedule Visit</h3>
+            <form>
+                <input type="text" placeholder="Your name">
+                <input type="tel" placeholder="Your Phone Number">
+                <textarea placeholder="Leave us a message..."></textarea>
+                <button type="submit">SCHEDULE VISIT</button>
+            </form>
+        </div>
+    </div>
+</div>
+<style>
+    @media (max-width: 900px) {
+    .property-right{
+        display: none;
+    }
+}
+</style>
+<!-- BROCHURE MODAL -->
+<div id="brochureModal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Download Brochure</h3>
+            <span class="close-btn">&times;</span>
+        </div>
+        
+        <form id="brochureForm" class="brochure-form">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-msg" id="nameError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-msg" id="emailError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Mobile Number *</label>
+                <div class="phone-input-container">
+                    <select id="countryCode" name="countryCode">
+                        <option value="+91">🇮🇳 +91 (India)</option>
+                        <option value="+1">🇺🇸 +1 (USA)</option>
+                        <option value="+44">🇬🇧 +44 (UK)</option>
+                        <option value="+971">🇦🇪 +971 (UAE)</option>
+                        <option value="+65">🇸🇬 +65 (Singapore)</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" 
+                           placeholder="10 digits" maxlength="10" pattern="[0-9]{10}">
+                </div>
+                <span class="error-msg" id="phoneError"></span>
+            </div>
+            
+            <button type="submit" id="submitBrochure" disabled>Download Brochure</button>
+        </form>
+    </div>
+</div>
+
+<style>
+/* Existing brochure-button styles remain the same */
+.brochure-button {
+    background: linear-gradient(135deg, #eb8023 0%, #e38a3c 100%);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.brochure-button:hover {
+    background: linear-gradient(135deg, #e38a3c 0%, #eb8023 100%);
+    transform: translateY(-2px);
+}
+
+.brochure-button:active {
+    transform: translateY(0);
+}
+
+.brochure-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.brochure-button:hover::before {
+    left: 100%;
+}
+
+/* MODAL STYLES */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.close-btn {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.brochure-form {
+    padding: 0 30px 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #eb8023;
+    box-shadow: 0 0 0 3px rgba(235, 128, 35, 0.1);
+}
+
+.phone-input-container {
+    display: flex;
+    gap: 10px;
+}
+
+#countryCode {
+    flex: 0 0 120px;
+    background: #f8f9fa;
+}
+
+#phoneNumber {
+    flex: 1;
+}
+
+.error-msg {
+    display: block;
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+#submitBrochure {
+    background: linear-gradient(135deg, #eb8023 0%, #e38a3c 100%);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#submitBrochure:hover:not(:disabled) {
+    background: linear-gradient(135deg, #e38a3c 0%, #eb8023 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(235, 128, 35, 0.4);
+}
+
+#submitBrochure:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.success-message {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    display: none;
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.getElementById('downloadBrochureBtn');
+    const modal = document.getElementById('brochureModal');
+    const closeBtn = document.querySelector('.close-btn');
+    const form = document.getElementById('brochureForm');
+    const submitBtn = document.getElementById('submitBrochure');
+    
+    // Open modal
+    downloadBtn.addEventListener('click', function() {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+    
+    // Close modal
+    closeBtn.addEventListener('click', closeModal);
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+    
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        form.reset();
+        clearErrors();
+        submitBtn.disabled = true;
+    }
+    
+    // Real-time validation
+    const inputs = ['name', 'email', 'phoneNumber'];
+    inputs.forEach(id => {
+        document.getElementById(id).addEventListener('input', validateForm);
+    });
+    document.getElementById('countryCode').addEventListener('change', validateForm);
+    
+    function validateForm() {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phoneNumber').value.trim();
+        
+        const isNameValid = name.length >= 2;
+        const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        const isPhoneValid = /^\d{10}$/.test(phone);
+        
+        // Update submit button state
+        submitBtn.disabled = !(isNameValid && isEmailValid && isPhoneValid);
+        
+        // Show/hide errors
+        toggleError('name', !isNameValid, isNameValid ? '' : 'Name must be at least 2 characters');
+        toggleError('email', !isEmailValid, isEmailValid ? '' : 'Please enter a valid email');
+        toggleError('phone', !isPhoneValid, isPhoneValid ? '' : 'Please enter exactly 10 digits');
+    }
+    
+    function toggleError(fieldId, show, message) {
+        const errorEl = document.getElementById(fieldId + 'Error');
+        errorEl.textContent = message;
+        errorEl.style.display = show ? 'block' : 'none';
+    }
+    
+    function clearErrors() {
+        ['name', 'email', 'phone'].forEach(field => {
+            toggleError(field, false, '');
+        });
+    }
+    
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (submitBtn.disabled) return;
+        
+        // Simulate form submission and download
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        // Here you would typically send data to your server
+        console.log('Form submitted:', data);
+        
+        // Simulate download
+        setTimeout(() => {
+            // Create and trigger download
+            const link = document.createElement('a');
+            link.href = '../images/blog-1.jpg'; // Replace with actual brochure URL
+            link.download = 'Fusion4-Oyster-Brochure.pdf';
+            link.click();
+            
+            closeModal();
+            alert('Brochure downloaded successfully!');
+        }, 1000);
+    });
+});
+</script>
+
+
+
+<section class="amenities-section">
+    <div class="container">
+        <h2 class="section-title">Amenities</h2>
+        <p class="section-subtitle">
+            Amenities for You and Your Family. Lorem ipsum dolor sit amet,<br>
+            consectetur adipiscing elit.
+        </p>
+
+        <div class="amenities-scroll-container">
+            <div class="amenities-track" id="amenitiesTrack">
+                <!-- Card 1 -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="WiFi Icon">
+                    </div>
+                    <h3>Multi Utility Hall</h3>
+                    <p>High-speed internet available throughout the property for all your connectivity needs.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="Walking Path Icon">
+                    </div>
+                    <h3>Walking Path</h3>
+                    <p>Ample secure parking space for residents and guests at no additional cost.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="Gym Icon">
+                    </div>
+                    <h3>Gym With Equipment</h3>
+                    <p>Uninterrupted power supply with backup generators for essential areas.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="WiFi Icon">
+                    </div>
+                    <h3>Swimming Pool</h3>
+                    <p>Access to premium satellite TV channels with a wide variety of entertainment options.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="WiFi Icon">
+                    </div>
+                    <h3>Sunbath Deck</h3>
+                    <p>Olympic-sized swimming pool with separate sections for adults and children.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="WiFi Icon">
+                    </div>
+                    <h3>Kids Play Area</h3>
+                    <p>Fully equipped gym with modern exercise equipment and personal training options.</p>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="WiFi Icon">
+                    </div>
+                    <h3>Landscaped Area</h3>
+                    <p>Beautifully landscaped gardens and parks for relaxation and outdoor activities.</p>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="Courtyard Icon">
+                    </div>
+                    <h3>Courtyard with Elderly seating</h3>
+                    <p>Round-the-clock security with CCTV surveillance and trained security personnel.</p>
+                </div>
+
+                <!-- Duplicate cards for seamless loop -->
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="WiFi Icon">
+                    </div>
+                    <h3>Multi Utility Hall</h3>
+                    <p>High-speed internet available throughout the property for all your connectivity needs.</p>
+                </div>
+
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="Walking Path Icon">
+                    </div>
+                    <h3>Walking Path</h3>
+                    <p>Ample secure parking space for residents and guests at no additional cost.</p>
+                </div>
+
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="Gym Icon">
+                    </div>
+                    <h3>Gym With Equipment</h3>
+                    <p>Uninterrupted power supply with backup generators for essential areas.</p>
+                </div>
+
+                <div class="amenity-item">
+                    <div class="item-icon">
+                        <img src="../images/conference.png" width="30" alt="WiFi Icon">
+                    </div>
+                    <h3>Swimming Pool</h3>
+                    <p>Access to premium satellite TV channels with a wide variety of entertainment options.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Amenities Section Base Styles */
+    .amenities-section {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+    }
+    
+    .section-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #18455c;
+    }
+    
+    .section-subtitle {
+        text-align: center;
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+    
+    /* Desktop Styles (768px and up) */
+    @media (min-width: 768px) {
+        .amenities-scroll-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            padding: 20px 0;
+        }
+        
+        .amenities-track {
+            display: flex;
+            gap: 30px;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-250px * 8 - 30px * 8));
+            }
+        }
+        
+        .amenity-item {
+            flex: 0 0 250px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .amenity-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .item-icon {
+            margin-bottom: 20px;
+        }
+        
+        .item-icon img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .amenity-item h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #18455c;
+        }
+        
+        .amenity-item p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        /* Pause animation on hover */
+        .amenities-track.paused {
+            animation-play-state: paused;
+        }
+    }
+    
+    /* Mobile Styles (767px and below) */
+    @media (max-width: 767px) {
+        .amenities-section {
+            padding: 40px 15px;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .section-subtitle {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        .section-subtitle br {
+            display: none;
+        }
+        
+        .amenities-scroll-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+            padding: 10px 5px 20px;
+        }
+        
+        .amenities-scroll-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+        
+        .amenities-track {
+            display: flex;
+            gap: 15px;
+            width: max-content;
+            padding: 5px;
+            animation: none !important; /* Disable animation on mobile */
+        }
+        
+        .amenity-item {
+            flex: 0 0 280px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .item-icon {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .item-icon img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .amenity-item h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #18455c;
+            text-align: center;
+        }
+        
+        .amenity-item p {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+            text-align: center;
+        }
+        
+        /* Hide duplicate cards on mobile */
+        .amenity-item:nth-child(n+9) {
+            display: none;
+        }
+        
+        /* Add scroll indicator for mobile */
+        .amenities-scroll-container {
+            position: relative;
+        }
+
+    }
+    
+    /* Tablet Styles (768px to 991px) */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .amenity-item {
+            flex: 0 0 220px;
+            padding: 20px;
+        }
+        
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-220px * 8 - 30px * 8));
+            }
+        }
+    }
+    
+    /* Small mobile devices (480px and below) */
+    @media (max-width: 480px) {
+        .amenity-item {
+            flex: 0 0 260px;
+            padding: 18px;
+        }
+        
+        .item-icon img {
+            width: 35px;
+            height: 35px;
+        }
+        
+        .amenity-item h3 {
+            font-size: 15px;
+        }
+        
+        .amenity-item p {
+            font-size: 12px;
+        }
+    }
+    
+    /* Very small mobile devices (360px and below) */
+    @media (max-width: 360px) {
+        .amenity-item {
+            flex: 0 0 240px;
+            padding: 15px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+        }
+        
+        .section-subtitle {
+            font-size: 13px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const track = document.getElementById('amenitiesTrack');
+        const container = document.querySelector('.amenities-scroll-container');
+        
+        // Only add hover pause on desktop
+        if (window.innerWidth >= 768) {
+            // Pause animation on hover
+            track.addEventListener('mouseenter', () => {
+                track.classList.add('paused');
+            });
+            
+            track.addEventListener('mouseleave', () => {
+                track.classList.remove('paused');
+            });
+            
+            // Also pause when hovering over the container
+            container.addEventListener('mouseenter', () => {
+                track.classList.add('paused');
+            });
+            
+            container.addEventListener('mouseleave', () => {
+                track.classList.remove('paused');
+            });
+            
+            // Reset animation when it reaches the end for seamless loop
+            track.addEventListener('animationiteration', () => {
+                // Smoothly reset position
+                track.style.animation = 'none';
+                track.offsetHeight; // Trigger reflow
+                track.style.animation = null;
+            });
+        }
+        
+        // For mobile touch devices
+        let isScrolling = false;
+        let scrollTimer;
+        
+        container.addEventListener('touchstart', () => {
+            if (window.innerWidth < 768) {
+                isScrolling = true;
+                clearTimeout(scrollTimer);
+            }
+        });
+        
+        container.addEventListener('touchend', () => {
+            if (window.innerWidth < 768) {
+                isScrolling = false;
+                scrollTimer = setTimeout(() => {
+                    isScrolling = false;
+                }, 100);
+            }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            // If switching to mobile, disable animation
+            if (window.innerWidth < 768) {
+                track.style.animation = 'none';
+                // Show only 8 cards on mobile
+                const allCards = track.querySelectorAll('.amenity-item');
+                allCards.forEach((card, index) => {
+                    if (index >= 8) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'flex';
+                    }
+                });
+            } else {
+                // If switching to desktop, enable animation
+                track.style.animation = '';
+                // Show all cards on desktop
+                const allCards = track.querySelectorAll('.amenity-item');
+                allCards.forEach(card => {
+                    card.style.display = 'flex';
+                });
+            }
+        });
+    });
+</script>
+
+
+<section class="amenities-section">
+    <div class="container">
+        <h2 class="section-title">Facilities</h2>
+        <p class="section-subtitle">
+            Facilities for You and Your Family Lorem ipsum dolor sit amet,<br>
+            consectetur adipiscing elit.
+        </p>
+
+        <div class="amenities-grid">
+
+            <!-- Card 1 -->
+            <div class="amenity-card">
+                <div class="icon-wrapper">
+                    <!-- Add your icon/image here -->
+                    <!-- <img src="icon1.png" alt=""> -->
+                </div>
+                <h3>Entrance Gateway With Security Cabin</h3>
+                <p>Lorem Ipsum is simply dummy</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="amenity-card">
+                <div class="icon-wrapper">
+                    <!-- Add your icon/image here -->
+                </div>
+                <h3>24/7 CCTV Security</h3>
+                <p>Lorem Ipsum is simply dummy</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="amenity-card">
+                <div class="icon-wrapper">
+                    <!-- Add your icon/image here -->
+                </div>
+                <h3>DG with 24/7 Power Backup</h3>
+                <p>Lorem Ipsum is simply dummy</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="amenity-card">
+                <div class="icon-wrapper">
+                    <!-- Add your icon/image here -->
+                </div>
+                <h3>Intercom Connectivity</h3>
+                <p>Lorem Ipsum is simply dummy</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-plan">
+  <div class="container">
+    <div class="section-header">
+      <p class="subtitle">BEST OFFERS</p>
+      <h2>AVAILABLE APARTMENTS<br>AT Q1-9 DISTRICT</h2>
+    </div>
+
+    <div class="plan-list">
+
+      <!-- Q1 -->
+      <div class="plan-item">
+        <div class="plan-left">
+          <div class="plan-title">
+            <h3>Q1</h3>
+            <p>Q1 DISTRICT</p>
+            <span>114.35 m²</span>
+          </div>
+
+          <div class="plan-image">
+            <!-- Your floor plan image here -->
+            <img src="../images/image 1.jpg" alt="Q1 Plan">
+          </div>
+        </div>
+
+        <div class="plan-center">
+          <ul>
+            <li>2 rooms</li>
+            <li>Floor 4</li>
+            <li>Balcony</li>
+          </ul>
+        </div>
+
+        <div class="plan-price">
+          <h4>starts from ₹250,000</h4>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="plan-item">
+        <div class="plan-left">
+          <div class="plan-title">
+            <h3>Q2</h3>
+            <p>Q1 DISTRICT</p>
+            <span>84.45 m²</span>
+          </div>
+
+          <div class="plan-image">
+            <img src="../images/image 1.jpg" alt="Q2 Plan">
+          </div>
+        </div>
+
+        <div class="plan-center">
+          <ul>
+            <li>3 rooms</li>
+            <li>Floor 2</li>
+            <li>Garden view</li>
+          </ul>
+        </div>
+
+        <div class="plan-price">
+            <h4>starts from ₹200,000</h4>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="plan-item">
+        <div class="plan-left">
+          <div class="plan-title">
+            <h3>Q3</h3>
+            <p>Q1 DISTRICT</p>
+            <span>145.35 m²</span>
+          </div>
+
+          <div class="plan-image">
+            <img src="../images/image 1.jpg" alt="Q3 Plan">
+          </div>
+        </div>
+
+        <div class="plan-center">
+          <ul>
+            <li>3 rooms</li>
+            <li>Floor 12</li>
+            <li>Balcony</li>
+          </ul>
+        </div>
+
+        <div class="plan-price">
+          <h4>starts from ₹500,200</h4>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="plan-item">
+        <div class="plan-left">
+          <div class="plan-title">
+            <h3>Q4</h3>
+            <p>Q1 DISTRICT</p>
+            <span>80 m²</span>
+          </div>
+
+          <div class="plan-image">
+            <img src="../images/image 1.jpg" alt="Q4 Plan">
+          </div>
+        </div>
+
+        <div class="plan-center">
+          <ul>
+            <li>1 room</li>
+            <li>Floor 2</li>
+            <li>Park view</li>
+          </ul>
+        </div>
+
+        <div class="plan-price">
+          <h4>starts from ₹245,900</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <div class="social-infra-container">
+        <h2 class="section-title">Social Infrastructure Nearby</h2>
+        
+        <div class="content-wrapper">
+            <!-- Left: Map Section -->
+            <div class="map-section">
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7841.142429716741!2d77.55682300391885!3d13.100262793804113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae190032011883%3A0xdd4f88f11a7e8118!2sFusion%204%20Oyster!5e0!3m2!1sen!2sin!4v1769082500079!5m2!1sen!2sin" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+               </iframe>
+                </div>
+            </div>
+
+            <!-- Right: Locations Section -->
+            <div class="locations-section">
+                <div class="locations-container">
+                    <ul class="location-categories">
+                         <li>
+                              <div class="category-header active" onclick="toggleDropdown('work-locations', this)">
+                                   <span class="category-icon">🏢</span>
+                                   <span class="category-name">Work</span>
+                                   <span class="arrow1">▲</span>
+                              </div>
+                              <ul class="sub-locations show" id="work-locations">
+                                   <li><span class="location-item">IT Park Whitefield</span><span class="distance">2.5 km</span></li>
+                                   <li><span class="location-item">Manyata Tech Park</span><span class="distance">8.2 km</span></li>
+                                   <li><span class="location-item">Electronic City</span><span class="distance">15.4 km</span></li>
+                              </ul>
+                         </li>
+                        <li>
+                            <div class="category-header" onclick="toggleDropdown('school-locations', this)">
+                                <span class="category-icon">🏫</span>
+                                <span class="category-name">Education</span>
+                                <span class="arrow1">▼</span>
+                            </div>
+                            <ul class="sub-locations" id="school-locations">
+                                <li><span class="location-item">Delhi Public School</span><span class="distance">1.2 km</span></li>
+                                <li><span class="location-item">National Public School</span><span class="distance">3.8 km</span></li>
+                                <li><span class="location-item">Vydehi School</span><span class="distance">2.1 km</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category-header" onclick="toggleDropdown('playground-locations', this)">
+                                <span class="category-icon">🎾</span>
+                                <span class="category-name">Sports</span>
+                                <span class="arrow1">▼</span>
+                            </div>
+                            <ul class="sub-locations" id="playground-locations">
+                                <li><span class="location-item">Kadubeesanahalli Park</span><span class="distance">0.8 km</span></li>
+                                <li><span class="location-item">Balaji Playground</span><span class="distance">1.5 km</span></li>
+                                <li><span class="location-item">BBMP Park</span><span class="distance">2.3 km</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category-header" onclick="toggleDropdown('hospital-locations', this)">
+                                <span class="category-icon">🏥</span>
+                                <span class="category-name">Hospital</span>
+                                <span class="arrow1">▼</span>
+                            </div>
+                            <ul class="sub-locations" id="hospital-locations">
+                                <li><span class="location-item">Columbia Asia Hospital</span><span class="distance">1.1 km</span></li>
+                                <li><span class="location-item">Vydehi Hospital</span><span class="distance">2.7 km</span></li>
+                                <li><span class="location-item">Manipal Hospital</span><span class="distance">4.2 km</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category-header" onclick="toggleDropdown('airport-locations', this)">
+                                <span class="category-icon">🛒</span>
+                                <span class="category-name">Shopping</span>
+                                <span class="arrow1">▼</span>
+                            </div>
+                            <ul class="sub-locations" id="airport-locations">
+                                <li><span class="location-item">Kempegowda International Airport</span><span class="distance">42 km</span></li>
+                                <li><span class="location-item">HAL Airport</span><span class="distance">12 km</span></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="category-header" onclick="toggleDropdown('airport-location', this)">
+                                <span class="category-icon">📍</span>
+                                <span class="category-name">others</span>
+                                <span class="arrow1">▼</span>
+                            </div>
+                            <ul class="sub-locations" id="airport-location">
+                                <li><span class="location-item">Kempegowda International Airport</span><span class="distance">42 km</span></li>
+                                <li><span class="location-item">HAL Airport</span><span class="distance">12 km</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+function toggleDropdown(locationId, headerElement) {
+    // Close all dropdowns first
+    const allSubLocations = document.querySelectorAll('.sub-locations');
+    const allHeaders = document.querySelectorAll('.category-header');
+    
+    allSubLocations.forEach(function(subList) {
+        subList.classList.remove('show');
+    });
+    
+    allHeaders.forEach(function(header) {
+        header.classList.remove('active');
+        const arrow = header.querySelector('.arrow1');
+        arrow.textContent = '▼';
+        arrow.style.transform = 'rotate(0deg)';
+    });
+    
+    // Open current dropdown
+    const subList = document.getElementById(locationId);
+    headerElement.classList.add('active');
+    subList.classList.add('show');
+    const arrow = headerElement.querySelector('.arrow1');
+    arrow.textContent = '▲';
+}
+</script>
+
+
+<style>
+    /* Navbar base for mobile (max-width 600px) */
+@media (max-width: 600px) {
+  .service-card {
+    padding: 18px;
+    width: 118%;
+    margin-left: -20px;
+    margin-right: -26px;
+  }
+  .navbarsection {
+    background-color: #18455c;
+  }
+  .navbarsection .navbar-brand img {
+    max-height: 65px;
+  }
+  .navbarsection .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  .navbarsection .nav-link:hover {
+    color: #eb8023;
+  }
+  .navbarsection .nav-link.active {
+    color: #eb8023;
+    font-weight: bold;
+  }
+}
+
+/* Desktop spacing fixes (but resets for mobile) */
+.navbarsection .navbar-brand {
+  margin-left: -89px;
+}
+.navbarsection .navbar-nav {
+  margin-left: 50px;
+  gap: 5px;
+}
+.navbarsection .option-item.cta-btn {
+  margin-left: 20px;
+  margin-right: -85px;
+}
+
+/* Mobile styles (max-width 991px) - Reset offsets, side-by-side menu */
+@media (max-width: 991px) {
+  .navbarsection .navbar-brand {
+    margin-left: 0;
+  }
+  .navbarsection .navbar-nav {
+    margin-left: 0;
+  }
+  .navbarsection .navbar-collapse {
+    background-color: #18455c;
+    padding: 15px;
+  }
+  .navbarsection .navbar-nav {
+    flex-direction: row; /* KEY: side-by-side */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .navbarsection .nav-item {
+    width: 48%; /* Two items per row */
+    text-align: center;
+  }
+  .navbarsection .nav-link {
+    padding: 12px 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  /* Hide desktop CTA */
+  .navbarsection .option-item.cta-btn {
+    display: none;
+  }
+
+  /* Show Call CTA without HTML changes */
+  .navbarsection .contact-link.d-none {
+    display: flex !important;
+    align-items: center;
+    background: rgba(255,255,255,0.08);
+    border-radius: 6px;
+  }
+  .navbarsection .contact-link .d-xl-inline {
+    display: block !important;
+    font-size: 0.7rem;
+  }
+  .navbarsection .option-item.cta-btn.d-none {
+    display: block !important;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .navbarsection .cta-btn .btn {
+    width: 25%;
+    text-align: center;
+  }
+}
+
+/* Compact side-by-side CTA (max-width 991px) */
+@media (max-width: 991px) {
+  .navbarsection .other-options {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    width: 75%;
+  }
+  .navbarsection .other-options .option-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .navbarsection .contact-link {
+    width: 100%;
+    justify-content: center;
+    padding: 6px 8px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 5px;
+  }
+  .navbarsection .contact-link img {
+    width: 18px;
+    margin-right: 5px;
+  }
+  .navbarsection .cta-btn .btn {
+    width: 100%;
+    padding: -1px 8px;
+    text-align: center;
+    margin-left: 65px;
+    font-size: 14px;
+  }
+}
+
+/* Smaller screen adjustments */
+@media (max-width: 575px) {
+  .navbarsection .cta-btn .btn {
+    margin-left: 25px;
+  }
+  .btn-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbarsection .cta-btn .btn {
+    margin-left: -11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbarsection .cta-btn .btn {
+    margin-left: -11px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbarsection .cta-btn .btn {
+    margin-left: -11px;
+  }
+}
+
+</style>
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center pb-90">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services.html">Service</a></li>
+                                        <li><a href="../about.html">About Us</a></li>
+                                        <li><a href="../projects.html">Projects</a></li>
+                                        <li><a href="../blog.html">Blogs</a></li>
+                                        <li><a href="../contact.html">Contact Us</a></li>
+                                        <li><a href="../privacy-and-policy.html">Privacy Policy</a></li>
+                                        <li><a href="../terms-and-conditions.html">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Services</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services/turnkey-construction-solutions.html">Turnkey Construction Solutions</a></li>
+                                        <li><a href="../services/joint-venture-and-development-partnerships.html">Joint Venture & Development Partnerships</a></li>
+                                        <li><a href="../services/bespoke-residential-construction.html">Bespoke Residential Construction</a></li>
+                                        <li><a href="../services/apartments-and-large-scale-residential-developments.html">Apartment & Large-Scale Residential Developments</a></li>
+                                        <li><a href="../services/commercial-construction-excellence.html">Commercial Construction Excellence</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Projects</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Oyester</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">iris</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Pearl</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Shatayu</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Project 5</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
+                                    <ul class="contact-info-list list-unstyled mb-0">
+                                        <li><span class="fw-bold text-white me-1">Address:</span> SAN SQUARE, #22, 3rd Floor, 1st Main Road, Mathikere, Bengaluru, Karnataka-560054</li>
+                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="info@fusion4construction.in">info@fusion4construction.in</a></li>
+                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:9880055230">9880055230</a></li>
+                                    </ul>
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                     <span class="text-alto fw-semibold me-2">Follow Us: </span>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://youtube.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-youtube-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-large-text font-optional fw-black round-10">
+                                    <span>F</span>
+                                    <span>U</span>
+                                    <span>S</span>
+                                    <span>I</span>
+                                    <span>O</span>
+                                    <span>N</span>
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10 text-white">
+                                    <i class=" text-white me-4"></i>
+                                    <span class="text_secondary fw-medium text-white ms-0">©2026 fusion4 constructions.</span>
+                                    <span class="ms-2">All Rights Reserved</span>
+                                </div>
+                            </div>
+                              <div class="col-md-7 text-md-end text-center">
+                                  <p class="copyright-text mb-0 text-white">
+                                      <a  target="_blank" href="https://thinkb.agency/" class="link style-three fw-medium text-white me-5 pe-3">Designed & Developed by thinkB</a>
+                                  </p>
+                              </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <div id="progress-wrap" class="progress-wrap style-one">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+              <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+            </svg>
+        </div>
+
+        <!-- Link of JS files -->
+        <script data-cfasync="false" src="../js/email-decode.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/megamenu.js"></script>
+        <script src="../js/swiper-bundle.min.js"></script>
+        <script src="../js/fslightbox.js"></script>
+        <script src="../js/gsap.min.js"></script>
+        <script src="../js/scrollTrigger.min.js"></script>
+        <script src="../js/lenis.min.js"></script>
+        <script src="../js/scrollToPlugin.js"></script>
+        <script src="../js/SplitText.min.js"></script>
+        <script src="../js/customEase.js"></script>
+        <script src="../js/scrollcue.min.js"></script>
+        <script src="../js/main.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 105px;
+    right: 24px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(0.9);
+}
+.whatsapp-float i {
+    margin-top: 16px;
+    display: block;
+    color: white;
+}
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 77px;
+        right: 7px;
+    }
+}
+
+</style>
+<a href="https://wa.me/919880055230" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!-- END WHATSAPP BUTTON -->
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+</html>

@@ -1,0 +1,1230 @@
+<!DOCTYPE html><html lang="zxx"><head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Link of CSS files -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../css/scrollcue.min.css">
+        <link rel="stylesheet" href="../css/remixicon.css">
+        <link rel="stylesheet" href="../css/services.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="../css/dark-theme.css">
+        
+        <title>About Us - Fusion4</title>
+        <link rel="icon" type="image/png" href="../images/favicon.png" width="16" height="16">
+
+    </head>
+    <body>
+
+       <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+
+        
+
+        <!-- Custom Cursor -->
+        <div class="cursor"><span class="cursor-text"></span></div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+
+<style>
+/* Navbar base */
+.navbar__section {
+    background-color: #18455c;
+}
+
+.navbar__section .navbar-brand img {
+    max-height: 65px;
+}
+
+/* Nav links */
+.navbar__section .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar__section .nav-link:hover {
+    color: #eb8023;
+}
+
+.navbar__section .nav-link.active {
+    color: #eb8023;
+    font-weight: bold;
+}
+
+/* Desktop spacing fixes */
+.navbar__section .navbar-brand {
+    margin-left: -110px;
+}
+
+.navbar__section .navbar-nav {
+    margin-left: 50px;
+    gap: 5px;
+}
+
+/* CTA button spacing */
+.navbar__section .option-item.cta-btn {
+    margin-left: 20px;
+    margin-right: -85px;
+}
+
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .navbar__section .container {
+        max-width: 812px !important;
+    }
+}
+
+/* ---------------- MOBILE STYLES ---------------- */
+@media (max-width: 991px) {
+
+    /* Reset desktop offsets */
+    .navbar__section .navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar__section .navbar-nav {
+        margin-left: 0;
+    }
+
+    /* Make mobile menu SIDE BY SIDE */
+    .navbar__section .navbar-collapse {
+        background-color: #18455c;
+        padding: 15px;
+    }
+
+    .navbar__section .navbar-nav {
+        flex-direction: row;               /* KEY PART */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;                        /* Two items per row */
+        text-align: center;
+    }
+
+    .navbar__section .nav-link {
+        padding: 12px 10px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    /* Hide desktop CTA button on mobile */
+    .navbar__section .option-item.cta-btn {
+        display: none;
+    }
+}
+/* -------- MOBILE FIX: SHOW CALL & CTA WITHOUT HTML CHANGES -------- */
+@media (max-width: 991px) {
+
+    /* Force show Call Us block */
+    .navbar__section .contact-link.d-none {
+        display: flex !important;
+        align-items: center;
+        background: rgba(255,255,255,0.08);
+        border-radius: 6px;
+    }
+
+    /* Show text inside Call Us */
+    .navbar__section .contact-link .d-xl-inline {
+        display: block !important;
+    }
+
+    /* Force show Get In Touch button */
+    .navbar__section .option-item.cta-btn.d-none {
+        display: block !important;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 25%;
+        text-align: center;
+    }
+
+    /* Keep mobile nav items side-by-side */
+    .navbar__section .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;
+        text-align: center;
+    }
+}
+/* ---------- COMPACT SIDE-BY-SIDE CALL & CTA ---------- */
+@media (max-width: 991px) {
+
+    .navbar__section .other-options {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        width: 75%;
+        }
+
+    .navbar__section .other-options .option-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__section .contact-link {
+        width: 100%;
+        justify-content: center;
+        padding: 6px 8px;         /* reduced padding */
+        background: rgba(255,255,255,0.08);
+        border-radius: 5px;
+    }
+
+    .navbar__section .contact-link img {
+        width: 18px;              /* slightly smaller icon */
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 100%;
+        padding: -1px 8px;         /* reduced padding */
+        text-align: center;
+        margin-left: 65px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: 25px;
+    }
+}
+@media (max-width: 375px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 400px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+
+
+</style>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mobile__offcanvas">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="../services.html">Services</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- Navbar Start -->
+<div class="navbar__section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="images/FUSION 4-02 new.png" alt="Logo">
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+
+                        <div class="option-item d-flex flex-wrap align-items-center">
+                            <div class="contact-link d-lg-flex d-none flex-wrap align-items-center position-relative">
+                                <span class="contact-icon rounded-circle">
+                                    <img src="../images/phone.png" alt="Icon">
+                                </span>
+                                <div class="d-xl-inline d-none">
+                                    <span class="text-white d-block">Call Us:</span>
+                                    <span class="text_primary fw-semibold">9880055230</span>
+                                </div>
+                                <a href="../contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+
+                        <div class="option-item cta-btn d-lg-block d-none">
+                            <a href="../contact.html" class="btn style-two">
+                                <span class="btn-text fw-semibold">Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+
+
+
+
+
+                <!-- About Us Section Start -->
+                <div section=""class="about-area style-one pb-120">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-lg-6">
+                                <div class="about-img-wrap position-relative pe-xxl-4 mb-md-30">
+                                    <img src="../images/about-img-1.jpg" alt="Image" class="about-img round-30 tilt-img">
+                                    <img src="../images/about-thumb.jpg" alt="Image" class="about-thumb move-bottom position-absolute">
+                                </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-6 ps-xxl-4">
+                                <div class="about-content">
+                                    <h2 class="section-title style-one text-title" data-cue="slideInUp" data-delay="300">At <span class="fw-black">Fusion4 our commitment to real estate is unwavering.</span> Backed by years of expertise and a contemporary approach</h2>
+                                    <div class="about-subcontent" data-cue="slideInUp" data-delay="400">
+                                        <p class="pe-xxl-5">Home renovation is the process of improving or modernizing a residential property to enhance its functionality, comfort, and aesthetic It can involve anything from small interior.</p>
+                                        <div class="row justify-content-center">
+                                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                                <div class="counter-card style-one bg-1 position-relative z-1 round-10" data-cue="slideInUp">
+                                                    <h6 class="fs-12 font-primary fw-semibold text-title ls-1">GLOBAL REACH</h6>
+                                                    <h4 class="font-secondary fw-black fs-36 text-title"><span class="counter ls-1 transition">85</span>+</h4>
+                                                    <p class="fw-medium d-block mb-0">Offices Worldwide</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                                <div class="counter-card style-one bg-2 position-relative z-1 round-10" data-cue="slideInUp">
+                                                    <h6 class="fs-12 font-primary fw-semibold text-title ls-1">LOCAL EXPERTISE</h6>
+                                                    <h4 class="font-secondary fw-black fs-36 text-title"><span class="counter ls-1 transition">3000</span>+</h4>
+                                                    <p class="fw-medium d-block mb-0">Employees</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                                <div class="counter-card style-one bg-3 position-relative z-1 round-10" data-cue="slideInUp">
+                                                    <h6 class="fs-12 font-primary fw-semibold text-title ls-1">OUR IMPACT</h6>
+                                                    <h4 class="font-secondary fw-black fs-36 text-title"><span class="counter ls-1 transition">3</span>K+</h4>
+                                                    <p class="fw-medium d-block mb-0">Projects Done</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About Us Section End -->
+
+
+
+
+<div class="con-strategy-section">
+    <div class="con-strategy-container">
+        <h1 class="con-strategy-heading">Our strategic approach to exceptional <br>construction projects</h1>
+        
+        <div class="con-strategy-sections">
+            <!-- Mission Section -->
+            <div class="con-strategy-card con-strategy-card-mission">
+                <h2 class="con-strategy-card-title">
+                    <i class="fas"></i> Our Mission
+                </h2>
+                <p class="con-strategy-card-text">
+                   Our mission is to create well-planned, structurally strong developments that unite design excellence with precise construction and exceed client expectations through quality and accountability
+                </p>
+                <ul class="con-strategy-list">
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Achieve Superior Construction Standards</span>
+                    </li>
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Maintain Clear and Honest Client Engagement</span>
+                    </li>
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Encourage Responsible and Efficient Building Practices</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Vision Section -->
+            <div class="con-strategy-card con-strategy-card-vision">
+                <h2 class="con-strategy-card-title">
+                    <i class="fas"></i> Our Vision
+                </h2>
+                <p class="con-strategy-card-text">
+                    Our vision is to establish as a recognized partner for innovation, dependability, and excellence in delivering spaces that remain relevant, resilient, and valuable over time.
+                </p>
+                <ul class="con-strategy-list">
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Lead With Design-Led Construction Thinking</span>
+                    </li>
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Strengthen Trust Through Consistent Performance</span>
+                    </li>
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Create Developments That Stand the Test of Time</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Values Section -->
+            <div class="con-strategy-card con-strategy-card-values">
+                <h2 class="con-strategy-card-title">
+                    <i class="fas"></i> Our Values
+                </h2>
+                <p class="con-strategy-card-text">
+                    Our values shape every phase of our work, guiding our teams to operate with discipline, collaboration, and commitment while delivering outcomes that reflect quality, reliability, and long-term client satisfaction.
+
+                </p>
+                <ul class="con-strategy-list">
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Commitment to Precision and Craftsmanship</span>
+                    </li>
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Transparent Processes and Ethical Practices</span>
+                    </li>
+                    <li class="con-strategy-list-item">
+                        <span class="section-label"><span class="dot"></span></span>
+                        <span class="con-strategy-list-text">Focus on Sustainable and Future-Ready Solutions</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="testimonials-section">
+    <div class="container">
+      <div class="content-grid">
+        <div class="left-section">
+          <div class="label">
+            <div class=""></div>
+            <span style="margin-left: -9px;" class="label-text">OUR TESTIMONIALS</span>
+          </div>
+
+          <h2>Real feedback from those who built their dreams</h2>
+
+          <p class="subtitle">
+            Our commitment to excellence has earned us the trust of homeowners, developers and businesses alike.
+          </p>
+        </div>
+
+        <div class="testimonials-wrapper">
+          <div class="testimonials-grid">
+            <!-- All testimonials positioned absolutely in same space -->
+            <div class="testimonial-card" data-group="1">
+            <div class="logo-header">
+              <img src="images/quotation-mark.png" alt="Quote icon" class="logo-icon style1" width="32" height="32">
+            </div>
+
+
+              <p class="testimonial-text">
+                "The team turned our dream home into a reality from design planning to final handover everything was managed with professionalism and precision."
+              </p>
+
+              <div class="author-info">
+                <span class="author-name">Shankar Vara Prasad</span>
+                <span class="author-role">House Owner</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card" data-group="1">
+            <div class="logo-header">
+              <img src="images/quotation-mark.png" alt="Quote icon" class="logo-icon style1" width="32" height="32">
+            </div>
+
+
+              <p class="testimonial-text">
+                "The team turned our dream home into a reality from design planning to final handover everything was managed with professionalism and precision."
+              </p>
+
+              <div class="author-info">
+                <span class="author-name">Kalyan Kumar</span>
+                <span class="author-role">House Owner</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card" data-group="2">
+            <div class="logo-header">
+              <img src="images/quotation-mark.png" alt="Quote icon" class="logo-icon style1" width="32" height="32">
+            </div>
+
+
+              <p class="testimonial-text">
+                "The team turned our dream home into a reality from design planning to final handover everything was managed with professionalism and precision."
+              </p>
+
+              <div class="author-info">
+                <span class="author-name">Sarib Rasool Khan</span>
+                <span class="author-role">House Owner</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card" data-group="2">
+            <div class="logo-header">
+              <img src="images/quotation-mark.png" alt="Quote icon" class="logo-icon style1" width="32" height="32">
+            </div>
+
+
+              <p class="testimonial-text">
+                "The team turned our dream home into a reality from design planning to final handover everything was managed with professionalism and precision."
+              </p>
+
+              <div class="author-info">
+                <span class="author-name">Hari Kumar</span>
+                <span class="author-role">Land Owner</span>
+              </div>
+            </div>
+
+
+            <div class="testimonial-card" data-group="3">
+            <div class="logo-header">
+              <img src="images/quotation-mark.png" alt="Quote icon" class="logo-icon style1" width="32" height="32">
+            </div>
+
+
+              <p class="testimonial-text">
+                "The team turned our dream home into a reality from design planning to final handover everything was managed with professionalism and precision."
+              </p>
+
+              <div class="author-info">
+                <span class="author-name">Shankar Vara Prasad</span>
+                <span class="author-role">House Owner</span>
+              </div>
+            </div>
+
+            <div class="testimonial-card" data-group="3">
+            <div class="logo-header">
+              <img src="images/quotation-mark.png" alt="Quote icon" class="logo-icon style1" width="32" height="32">
+            </div>
+
+
+              <p class="testimonial-text">
+                "The team turned our dream home into a reality from design planning to final handover everything was managed with professionalism and precision."
+              </p>
+
+              <div class="author-info">
+                <span class="author-name">Shankar Vara Prasad</span>
+                <span class="author-role">House Owner</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-banner">
+        <div class="banner-content">
+        </div>
+      </div>
+    </div>
+</section>
+
+<style>
+.section-label .dot {
+    width: 6px;
+    height: 6px;
+    background: #f28a35;
+    margin-bottom: -23px;
+    margin-right: 11px;
+    border-radius: 50%;
+  }
+@media screen and (max-width: 768px) {
+    .section-label .dot {
+        margin-bottom: -3px;
+        margin-right: 8px;
+    }
+}
+
+
+  .logo-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain; /* Ensures image fits perfectly without distortion */
+  background-color: #ffffff; /* Keeps yellow bg if image has transparency */
+}
+
+    /* All your original CSS remains exactly the same except testimonials section */
+    .testimonials-section {
+      position: relative;
+      background-color: #cacaca;
+      padding: 80px 24px;
+      overflow: hidden;
+    }
+
+    .testimonials-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.2;
+    }
+
+    .container {
+      position: relative;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .label-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #eb8023;
+      border-radius: 50%;
+    }
+
+    .label-text {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #1f2937;
+    }
+
+    h2 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #000000;
+    }
+
+    .subtitle {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 600;
+      max-width: 28rem;
+      line-height: 1.6;
+    }
+
+    /* NEW: Testimonials wrapper for fixed positioning */
+    .testimonials-wrapper {
+      position: relative;
+      height: 400px; /* Fixed height to maintain space */
+    }
+
+    .testimonials-grid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background-color: #ffffff;
+      padding: 32px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      height: 400px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      position: absolute;
+      width: calc(50% - 12px); /* Account for gap */
+    }
+
+    .testimonial-card.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Position cards in grid layout */
+    .testimonial-card:nth-child(1),
+    .testimonial-card:nth-child(3),
+    .testimonial-card:nth-child(5) {
+      left: 0;
+    }
+
+    .testimonial-card:nth-child(2),
+    .testimonial-card:nth-child(4),
+    .testimonial-card:nth-child(6) {
+      right: 0;
+    }
+
+    .logo-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+
+
+    .testimonial-text {
+      color: #111827;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-name {
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .author-role {
+      color: #9ca3af;
+      font-size: 14px;
+    }
+
+    .cta-banner {
+      margin-top: 69px;
+      border-top: 4px solid #eb8023;
+    }
+
+    .banner-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+ @media (max-width: 640px) {
+
+  .testimonials-section {
+    padding: 40px 16px;
+  }
+
+  .left-section {
+    gap: 24px;
+  }
+
+  .content-grid {
+    gap: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  /* Horizontal scroll setup */
+  .testimonials-wrapper {
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .testimonials-grid {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: max-content;
+  }
+
+  .testimonial-card {
+    opacity: 1 !important;
+    transform: none !important;
+    position: relative !important;
+    width: 236px !important;
+    height: auto;
+    width: 40px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    padding: 24px;
+  }
+
+  /* Hide scrollbar for clean UI */
+  .testimonials-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonials-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+    
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    let currentGroup = 1;
+    const totalGroups = 3; // 3 pairs
+    const rotationInterval = 4000; // 2 seconds
+
+    function showGroup(groupNumber) {
+        testimonialCards.forEach(card => {
+            card.classList.remove('active');
+        });
+
+        // Show both cards in current group with stagger effect
+        testimonialCards.forEach((card, index) => {
+            if (parseInt(card.dataset.group) === groupNumber) {
+                setTimeout(() => {
+                    card.classList.add('active');
+                }, index * 100); // Stagger entrance by 100ms
+            }
+        });
+    }
+
+    function nextGroup() {
+        currentGroup = (currentGroup % totalGroups) + 1;
+        showGroup(currentGroup);
+    }
+
+    // Initialize first group
+    showGroup(currentGroup);
+
+    // Auto-rotate every 2 seconds
+    setInterval(nextGroup, rotationInterval);
+});
+</script>
+
+
+
+
+
+
+
+
+<div class="cta-box-v2 dark-section-v2 parallaxie-v2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-md-9">
+                    <!-- CTA Box Content Start -->
+                    <div class="cta-box-content-v2">
+                        <!-- Section Title Start -->
+                        <div class="section-title-v2">
+                            <h3 class="wow fadeInUp">Contact Us Today!</h3>
+                            <h2 class="text-anime-style-3-v2" data-cursor="-opaque">Partner with us to design and build the future you envision</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Whether it's a residential, commercial, or industrial project, we're here to help bring your ideas to life. Get in touch and let's shape something remarkable together.</p>
+                        </div>
+                        <!-- Section Title End -->
+                    
+                        <!-- CTA Box Items List Start -->
+                        <div class="cta-box-items-list-v2 wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- CTA Box Item Start -->
+                            <div class="cta-box-item-v2">
+                                <div class="icon-box-v2">
+                                    <img src="images/icon-cta-box-item-1.svg" alt="">
+                                </div>
+                                <div class="cta-box-item-content-v2">
+                                    <h3>Quick Response & Expert Support</h3>
+                                </div>
+                            </div>
+                            <!-- CTA Box Item End -->
+
+                            <!-- CTA Box Item Start -->
+                            <div class="cta-box-item-v2">
+                                <div class="icon-box-v2">
+                                    <img src="images/icon-cta-box-item-2.svg" alt="">
+                                </div>
+                                <div class="cta-box-item-content-v2">
+                                    <h3>Partner with Industry Experts</h3>
+                                </div>
+                            </div>
+                            <!-- CTA Box Item End -->
+                        </div>
+                        <!-- CTA Box Items List End -->
+
+                        <!-- CTA Box Btn Start -->
+                        <div class="cta-box-btn-v2 wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="tel:+919880055230" class="btn-default-v2 btn-highlighted-v2">Call Us: 9880055230</a>  
+                        </div>
+                        <!-- CTA Box Btn End -->
+                    </div> 
+                    <!-- CTA Box Content End -->
+                </div>
+
+                <div class="col-xl-5 col-md-3">
+                    <!-- CTA Box Image Start -->
+                    <div class="cta-box-image-v2">
+                        <figure>
+                            <img src="images/cta-box-image.png" alt="">
+                        </figure>
+                    </div>
+                    <!-- CTA Box Image End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CTA Box Section End -->
+
+
+
+    <!-- Our FAQs Section Start -->
+    <div class="our-faqs-v2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <!-- Our FAQs Content Start -->
+                    <div class="our-faqs-content-v2">
+                        <!-- Faqs Title Box Start -->
+                        <div class="faqs-title-box-v2">
+                            <!-- Section Title Start -->
+                            <div class="section-title-v2">
+                                <h3 class="wow fadeInUp">Frequently Asked Questions</h3>
+                                <h2 class="text-anime-style-3-v2" data-cursor="-opaque">We're here to provide clear and helpful answers</h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Explore our FAQs to learn more about our process, pricing, and how we ensure quality, transparency, and client satisfaction at every stage.</p>
+                            </div>
+                            <!-- Section Title End -->
+
+                        </div>
+                        <!-- Faqs Title Box End -->
+
+                    </div>
+                    <!-- Our FAQs Content End -->
+                </div>
+
+                <div class="col-xl-7">
+                    <!-- FAQ Accordion Start -->
+                    <div class="faq-accordion-v2" id="accordion-v2">
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item-v2 wow fadeInUp">
+                            <h2 class="accordion-header-v2" id="heading1-v2">
+                                <button class="accordion-button-v2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1-v2" aria-expanded="true" aria-controls="collapse1-v2">
+                                    Q1. Do you provide both design and construction services?
+                                </button>
+                            </h2>
+                            <div id="collapse1-v2" class="accordion-collapse-v2 collapse show" aria-labelledby="heading1-v2" data-bs-parent="#accordion-v2">
+                                <div class="accordion-body-v2">
+                                    <p>Yes, we offer end-to-end design and build solutions, including architectural planning, structural design, interior finishing, and on-site construction ensuring a smooth, integrated process from concept to completion. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item-v2 wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="accordion-header-v2" id="heading2-v2">
+                                <button class="accordion-button-v2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2-v2" aria-expanded="false" aria-controls="collapse2-v2">
+                                    Q2. Can you work with my existing architect or designer?
+                                </button>
+                            </h2>
+                            <div id="collapse2-v2" class="accordion-collapse-v2 collapse" aria-labelledby="heading2-v2" data-bs-parent="#accordion-v2">
+                                <div class="accordion-body-v2">
+                                    <p>Yes, we offer end-to-end design and build solutions, including architectural planning, structural design, interior finishing, and on-site construction ensuring a smooth, integrated process from concept to completion. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item-v2 wow fadeInUp" data-wow-delay="0.4s">
+                            <h2 class="accordion-header-v2" id="heading3-v2">
+                                <button class="accordion-button-v2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3-v2" aria-expanded="false" aria-controls="collapse3-v2">
+                                    Q3. How do you estimate the total project cost?
+                                </button>
+                            </h2>
+                            <div id="collapse3-v2" class="accordion-collapse-v2 collapse" aria-labelledby="heading3-v2" data-bs-parent="#accordion-v2">
+                                <div class="accordion-body-v2">
+                                    <p>Yes, we offer end-to-end design and build solutions, including architectural planning, structural design, interior finishing, and on-site construction ensuring a smooth, integrated process from concept to completion. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item-v2 wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="accordion-header-v2" id="heading4-v2">
+                                <button class="accordion-button-v2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4-v2" aria-expanded="false" aria-controls="collapse4-v2">
+                                    Q4. What materials do you typically use for construction?
+                                </button>
+                            </h2>
+                            <div id="collapse4-v2" class="accordion-collapse-v2 collapse" aria-labelledby="heading4-v2" data-bs-parent="#accordion-v2">
+                                <div class="accordion-body-v2">
+                                    <p>Yes, we offer end-to-end design and build solutions, including architectural planning, structural design, interior finishing, and on-site construction ensuring a smooth, integrated process from concept to completion. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                        
+                        <!-- FAQ Item Start -->
+                        <div class="accordion-item-v2 wow fadeInUp" data-wow-delay="0.8s">
+                            <h2 class="accordion-header-v2" id="heading5-v2">
+                                <button class="accordion-button-v2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5-v2" aria-expanded="false" aria-controls="collapse5-v2">
+                                    Q5. Can you handle renovation or remodeling projects?
+                                </button>
+                            </h2>
+                            <div id="collapse5-v2" class="accordion-collapse-v2 collapse" aria-labelledby="heading5-v2" data-bs-parent="#accordion-v2">
+                                <div class="accordion-body-v2">
+                                    <p>Yes, we offer end-to-end design and build solutions, including architectural planning, structural design, interior finishing, and on-site construction ensuring a smooth, integrated process from concept to completion. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item End -->
+                    </div>
+                    <!-- FAQ Accordion End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our FAQs Section End -->
+
+
+
+
+
+
+
+
+
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center pb-90">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services.html">Service</a></li>
+                                        <li><a href="../about.html">About Us</a></li>
+                                        <li><a href="../projects.html">Projects</a></li>
+                                        <li><a href="../blog.html">Blogs</a></li>
+                                        <li><a href="../contact.html">Contact Us</a></li>
+                                        <li><a href="../privacy-and-policy.html">Privacy Policy</a></li>
+                                        <li><a href="../terms-and-conditions.html">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Services</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services/turnkey-construction-solutions.html">Turnkey Construction Solutions</a></li>
+                                        <li><a href="../services/joint-venture-and-development-partnerships.html">Joint Venture & Development Partnerships</a></li>
+                                        <li><a href="../services/bespoke-residential-construction.html">Bespoke Residential Construction</a></li>
+                                        <li><a href="../services/apartments-and-large-scale-residential-developments.html">Apartment & Large-Scale Residential Developments</a></li>
+                                        <li><a href="../services/commercial-construction-excellence.html">Commercial Construction Excellence</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Projects</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Oyester</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">iris</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Pearl</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Shatayu</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Project 5</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
+                                    <ul class="contact-info-list list-unstyled mb-0">
+                                        <li><span class="fw-bold text-white me-1">Address:</span> SAN SQUARE, #22, 3rd Floor, 1st Main Road, Mathikere, Bengaluru, Karnataka-560054</li>
+                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="info@fusion4construction.in">info@fusion4construction.in</a></li>
+                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:9880055230">9880055230</a></li>
+                                    </ul>
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                     <span class="text-alto fw-semibold me-2">Follow Us: </span>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://youtube.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-youtube-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-large-text font-optional fw-black round-10">
+                                    <span>F</span>
+                                    <span>U</span>
+                                    <span>S</span>
+                                    <span>I</span>
+                                    <span>O</span>
+                                    <span>N</span>
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10 text-white">
+                                    <i class=" text-white me-4"></i>
+                                    <span class="text_secondary fw-medium text-white ms-0">©2026 fusion4 constructions.</span>
+                                    <span class="ms-2">All Rights Reserved</span>
+                                </div>
+                            </div>
+                              <div class="col-md-7 text-md-end text-center">
+                                  <p class="copyright-text mb-0 text-white">
+                                      <a  target="_blank" href="https://thinkb.agency/" class="link style-three fw-medium text-white me-5 pe-3">Designed & Developed by thinkB</a>
+                                  </p>
+                              </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+                
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <div id="progress-wrap" class="progress-wrap style-one">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+              <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+            </svg>
+        </div>
+
+        <!-- Link of JS files -->
+        <script data-cfasync="false" src="../js/email-decode.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/megamenu.js"></script>
+        <script src="../js/swiper-bundle.min.js"></script>
+        <script src="../js/fslightbox.js"></script>
+        <script src="../js/gsap.min.js"></script>
+        <script src="../js/scrollTrigger.min.js"></script>
+        <script src="../js/lenis.min.js"></script>
+        <script src="../js/scrollToPlugin.js"></script>
+        <script src="../js/SplitText.min.js"></script>
+        <script src="../js/customEase.js"></script>
+        <script src="../js/scrollcue.min.js"></script>
+        <script src="../js/main.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 105px;
+    right: 24px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(0.9);
+}
+.whatsapp-float i {
+    margin-top: 16px;
+    display: block;
+    color: white;
+}
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 77px;
+        right: 7px;
+    }
+}
+
+</style>
+<a href="https://wa.me/919880055230" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!-- END WHATSAPP BUTTON -->
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+</html>

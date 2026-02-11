@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/scrollcue.min.css">
+    <link rel="stylesheet" href="../css/remixicon.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+    
+    <title>Blog Detail - Fusion4</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" width="16" height="16">
+</head>
+<body>
+
+   <!--  Preloader Start -->
+    <div class="preloader-area" id="preloader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--  Preloader End -->
+
+    <!-- Custom Cursor -->
+    <div class="cursor"><span class="cursor-text"></span></div>
+    <div class="cursor-inner"></div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+
+<style>
+/* Navbar base */
+@media (max-width: 600px) {
+    .service-card {
+        padding: 18px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+.navbar__section {
+    background-color: #18455c;
+}
+
+.navbar__section .navbar-brand img {
+    max-height: 65px;
+}
+
+/* Nav links */
+.navbar__section .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar__section .nav-link:hover {
+    color: #eb8023;
+}
+
+.navbar__section .nav-link.active {
+    color: #eb8023;
+    font-weight: bold;
+}
+
+/* Desktop spacing fixes */
+.navbar__section .navbar-brand {
+    margin-left: -89px;
+}
+
+.navbar__section .navbar-nav {
+    margin-left: 50px;
+    gap: 5px;
+}
+
+/* CTA button spacing */
+.navbar__section .option-item.cta-btn {
+    margin-left: 20px;
+    margin-right: -85px;
+}
+
+/* ---------------- MOBILE STYLES ---------------- */
+@media (max-width: 991px) {
+
+    /* Reset desktop offsets */
+    .navbar__section .navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar__section .navbar-nav {
+        margin-left: 0;
+    }
+
+    /* Make mobile menu SIDE BY SIDE */
+    .navbar__section .navbar-collapse {
+        background-color: #18455c;
+        padding: 15px;
+    }
+
+    .navbar__section .navbar-nav {
+        flex-direction: row;               /* KEY PART */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;                        /* Two items per row */
+        text-align: center;
+    }
+
+    .navbar__section .nav-link {
+        padding: 12px 10px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    /* Hide desktop CTA button on mobile */
+    .navbar__section .option-item.cta-btn {
+        display: none;
+    }
+}
+/* -------- MOBILE FIX: SHOW CALL & CTA WITHOUT HTML CHANGES -------- */
+@media (max-width: 991px) {
+
+    /* Force show Call Us block */
+    .navbar__section .contact-link.d-none {
+        display: flex !important;
+        align-items: center;
+        background: rgba(255,255,255,0.08);
+        border-radius: 6px;
+    }
+
+    /* Show text inside Call Us */
+    .navbar__section .contact-link .d-xl-inline {
+        display: block !important;
+        font-size: 0.7rem;
+    }
+
+    /* Force show Get In Touch button */
+    .navbar__section .option-item.cta-btn.d-none {
+        display: block !important;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 25%;
+        text-align: center;
+    }
+
+    /* Keep mobile nav items side-by-side */
+    .navbar__section .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;
+        text-align: center;
+    }
+}
+/* ---------- COMPACT SIDE-BY-SIDE CALL & CTA ---------- */
+@media (max-width: 991px) {
+
+    .navbar__section .other-options {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        width: 75%;
+        }
+
+    .navbar__section .other-options .option-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__section .contact-link {
+        width: 100%;
+        justify-content: center;
+        padding: 6px 8px;         /* reduced padding */
+        background: rgba(255,255,255,0.08);
+        border-radius: 5px;
+    }
+
+    .navbar__section .contact-link img {
+        width: 18px;              /* slightly smaller icon */
+        margin-right: 5px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 100%;
+        padding: -1px 8px;         /* reduced padding */
+        text-align: center;
+        margin-left: 65px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: 25px;
+    }
+    .btn-text {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 375px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 400px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+
+
+</style>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mobile__offcanvas">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="../services.html">Services</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Navbar Start -->
+<div class="navbar__section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../images/FUSION 4-02 new.png" alt="Logo">
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+
+                        <div class="option-item d-flex flex-wrap align-items-center">
+                            <div class="contact-link d-lg-flex d-none flex-wrap align-items-center position-relative">
+                                <span class="contact-icon rounded-circle">
+                                    <img src="../images/phone.png" alt="Icon">
+                                </span>
+                                <div class="d-xl-inline d-none">
+                                    <span class="text-white d-block">Call Us:</span>
+                                    <span class="text_primary fw-semibold">9880055230</span>
+                                </div>
+                                <a href="../contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+
+                        <div class="option-item cta-btn d-lg-block d-none">
+                            <a href="../contact.html" class="btn style-two">
+                                <span class="btn-text fw-semibold">Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+<section class="blog-page">
+    <!-- Hero Section -->
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Construction team planning">
+        </div>
+    
+    <!-- Introduction Section -->
+    <div class="content-section intro-section">
+        <div class="hero-content">
+            <h1 class="blog-title">How to Choose the Right Construction Partner for Your Project</h1>
+            <p class="blog-subtitle">Making the most important decision for your building success</p>
+        </div>
+        <div class="container">
+            <p class="lead-text">Choosing the right construction partner is one of the most important decisions in any building project. The quality of execution, adherence to timelines, cost control, and overall experience largely depend on the team you trust to bring your vision to life.</p>
+            <p>Whether you are planning a home, a commercial space, or a large-scale development, selecting the right partner early can save time, money, and stress.</p>
+        </div>
+    </div>
+
+    <!-- Selection Criteria Section -->
+    <div class="criteria-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Selection Criteria</h2>
+                <p>Essential factors to consider when choosing your construction partner</p>
+            </div>
+            
+            <!-- Criterion 1 -->
+            <div class="criterion-card">
+                <div class="criterion-number">01</div>
+                <div class="criterion-content">
+                    <h3>Look Beyond Design — Focus on Execution Strength</h3>
+                    <p>While design creates the vision, execution determines the final outcome. A reliable construction partner should demonstrate:</p>
+                    <div class="strength-points">
+                        <div class="strength-point">
+                            <div class="strength-text">Strong site management</div>
+                        </div>
+                        <div class="strength-point">
+                            <div class="strength-text">Skilled supervision teams</div>
+                        </div>
+                        <div class="strength-point">
+                            <div class="strength-text">Proven execution processes</div>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>Ask how the company:</strong> manages day-to-day construction, handles challenges on site, and ensures quality at every stage.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Criterion 2 -->
+            <div class="criterion-card">
+                <div class="criterion-number">02</div>
+                <div class="criterion-content">
+                    <h3>Check Experience in Similar Projects</h3>
+                    <p>Every type of project has its own complexities. A good construction partner should have experience relevant to your project type, such as:</p>
+                    <div class="experience-grid">
+                        <div class="experience-type">
+                            <h4>Residential Homes</h4>
+                            <p>Individual homes or villas</p>
+                        </div>
+                        <div class="experience-type">
+                            <h4>Apartment Complexes</h4>
+                            <p>Large-scale residential projects</p>
+                        </div>
+                        <div class="experience-type">
+                            <h4>Commercial Buildings</h4>
+                            <p>Office or institutional spaces</p>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>Experience brings:</strong> practical problem-solving and helps avoid costly mistakes during execution.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Criterion 3 -->
+            <div class="criterion-card">
+                <div class="criterion-number">03</div>
+                <div class="criterion-content">
+                    <h3>Understand Their Planning & Process Approach</h3>
+                    <p>Professional construction companies work with structured planning systems. This includes:</p>
+                    <div class="planning-features">
+                        <div class="planning-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Clear project timelines</span>
+                        </div>
+                        <div class="planning-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Detailed cost planning</span>
+                        </div>
+                        <div class="planning-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Defined execution stages</span>
+                        </div>
+                        <div class="planning-feature">
+                            <div class="feature-check">✓</div>
+                            <span>Milestone-based progress tracking</span>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>A partner who explains their process clearly</strong> is more likely to deliver predictable results.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Criterion 4 -->
+            <div class="criterion-card">
+                <div class="criterion-number">04</div>
+                <div class="criterion-content">
+                    <h3>Transparency in Cost & Communication</h3>
+                    <p>Transparency is critical in construction. Before finalising a partner, ensure:</p>
+                    <div class="transparency-grid">
+                        <div class="transparency-item">
+                            <div class="transparency-details">
+                                <h4>Clear Scope Definition</h4>
+                                <p>Exactly what's included in the project</p>
+                            </div>
+                        </div>
+                        <div class="transparency-item">
+                            <div class="transparency-details">
+                                <h4>Transparent Cost Breakdowns</h4>
+                                <p>Detailed pricing without hidden charges</p>
+                            </div>
+                        </div>
+                        <div class="transparency-item">
+                            <div class="transparency-details">
+                                <h4>Regular Progress Updates</h4>
+                                <p>Consistent communication about project status</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>A trustworthy partner</strong> avoids surprises and keeps clients informed at every stage.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Criterion 5 -->
+            <div class="criterion-card">
+                <div class="criterion-number">05</div>
+                <div class="criterion-content">
+                    <h3>Ability to Handle Approvals & Compliance</h3>
+                    <p>Construction involves multiple approvals and statutory requirements. A reliable partner should be capable of:</p>
+                    <div class="compliance-points">
+                        <div class="compliance-point">
+                            <div class="compliance-marker"></div>
+                            <span>Coordinating with local authorities</span>
+                        </div>
+                        <div class="compliance-point">
+                            <div class="compliance-marker"></div>
+                            <span>Managing statutory approvals</span>
+                        </div>
+                        <div class="compliance-point">
+                            <div class="compliance-marker"></div>
+                            <span>Ensuring compliance with regulations</span>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>This reduces delays</strong> and keeps the project legally secure.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Criterion 6 -->
+            <div class="criterion-card">
+                <div class="criterion-number">06</div>
+                <div class="criterion-content">
+                    <h3>Quality Control & Safety Standards</h3>
+                    <p>Quality and safety should never be compromised. Look for a construction partner who:</p>
+                    <div class="quality-grid">
+                        <div class="quality-item">
+                            <div class="quality-details">
+                                <h4>Structured Quality Checks</h4>
+                                <p>Systematic inspection processes</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-details">
+                                <h4>Approved Materials & Methods</h4>
+                                <p>Verified materials and construction techniques</p>
+                            </div>
+                        </div>
+                        <div class="quality-item">
+                            <div class="quality-details">
+                                <h4>Site Safety Protocols</h4>
+                                <p>Comprehensive safety measures on site</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>Consistent quality supervision</strong> ensures long-term durability and peace of mind.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Criterion 7 -->
+            <div class="criterion-card">
+                <div class="criterion-number">07</div>
+                <div class="criterion-content">
+                    <h3>Single-Point Responsibility vs Multiple Vendors</h3>
+                    <p>Projects often fail when responsibility is fragmented. Choosing a partner who offers:</p>
+                    <div class="responsibility-comparison">
+                        <div class="comparison-box fragmented">
+                            <h4>Multiple Vendors</h4>
+                            <ul>
+                                <li>Coordination issues</li>
+                                <li>Delayed handovers</li>
+                                <li>Blame shifting</li>
+                                <li>Increased stress</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-arrow">→</div>
+                        <div class="comparison-box unified">
+                            <h4>Single-Point Responsibility</h4>
+                            <ul>
+                                <li>End-to-end execution</li>
+                                <li>Centralised accountability</li>
+                                <li>Coordinated management</li>
+                                <li>Reduced confusion</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>Helps reduce</strong> confusion, delays, and coordination issues.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Criterion 8 -->
+            <div class="criterion-card">
+                <div class="criterion-number">08</div>
+                <div class="criterion-content">
+                    <h3>Reputation, Not Just Promises</h3>
+                    <p>Before finalising, evaluate:</p>
+                    <div class="reputation-factors">
+                        <div class="reputation-factor">
+                            <div class="factor-content">
+                                <h4>Completed Projects</h4>
+                                <p>Visit actual completed work if possible</p>
+                            </div>
+                        </div>
+                        <div class="reputation-factor">
+                            <div class="factor-content">
+                                <h4>Client Testimonials</h4>
+                                <p>Speak with previous clients</p>
+                            </div>
+                        </div>
+                        <div class="reputation-factor">
+                            <div class="factor-content">
+                                <h4>Market Reputation</h4>
+                                <p>Research company standing in the industry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>A construction partner's past work</strong> speaks louder than marketing claims.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Criterion 9 -->
+            <div class="criterion-card">
+                <div class="criterion-number">09</div>
+                <div class="criterion-content">
+                    <h3>Alignment with Your Vision & Expectations</h3>
+                    <p>The right construction partner understands not just the technical aspects but also:</p>
+                    <div class="alignment-grid">
+                        <div class="alignment-item">
+                            <div class="alignment-details">
+                                <h4>Your Goals</h4>
+                                <p>What you want to achieve with the project</p>
+                            </div>
+                        </div>
+                        <div class="alignment-item">
+                            <div class="alignment-details">
+                                <h4>Your Budget Expectations</h4>
+                                <p>Financial constraints and priorities</p>
+                            </div>
+                        </div>
+                        <div class="alignment-item">
+                            <div class="alignment-details">
+                                <h4>Your Timeline Priorities</h4>
+                                <p>Project completion deadlines</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="criterion-tip">
+                        <strong>Clear alignment from the beginning</strong> ensures smoother collaboration.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importance Section -->
+    <div class="importance-section">
+        <div class="container">
+            <div class="importance-content">
+                <h2>Why the Right Construction Partner Matters</h2>
+                <p class="importance-subtitle">A strong construction partner does more than build structures — they:</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h4>Protect Your Investment</h4>
+                        <p>Safeguard your financial commitment with professional management</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>Manage Risks</h4>
+                        <p>Anticipate and mitigate potential problems before they escalate</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>Deliver Predictability</h4>
+                        <p>Provide clear timelines and cost estimates you can rely on</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h4>Ensure Long-Term Value</h4>
+                        <p>Build quality that lasts, protecting your asset's future worth</p>
+                    </div>
+                </div>
+                
+                <div class="conclusion-box">
+                    <p class="conclusion-text"><strong>Choosing wisely sets the foundation for a successful project.</strong> Take the time to evaluate potential partners thoroughly—your investment deserves the right team.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checklist Section -->
+    <div class="checklist-section">
+        <div class="container">
+            <div class="checklist-content">
+                <h2>Quick Selection Checklist</h2>
+                <div class="checklist-grid">
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Execution strength and site management</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Relevant project experience</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Clear planning and process documentation</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Transparent cost breakdowns</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Approvals and compliance expertise</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Quality and safety standards</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Single-point responsibility</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Strong reputation and references</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-check">✓</div>
+                        <span>Alignment with your goals and budget</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Base Styles */
+        .blog-page {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            color: #000;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .blog-hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 60px 0 0 0;
+            margin-bottom: 50px;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+
+        .blog-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .blog-subtitle {
+            font-size: 1.3rem;
+            color: #eb8023;
+            font-weight: 500;
+            opacity: 0.95;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Introduction Section */
+        .content-section {
+            padding: 60px 0;
+        }
+
+        .intro-section {
+            background: white;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: #eb8023;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .lead-text {
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Criteria Section */
+        .criteria-section {
+            padding: 40px 0;
+            background: white;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .criterion-card {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+            padding: 35px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border-left: 4px solid #eb8023;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .criterion-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(235, 128, 35, 0.1);
+            background: #fff8f0;
+        }
+
+        .criterion-number {
+            background: #eb8023;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .criterion-content {
+            flex: 1;
+        }
+
+        .criterion-content h3 {
+            font-size: 1.5rem;
+            color: #000;
+            margin-bottom: 15px;
+        }
+
+        .criterion-content p {
+            font-size: 1.05rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .strength-points {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .strength-point {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+            background: white;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .strength-icon {
+            font-size: 1.5rem;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .experience-type {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .type-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .experience-type h4 {
+            color: #000;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .experience-type p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .planning-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .planning-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .feature-check {
+            background: #eb8023;
+            color: white;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .transparency-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .transparency-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .transparency-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .transparency-details h4 {
+            color: #000;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .transparency-details p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .compliance-points {
+            margin: 25px 0;
+        }
+
+        .compliance-point {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12px;
+            padding: 15px;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .compliance-marker {
+            width: 8px;
+            height: 8px;
+            background: #eb8023;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .quality-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .quality-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .quality-details h4 {
+            color: #000;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .responsibility-comparison {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .comparison-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .comparison-box.fragmented {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+        }
+
+        .comparison-box.unified {
+            background: #fff8f0;
+            border: 1px solid #ffd9b3;
+        }
+
+        .comparison-box h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .comparison-box.fragmented h4 {
+            color: #666;
+        }
+
+        .comparison-box.unified h4 {
+            color: #eb8023;
+        }
+
+        .comparison-box ul {
+            padding-left: 20px;
+        }
+
+        .comparison-box li {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .comparison-arrow {
+            font-size: 1.5rem;
+            color: #eb8023;
+            font-weight: bold;
+        }
+
+        .reputation-factors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .reputation-factor {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .factor-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .factor-content h4 {
+            color: #000;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .factor-content p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .alignment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .alignment-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .alignment-icon {
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .alignment-details h4 {
+            color: #000;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .alignment-details p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .criterion-tip {
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+            border-left: 3px solid #eb8023;
+            font-size: 0.95rem;
+        }
+
+        .criterion-tip strong {
+            color: #eb8023;
+        }
+
+        /* Importance Section */
+        .importance-section {
+            padding: 60px 0;
+            background: #f5f5f5;
+        }
+
+        .importance-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .importance-content h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .importance-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 4px solid #eb8023;
+            transition: transform 0.2s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(235, 128, 35, 0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card h4 {
+            color: #000;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .benefit-card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .conclusion-box {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #ddd;
+        }
+
+        .conclusion-text {
+            font-size: 1.2rem;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Checklist Section */
+        .checklist-section {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .checklist-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .checklist-content h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #000;
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: #f8f8f8;
+            border-radius: 6px;
+            border-left: 3px solid #eb8023;
+        }
+
+        .checklist-check {
+            background: #eb8023;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .criterion-card {
+                flex-direction: column;
+            }
+
+            .criterion-number {
+                align-self: flex-start;
+            }
+
+            .blog-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            .responsibility-comparison {
+                flex-direction: column;
+            }
+
+            .comparison-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero {
+                padding: 40px 0 0 0;
+            }
+
+            .hero-content {
+                padding: 0 15px 30px;
+            }
+
+            .blog-title {
+                font-size: 1.8rem;
+            }
+
+            .blog-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-image {
+                height: 250px;
+            }
+
+            .content-section {
+                padding: 40px 0;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .criterion-card {
+                padding: 25px;
+            }
+
+            .criterion-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .importance-content h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-title {
+                font-size: 1.6rem;
+            }
+
+            .hero-image {
+                height: 200px;
+            }
+
+            .strength-points,
+            .experience-grid,
+            .planning-features,
+            .transparency-grid,
+            .quality-grid,
+            .reputation-factors,
+            .alignment-grid,
+            .benefits-grid,
+            .checklist-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .strength-point,
+            .experience-type,
+            .transparency-item,
+            .quality-item,
+            .reputation-factor,
+            .alignment-item {
+                min-width: 100%;
+            }
+        }
+    </style>
+</section>
+
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center pb-90">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services.html">Service</a></li>
+                                        <li><a href="../about.html">About Us</a></li>
+                                        <li><a href="../projects.html">Projects</a></li>
+                                        <li><a href="../blog.html">Blogs</a></li>
+                                        <li><a href="../contact.html">Contact Us</a></li>
+                                        <li><a href="../privacy-and-policy.html">Privacy Policy</a></li>
+                                        <li><a href="../terms-and-conditions.html">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Services</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services/turnkey-construction-solutions.html">Turnkey Construction Solutions</a></li>
+                                        <li><a href="../services/joint-venture-and-development-partnerships.html">Joint Venture & Development Partnerships</a></li>
+                                        <li><a href="../services/bespoke-residential-construction.html">Bespoke Residential Construction</a></li>
+                                        <li><a href="../services/apartments-and-large-scale-residential-developments.html">Apartment & Large-Scale Residential Developments</a></li>
+                                        <li><a href="../services/commercial-construction-excellence.html">Commercial Construction Excellence</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Projects</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Oyester</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">iris</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Pearl</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Shatayu</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Project 5</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
+                                    <ul class="contact-info-list list-unstyled mb-0">
+                                        <li><span class="fw-bold text-white me-1">Address:</span> SAN SQUARE, #22, 3rd Floor, 1st Main Road, Mathikere, Bengaluru, Karnataka-560054</li>
+                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="info@fusion4construction.in">info@fusion4construction.in</a></li>
+                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:9880055230">9880055230</a></li>
+                                    </ul>
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                     <span class="text-alto fw-semibold me-2">Follow Us: </span>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://youtube.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-youtube-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-large-text font-optional fw-black round-10">
+                                    <span>F</span>
+                                    <span>U</span>
+                                    <span>S</span>
+                                    <span>I</span>
+                                    <span>O</span>
+                                    <span>N</span>
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10 text-white">
+                                    <i class=" text-white me-4"></i>
+                                    <span class="text_secondary fw-medium text-white ms-0">©2026 fusion4 constructions.</span>
+                                    <span class="ms-2">All Rights Reserved</span>
+                                </div>
+                            </div>
+                              <div class="col-md-7 text-md-end text-center">
+                                  <p class="copyright-text mb-0 text-white">
+                                      <a  target="_blank" href="https://thinkb.agency/" class="link style-three fw-medium text-white me-5 pe-3">Designed & Developed by thinkB</a>
+                                  </p>
+                              </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <div id="progress-wrap" class="progress-wrap style-one">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+
+    <!-- Link of JS files -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/megamenu.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/fslightbox.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/scrollTrigger.min.js"></script>
+    <script src="../js/lenis.min.js"></script>
+    <script src="../js/scrollToPlugin.js"></script>
+    <script src="../js/SplitText.min.js"></script>
+    <script src="../js/customEase.js"></script>
+    <script src="../js/scrollcue.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <!-- Add CSS for Blog Page -->
+    <style>
+        /* Blog Post Styles */
+        .blog-post-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Blog Header */
+        .blog-header {
+            margin-bottom: 3rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 1.5rem;
+        }
+
+        .blog-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        .blog-category {
+            background: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        /* Blog Content */
+        .blog-content {
+            font-size: 1.1rem;
+        }
+
+        .blog-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .blog-intro {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            font-weight: 500;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+
+        /* Points Grid */
+        .points-grid {
+            display: grid;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .point-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .point-icon {
+            background: #2c3e50;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .point-text {
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .point-conclusion {
+            font-style: italic;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        /* Success Section */
+        .success-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+        }
+
+        .success-section .section-subtitle {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote-block {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .quote-text {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin: 0.5rem 0;
+        }
+
+        .quote-text.emphasis {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #f1c40f;
+        }
+
+        .company-signature {
+            font-weight: 500;
+            font-style: italic;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            margin-top: 1.5rem;
+        }
+
+        /* Joint Development Section */
+        .jd-section {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 3px solid #2c3e50;
+        }
+
+        .jd-intro {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #2c3e50;
+        }
+
+        .jd-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 1.5rem 0;
+        }
+
+        .jd-list li {
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            background: #e8f4fc;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+
+        .jd-note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 1rem;
+            border-radius: 6px;
+            color: #856404;
+            margin: 1.5rem 0;
+            font-weight: 500;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            margin: 2.5rem 0;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-number {
+            background: #2c3e50;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .benefit-content h3 {
+            color: #2c3e50;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .benefit-content h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .nested-list {
+            list-style: none;
+            padding-left: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .nested-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .nested-list li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Process Steps */
+        .process-step {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2c3e50;
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-number {
+            background: #e74c3c;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .step-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .step-note {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 4px;
+        }
+
+        .step-note.emphasis {
+            background: #d4edda;
+            color: #155724;
+            font-weight: 500;
+            border: 1px solid #c3e6cb;
+        }
+
+        /* Typography */
+        .section-subtitle {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .subsection-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .highlight-text {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-post-container {
+                padding: 1rem;
+            }
+            
+            .blog-title {
+                font-size: 2rem;
+            }
+            
+            .blog-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .benefit-item {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .points-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quote-text {
+                font-size: 1.5rem;
+            }
+            
+            .quote-text.emphasis {
+                font-size: 1.8rem;
+            }
+            
+            .benefit-content h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-title {
+                font-size: 1.6rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .subsection-title {
+                font-size: 1.3rem;
+            }
+            
+            .success-section {
+                padding: 1.5rem;
+            }
+            
+            .point-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 105px;
+    right: 24px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(0.9);
+}
+.whatsapp-float i {
+    margin-top: 16px;
+    display: block;
+    color: white;
+}
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 77px;
+        right: 7px;
+    }
+}
+
+</style>
+<a href="https://wa.me/919880055230" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!-- END WHATSAPP BUTTON -->
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+</html>

@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/scrollcue.min.css">
+    <link rel="stylesheet" href="../css/remixicon.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+
+    <title>Service Details - Fusion4</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" width="16" height="16">
+</head>
+<body>
+
+   <!--  Preloader Start -->
+    <div class="preloader-area" id="preloader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--  Preloader End -->
+
+    <!-- Custom Cursor -->
+    <div class="cursor"><span class="cursor-text"></span></div>
+    <div class="cursor-inner"></div>
+
+    <div id="smooth-wrapper">
+        <di id="smooth-content">
+
+
+<style>
+/* Navbar base */
+@media (max-width: 600px) {
+    .service-card {
+        padding: 18px;
+        width: 118%;
+        margin-left: -20px;
+        margin-right: -26px;
+    }
+}
+.navbar__section {
+    background-color: #18455c;
+}
+
+.navbar__section .navbar-brand img {
+    max-height: 65px;
+}
+
+/* Nav links */
+.navbar__section .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar__section .nav-link:hover {
+    color: #eb8023;
+}
+
+.navbar__section .nav-link.active {
+    color: #eb8023;
+    font-weight: bold;
+}
+
+/* Desktop spacing fixes */
+.navbar__section .navbar-brand {
+    margin-left: -89px;
+}
+
+.navbar__section .navbar-nav {
+    margin-left: 50px;
+    gap: 5px;
+}
+
+/* CTA button spacing */
+.navbar__section .option-item.cta-btn {
+    margin-left: 20px;
+    margin-right: -85px;
+}
+
+/* ---------------- MOBILE STYLES ---------------- */
+@media (max-width: 991px) {
+
+    /* Reset desktop offsets */
+    .navbar__section .navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar__section .navbar-nav {
+        margin-left: 0;
+    }
+
+    /* Make mobile menu SIDE BY SIDE */
+    .navbar__section .navbar-collapse {
+        background-color: #18455c;
+        padding: 15px;
+    }
+
+    .navbar__section .navbar-nav {
+        flex-direction: row;               /* KEY PART */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;                        /* Two items per row */
+        text-align: center;
+    }
+
+    .navbar__section .nav-link {
+        padding: 12px 10px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    /* Hide desktop CTA button on mobile */
+    .navbar__section .option-item.cta-btn {
+        display: none;
+    }
+}
+/* -------- MOBILE FIX: SHOW CALL & CTA WITHOUT HTML CHANGES -------- */
+@media (max-width: 991px) {
+
+    /* Force show Call Us block */
+    .navbar__section .contact-link.d-none {
+        display: flex !important;
+        align-items: center;
+        background: rgba(255,255,255,0.08);
+        border-radius: 6px;
+    }
+
+    /* Show text inside Call Us */
+    .navbar__section .contact-link .d-xl-inline {
+        display: block !important;
+        font-size: 0.7rem;
+    }
+
+    /* Force show Get In Touch button */
+    .navbar__section .option-item.cta-btn.d-none {
+        display: block !important;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 25%;
+        text-align: center;
+    }
+
+    /* Keep mobile nav items side-by-side */
+    .navbar__section .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;
+        text-align: center;
+    }
+}
+/* ---------- COMPACT SIDE-BY-SIDE CALL & CTA ---------- */
+@media (max-width: 991px) {
+
+    .navbar__section .other-options {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        width: 75%;
+        }
+
+    .navbar__section .other-options .option-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__section .contact-link {
+        width: 100%;
+        justify-content: center;
+        padding: 6px 8px;         /* reduced padding */
+        background: rgba(255,255,255,0.08);
+        border-radius: 5px;
+    }
+
+    .navbar__section .contact-link img {
+        width: 18px;              /* slightly smaller icon */
+        margin-right: 5px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 100%;
+        padding: -1px 8px;         /* reduced padding */
+        text-align: center;
+        margin-left: 65px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: 25px;
+    }
+    .btn-text {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 375px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 400px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+
+
+</style>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mobile__offcanvas">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="../services.html">Services</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Navbar Start -->
+<div class="navbar__section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../images/FUSION 4-02 new.png" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+
+                        <div class="option-item d-flex flex-wrap align-items-center">
+                            <div class="contact-link d-lg-flex d-none flex-wrap align-items-center position-relative">
+                                <span class="contact-icon rounded-circle">
+                                    <img src="../images/phone.png" alt="Icon">
+                                </span>
+                                <div class="d-xl-inline d-none">
+                                    <span class="text-white d-block">Call Us:</span>
+                                    <span class="text_primary fw-semibold">9880055230</span>
+                                </div>
+                                <a href="tel:7780250502" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+
+                        <div class="option-item cta-btn d-lg-block d-none">
+                            <a href="../contact.html" class="btn style-two">
+                                <span class="btn-text fw-semibold">Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content container">
+            <div class="breadcrumb">
+                <span>Home</span>
+                <span>></span>
+                <span>Services</span>
+                <span>></span>
+                <span class="current">Apartments & Large-Scale Residential Developments</span>
+            </div>
+            <h1>Apartments & Large-Scale Residential Developments</h1>
+        </div>
+    </section>
+
+    <section class="intro-section">
+            <div class="intro-content">
+                <p>At Fusion 4 Construction, we specialise in delivering well-planned, high-quality apartment and large-scale residential developments that combine smart design, efficient execution, and long-term value. Our approach is rooted in precision planning, disciplined timelines, and uncompromising construction standards.</p>
+                <p>With deep experience in premium construction and joint development models, we partner with landowners and developers to execute projects that are structurally strong, aesthetically refined, and market-ready, ensuring smooth delivery from concept to completion.</p>
+            </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">Our commitment to excellence in large-scale residential development sets us apart in the construction industry.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Strong Large-Scale Execution Capability</h3>
+                    <p class="feature-description">Proven expertise in managing multi-unit and large residential projects with consistency and control.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 11h6M9 15h6M9 7h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">End-to-End Development Management</h3>
+                    <p class="feature-description">Complete responsibility from planning and approvals to construction and final handover.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Strict Timeline Commitment</h3>
+                    <p class="feature-description">Project schedules are closely monitored to ensure on-time or before-time delivery.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="16 12 12 8 8 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">High Construction Quality Standards</h3>
+                    <p class="feature-description">Superior materials, skilled workmanship, and rigorous quality checks at every stage.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Transparent Development Process</h3>
+                    <p class="feature-description">Clear communication, structured reporting, and honest, straightforward execution throughout the project.</p>
+                </div>
+            </div>
+
+            <div class="project-images">
+                <div class="project-image">
+                    <img src="../images/s4in.jpg" alt="Modern residential building">
+                </div>
+                <div class="project-image">
+                    <img src="../images/s4in2.jpg" alt="Apartment complex">
+                </div>
+                <div class="project-image">
+                    <img src="../images/s4in3.jpg" alt="Residential development">
+                </div>
+            </div>
+
+            <div class="tagline">
+                From vision to structure – <span class="tagline-highlight">Where Quality Meets Construction Excellence</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <p class="section-subtitle">Our Apartment & Large-Scale Residential Development services are thoughtfully structured to ensure smooth execution, controlled risk, and long-term project value, even in complex, multi-unit developments.</p>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Land Assessment & Feasibility Planning</h3>
+                    <p>We conduct a comprehensive assessment of land potential, zoning norms, access, and development scope to ensure the project begins with a strong technical and commercial foundation.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Master Planning & Design Coordination</h3>
+                    <p>Strategic master planning and close coordination with architects enable us to design efficient layouts, optimised unit planning, and well-balanced community spaces that enhance both functionality and market appeal.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Approval & Statutory Management</h3>
+                    <p>Our team manages the entire approval process, including statutory compliances and coordination with authorities, helping reduce uncertainties, delays, and execution risks.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Construction & Project Execution</h3>
+                    <p>Construction is executed through a structured management approach with strict quality controls, safety protocols, and disciplined timeline tracking, ensuring consistency across all phases.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Common Areas & Finishing Works</h3>
+                    <p>Special attention is given to common amenities, circulation areas, and finishing works, ensuring the development offers enhanced liveability, durability, and long-term aesthetic value.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Project Completion & Handover</h3>
+                    <p>We ensure systematic project completion with quality assurance checks, clear documentation, and operational readiness, allowing a smooth transition from construction to occupancy.</p>
+                </div>
+            </div>
+
+            <div class="intro-content" style="margin-top: 40px; text-align: center;">
+                <p><strong>We work on select developments only, ensuring every project aligns with Fusion 4 Construction's premium standards, execution discipline, and long-term development vision.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">Project Development Process</h2>
+            <p class="section-subtitle">How We Deliver Large-Scale Residential Projects</p>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Initial Discussion & Site Evaluation</h3>
+                        <p>We begin by understanding land characteristics, project vision, and development objectives, allowing us to define a clear and realistic execution roadmap.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Feasibility & Master Planning</h3>
+                        <p>Detailed feasibility studies and master planning are carried out to ensure the project is technically viable, regulatory-compliant, and execution-ready.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Approvals & Documentation</h3>
+                        <p>We handle all approvals, statutory requirements, and documentation, maintaining close coordination with authorities to keep the project moving without disruptions.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Construction & Quality Management</h3>
+                        <p>Phased execution is supported by continuous supervision, systematic quality audits, and milestone-based monitoring, ensuring high standards across large-scale operations.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Finishing & Common Area Development</h3>
+                        <p>Thoughtfully planned finishes and amenity execution enhance resident experience, usability, and long-term value of the development.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Final Delivery & Project Closure</h3>
+                        <p>Projects are completed on time with structured handover, clear documentation, and post-delivery support, ensuring confidence for developers and partners alike.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-content" style="margin-top: 40px; text-align: center;">
+                <p><strong>Each stage is professionally planned, closely monitored, and transparently executed, enabling large-scale residential projects to be delivered with consistency, quality, and execution confidence.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Everything You Need to Know</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What type of apartment and large-scale residential projects does Fusion 4 undertake?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Fusion 4 undertakes select mid to premium apartment developments, gated communities, and large-scale residential projects. We focus on developments that require strong execution capability, structured planning, and disciplined project management, ensuring quality delivery across multiple units and phases.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you assist with land feasibility and development planning?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes. We begin every project with a detailed land assessment and feasibility study, evaluating development potential, regulatory constraints, and execution practicality. This helps clients make informed decisions and reduces risk before major investments are made.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Does Fusion 4 handle approvals and statutory compliances?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely. We manage end-to-end statutory approvals, documentation, and coordination with government authorities, ensuring the project progresses smoothly without unnecessary delays or compliance-related challenges.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you manage quality and timelines in large-scale projects?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Large-scale developments are executed through a structured construction management system, including experienced supervision, strict quality benchmarks, safety protocols, and milestone-based progress tracking. This ensures consistency, efficiency, and timely delivery across all phases.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you also execute common areas and amenities?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes. We give equal importance to common amenities, circulation spaces, and shared facilities, as these define the overall living experience and long-term value of the project. Finishes are selected and executed to balance durability, aesthetics, and ease of maintenance.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Why should developers or landowners choose Fusion 4 for large residential projects?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Developers choose Fusion 4 for our execution reliability, transparency, and disciplined approach to large-scale construction. We work on limited projects at a time, ensuring focused attention, accountability, and delivery aligned with premium development standards.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+            <!-- Service Content Section End -->
+
+
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center pb-90">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services.html">Service</a></li>
+                                        <li><a href="../about.html">About Us</a></li>
+                                        <li><a href="../projects.html">Projects</a></li>
+                                        <li><a href="../blog.html">Blogs</a></li>
+                                        <li><a href="../contact.html">Contact Us</a></li>
+                                        <li><a href="../privacy-and-policy.html">Privacy Policy</a></li>
+                                        <li><a href="../terms-and-conditions.html">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Services</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services/turnkey-construction-solutions.html">Turnkey Construction Solutions</a></li>
+                                        <li><a href="../services/joint-venture-and-development-partnerships.html">Joint Venture & Development Partnerships</a></li>
+                                        <li><a href="../services/bespoke-residential-construction.html">Bespoke Residential Construction</a></li>
+                                        <li><a href="../services/apartments-and-large-scale-residential-developments.html">Apartment & Large-Scale Residential Developments</a></li>
+                                        <li><a href="../services/commercial-construction-excellence.html">Commercial Construction Excellence</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Projects</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Oyester</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">iris</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Pearl</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Shatayu</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Project 5</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
+                                    <ul class="contact-info-list list-unstyled mb-0">
+                                        <li><span class="fw-bold text-white me-1">Address:</span> SAN SQUARE, #22, 3rd Floor, 1st Main Road, Mathikere, Bengaluru, Karnataka-560054</li>
+                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="info@fusion4construction.in">info@fusion4construction.in</a></li>
+                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:9880055230">9880055230</a></li>
+                                    </ul>
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                     <span class="text-alto fw-semibold me-2">Follow Us: </span>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://youtube.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-youtube-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-large-text font-optional fw-black round-10">
+                                    <span>F</span>
+                                    <span>U</span>
+                                    <span>S</span>
+                                    <span>I</span>
+                                    <span>O</span>
+                                    <span>N</span>
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10 text-white">
+                                    <i class=" text-white me-4"></i>
+                                    <span class="text_secondary fw-medium text-white ms-0">©2026 fusion4 constructions.</span>
+                                    <span class="ms-2">All Rights Reserved</span>
+                                </div>
+                            </div>
+                              <div class="col-md-7 text-md-end text-center">
+                                  <p class="copyright-text mb-0 text-white">
+                                      <a  target="_blank" href="https://thinkb.agency/" class="link style-three fw-medium text-white me-5 pe-3">Designed & Developed by thinkB</a>
+                                  </p>
+                              </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <div id="progress-wrap" class="progress-wrap style-one">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+
+    <!-- Link of JS files -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/megamenu.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/fslightbox.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/scrollTrigger.min.js"></script>
+    <script src="../js/lenis.min.js"></script>
+    <script src="../js/scrollToPlugin.js"></script>
+    <script src="../js/SplitText.min.js"></script>
+    <script src="../js/customEase.js"></script>
+    <script src="../js/scrollcue.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <!-- Add CSS for Apartment & Large-Scale Residential Developments -->
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 400px;
+            background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(15, 23, 42, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb span {
+            margin: 0 0.5rem;
+        }
+
+        .breadcrumb .current {
+            color: #eb8023;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 40px;
+            max-width: 900px;
+        }
+
+        .intro-section {
+            padding: 40px 0;
+            background: #fff;
+        }
+
+        .intro-content {
+            max-width: 1217px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .intro-content p {
+            margin-bottom: 2px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 60px;
+            line-height: 1.6;
+        }
+
+        .features-section {
+            padding: 1px 0;
+            background: #ffffff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: #f1f5f9;
+            padding: 23px 27px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            color: #eb8023;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .project-image {
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .project-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .tagline {
+            text-align: center;
+            margin: 60px 0;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .tagline-highlight {
+            color: #eb8023;
+            font-weight: 600;
+        }
+
+        .services-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .services-list {
+            display: grid;
+            gap: 40px;
+        }
+
+        .service-item {
+            background: #f1f5f9;
+            padding: 10px 10px 1px 31px;
+            border-radius: 8px;
+            border-left: 4px solid #eb8023;
+        }
+
+        .service-item h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .service-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .process-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .process-steps {
+            display: grid;
+            gap: 20px;
+        }
+
+        .process-step {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            transition: transform 0.3s;
+        }
+
+
+        .step-number {
+            background: #eb8023;
+            color: #1a1a1a;
+            width: 70px;
+            height: 70px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .step-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .faq-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .faq-list {
+            max-width: 1246px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 17px;
+            color: #1a1a1a;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #e5e7eb;
+        }
+
+        .faq-toggle {
+            font-size: 24px;
+            color: #eb8023;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 30px 25px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-images {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 105px;
+    right: 24px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(0.9);
+}
+.whatsapp-float i {
+    margin-top: 16px;
+    display: block;
+    color: white;
+}
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 77px;
+        right: 7px;
+    }
+}
+
+</style>
+<a href="https://wa.me/919880055230" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!-- END WHATSAPP BUTTON -->
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+</html>

@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link of CSS files -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/scrollcue.min.css">
+    <link rel="stylesheet" href="../css/remixicon.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/dark-theme.css">
+
+    <title>Service Details - Fusion4</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png" width="16" height="16">
+</head>
+<body>
+
+   <!--  Preloader Start -->
+    <div class="preloader-area" id="preloader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!--  Preloader End -->
+
+    <!-- Custom Cursor -->
+    <div class="cursor"><span class="cursor-text"></span></div>
+    <div class="cursor-inner"></div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+
+<style>
+/* Navbar base */
+@media (max-width: 600px) {
+    .service-card {
+        padding: 18px;
+        width: 118%;
+        margin-left: -20px;
+        margin-right: -26px;
+    }
+}
+.navbar__section {
+    background-color: #18455c;
+}
+
+.navbar__section .navbar-brand img {
+    max-height: 65px;
+}
+
+/* Nav links */
+.navbar__section .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar__section .nav-link:hover {
+    color: #eb8023;
+}
+
+.navbar__section .nav-link.active {
+    color: #eb8023;
+    font-weight: bold;
+}
+
+/* Desktop spacing fixes */
+.navbar__section .navbar-brand {
+    margin-left: -89px;
+}
+
+.navbar__section .navbar-nav {
+    margin-left: 50px;
+    gap: 5px;
+}
+
+/* CTA button spacing */
+.navbar__section .option-item.cta-btn {
+    margin-left: 20px;
+    margin-right: -85px;
+}
+
+/* ---------------- MOBILE STYLES ---------------- */
+@media (max-width: 991px) {
+
+    /* Reset desktop offsets */
+    .navbar__section .navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar__section .navbar-nav {
+        margin-left: 0;
+    }
+
+    /* Make mobile menu SIDE BY SIDE */
+    .navbar__section .navbar-collapse {
+        background-color: #18455c;
+        padding: 15px;
+    }
+
+    .navbar__section .navbar-nav {
+        flex-direction: row;               /* KEY PART */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;                        /* Two items per row */
+        text-align: center;
+    }
+
+    .navbar__section .nav-link {
+        padding: 12px 10px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    /* Hide desktop CTA button on mobile */
+    .navbar__section .option-item.cta-btn {
+        display: none;
+    }
+}
+/* -------- MOBILE FIX: SHOW CALL & CTA WITHOUT HTML CHANGES -------- */
+@media (max-width: 991px) {
+
+    /* Force show Call Us block */
+    .navbar__section .contact-link.d-none {
+        display: flex !important;
+        align-items: center;
+        background: rgba(255,255,255,0.08);
+        border-radius: 6px;
+    }
+
+    /* Show text inside Call Us */
+    .navbar__section .contact-link .d-xl-inline {
+        display: block !important;
+        font-size: 0.7rem;
+    }
+
+    /* Force show Get In Touch button */
+    .navbar__section .option-item.cta-btn.d-none {
+        display: block !important;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 25%;
+        text-align: center;
+    }
+
+    /* Keep mobile nav items side-by-side */
+    .navbar__section .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;
+        text-align: center;
+    }
+}
+/* ---------- COMPACT SIDE-BY-SIDE CALL & CTA ---------- */
+@media (max-width: 991px) {
+
+    .navbar__section .other-options {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        width: 75%;
+        }
+
+    .navbar__section .other-options .option-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__section .contact-link {
+        width: 100%;
+        justify-content: center;
+        padding: 6px 8px;         /* reduced padding */
+        background: rgba(255,255,255,0.08);
+        border-radius: 5px;
+    }
+
+    .navbar__section .contact-link img {
+        width: 18px;              /* slightly smaller icon */
+        margin-right: 5px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 100%;
+        padding: -1px 8px;         /* reduced padding */
+        text-align: center;
+        margin-left: 65px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: 25px;
+    }
+    .btn-text {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 375px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 400px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+
+
+</style>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mobile__offcanvas">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="../services.html">Services</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Navbar Start -->
+<div class="navbar__section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../images/FUSION 4-02 new.png" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+
+                        <div class="option-item d-flex flex-wrap align-items-center">
+                            <div class="contact-link d-lg-flex d-none flex-wrap align-items-center position-relative">
+                                <span class="contact-icon rounded-circle">
+                                    <img src="../images/phone.png" alt="Icon">
+                                </span>
+                                <div class="d-xl-inline d-none">
+                                    <span class="text-white d-block">Call Us:</span>
+                                    <span class="text_primary fw-semibold">9880055230</span>
+                                </div>
+                                <a href="../contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+
+                        <div class="option-item cta-btn d-lg-block d-none">
+                            <a href="../contact.html" class="btn style-two">
+                                <span class="btn-text fw-semibold">Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content container">
+            <div class="breadcrumb">
+                <span>Home</span>
+                <span>></span>
+                <span>Services</span>
+                <span>></span>
+                <span class="current">Commercial Construction Excellence</span>
+            </div>
+            <h1>Commercial Construction Excellence</h1>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <p>At Fusion 4 Construction, we deliver commercial projects with precision, reliability, and long-term value. From office spaces to retail complexes and institutional buildings, our approach combines strategic planning, disciplined execution, and superior construction standards.</p>
+                <p>We understand that commercial spaces are business-critical assets, and every decision—be it design, material, or timeline—is aimed at maximising operational efficiency, functionality, and long-term durability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">Our commitment to excellence in commercial construction sets us apart in the industry.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Expertise in Commercial Spaces</h3>
+                    <p class="feature-description">Proven experience in offices, retail, mixed-use, and institutional developments, executed with precision.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 11h6M9 15h6M9 7h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">End-to-End Project Management</h3>
+                    <p class="feature-description">Complete responsibility from planning, approvals, construction, to operational handover.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Timely Delivery Focus</h3>
+                    <p class="feature-description">Structured project management ensures on-time or ahead-of-schedule completion, reducing business disruption.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="16 12 12 8 8 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Superior Quality Standards</h3>
+                    <p class="feature-description">High-quality materials, skilled workmanship, and strict quality audits at every stage.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Transparent & Reliable Execution</h3>
+                    <p class="feature-description">Open communication, cost clarity, and a straightforward business approach throughout the project lifecycle.</p>
+                </div>
+            </div>
+
+            <div class="project-images">
+                <div class="project-image">
+                    <img src="../images/s5in.jpg" alt="Modern office building">
+                </div>
+                <div class="project-image">
+                    <img src="../images/s5in2.jpg" alt="Commercial retail space">
+                </div>
+                <div class="project-image">
+                    <img src="../images/s5in3.png" alt="Corporate workspace">
+                </div>
+            </div>
+
+            <div class="tagline">
+                Precision in Every Detail – <span class="tagline-highlight">Building Business-Ready Spaces</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <p class="section-subtitle">Our Commercial Construction services are carefully designed to ensure efficient, hassle-free execution, minimal operational disruption, and long-term asset value for every business space we deliver.</p>
+
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Site Assessment & Feasibility Analysis</h3>
+                    <p>We start with a comprehensive evaluation of site potential, business requirements, and commercial viability, ensuring a strong foundation for planning and execution. This stage helps identify opportunities, anticipate challenges, and create a practical roadmap for a successful project.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Design & Functional Planning</h3>
+                    <p>Collaborating closely with architects, engineers, and consultants, we create optimised layouts, functional space planning, and professional-grade design solutions. Our focus is on balancing operational efficiency, aesthetics, and regulatory compliance</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Approval & Regulatory Management</h3>
+                    <p>Navigating commercial approvals can be complex. Fusion 4 handles end-to-end statutory approvals, permits, and coordination with authorities, reducing delays, ensuring compliance, and giving clients peace of mind throughout the project lifecycle.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Construction & Project Execution</h3>
+                    <p>Every commercial project is executed with a structured phased approach, strict quality control, and disciplined timeline management. Our teams ensure high standards of safety, workmanship, and workflow efficiency, delivering projects without disrupting your ongoing operations.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Service Integration & Finishing Works</h3>
+                    <p>We integrate utilities, MEP systems, and high-quality finishes seamlessly, creating spaces that are not just visually appealing but operationally robust. This ensures the commercial property is ready for immediate use and sustainable in the long term.</p>
+                </div>
+
+                <div class="service-item">
+                    <h3>Final Handover & Operational Readiness</h3>
+                    <p>The project is handed over with detailed documentation, quality verification, and operational readiness, allowing businesses to move in or commence operations without any delays or gaps.</p>
+                </div>
+            </div>
+
+            <div class="intro-content" style="margin-top: 40px; text-align: center;">
+                <p><strong>We take on select commercial projects only, ensuring focused attention, premium execution standards, and enduring value for all stakeholders.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">Project Delivery Process</h2>
+            <p class="section-subtitle">How We Deliver Premium Commercial Projects</p>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Initial Consultation & Site Evaluation</h3>
+                        <p>We begin by understanding your business objectives, functional requirements, and site conditions, which allows us to define a realistic, efficient, and actionable execution roadmap.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Feasibility & Design Planning</h3>
+                        <p>Detailed feasibility studies and design coordination are conducted to ensure efficient space utilisation, operational readiness, and compliance with regulations, resulting in a well-planned and market-ready property.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Approvals & Documentation</h3>
+                        <p>We manage all statutory approvals, local authority coordination, and documentation, eliminating bottlenecks and minimizing delays during construction.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Construction & Quality Supervision</h3>
+                        <p>Phased execution with continuous supervision, milestone tracking, and rigorous quality audits ensures every part of the project meets Fusion 4's premium construction standards.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Service Integration & Finishing</h3>
+                        <p>Utilities, interiors, and finishing works are executed thoughtfully to enhance operational efficiency, durability, and aesthetic appeal, giving businesses spaces that are ready for professional use.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Final Handover & Support</h3>
+                        <p>Projects are delivered on time with complete documentation, quality checks, and post-completion guidance, ensuring confidence and readiness for immediate commercial operations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-content" style="margin-top: 40px; text-align: center;">
+                <p><strong>Each stage is professionally monitored, transparently managed, and executed with precision, resulting in commercial spaces that are highly functional, premium in quality, and future-ready.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Everything You Need to Know</h2>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What types of commercial projects does Fusion 4 handle?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We undertake premium office buildings, retail complexes, mixed-use developments, and institutional facilities. Our focus is on projects that require disciplined execution, functional planning, and superior construction standards to deliver long-term value.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you manage approvals and statutory compliance for commercial buildings?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely. Fusion 4 takes care of all regulatory approvals, statutory requirements, and authority coordination, ensuring smooth progress and minimal administrative hurdles for clients.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do you ensure consistent quality across large commercial projects?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Quality is maintained through structured supervision, milestone-based inspections, and strict execution protocols. Every stage is carefully monitored, ensuring durability, functionality, and premium standards.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can Fusion 4 handle operationally sensitive or phased projects?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes. We are experienced in managing phased construction, multi-stakeholder coordination, and operationally sensitive environments, ensuring minimal disruption and maximum efficiency throughout the project lifecycle.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Why should businesses choose Fusion 4 for commercial construction?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Clients choose Fusion 4 for our execution reliability, transparency, and deep understanding of commercial operations. We build spaces that are business-ready, durable, functional, and delivered on schedule, giving long-term confidence and operational freedom.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center pb-90">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services.html">Service</a></li>
+                                        <li><a href="../about.html">About Us</a></li>
+                                        <li><a href="../projects.html">Projects</a></li>
+                                        <li><a href="../blog.html">Blogs</a></li>
+                                        <li><a href="../contact.html">Contact Us</a></li>
+                                        <li><a href="../privacy-and-policy.html">Privacy Policy</a></li>
+                                        <li><a href="../terms-and-conditions.html">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Services</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services/turnkey-construction-solutions.html">Turnkey Construction Solutions</a></li>
+                                        <li><a href="../services/joint-venture-and-development-partnerships.html">Joint Venture & Development Partnerships</a></li>
+                                        <li><a href="../services/bespoke-residential-construction.html">Bespoke Residential Construction</a></li>
+                                        <li><a href="../services/apartments-and-large-scale-residential-developments.html">Apartment & Large-Scale Residential Developments</a></li>
+                                        <li><a href="../services/commercial-construction-excellence.html">Commercial Construction Excellence</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Projects</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Oyester</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">iris</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Pearl</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Shatayu</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Project 5</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
+                                    <ul class="contact-info-list list-unstyled mb-0">
+                                        <li><span class="fw-bold text-white me-1">Address:</span> SAN SQUARE, #22, 3rd Floor, 1st Main Road, Mathikere, Bengaluru, Karnataka-560054</li>
+                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="info@fusion4construction.in">info@fusion4construction.in</a></li>
+                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:9880055230">9880055230</a></li>
+                                    </ul>
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                     <span class="text-alto fw-semibold me-2">Follow Us: </span>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://youtube.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-youtube-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-large-text font-optional fw-black round-10">
+                                    <span>F</span>
+                                    <span>U</span>
+                                    <span>S</span>
+                                    <span>I</span>
+                                    <span>O</span>
+                                    <span>N</span>
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10 text-white">
+                                    <i class=" text-white me-4"></i>
+                                    <span class="text_secondary fw-medium text-white ms-0">©2026 fusion4 constructions.</span>
+                                    <span class="ms-2">All Rights Reserved</span>
+                                </div>
+                            </div>
+                              <div class="col-md-7 text-md-end text-center">
+                                  <p class="copyright-text mb-0 text-white">
+                                      <a  target="_blank" href="https://thinkb.agency/" class="link style-three fw-medium text-white me-5 pe-3">Designed & Developed by thinkB</a>
+                                  </p>
+                              </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <div id="progress-wrap" class="progress-wrap style-one">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+
+    <!-- Link of JS files -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/megamenu.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/fslightbox.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/scrollTrigger.min.js"></script>
+    <script src="../js/lenis.min.js"></script>
+    <script src="../js/scrollToPlugin.js"></script>
+    <script src="../js/SplitText.min.js"></script>
+    <script src="../js/customEase.js"></script>
+    <script src="../js/scrollcue.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <!-- Add CSS for Commercial Construction Excellence -->
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 400px;
+            background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(15, 23, 42, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb span {
+            margin: 0 0.5rem;
+        }
+
+        .breadcrumb .current {
+            color: #eb8023;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+
+        .hero-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-top: 40px;
+            max-width: 900px;
+        }
+
+        .intro-section {
+            padding: 80px 0 2px;
+            background: #fff;
+        }
+
+        .intro-content {
+            max-width: 1194px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .intro-content p {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 60px;
+            line-height: 1.6;
+        }
+
+        .features-section {
+            padding: 2px 0;
+            background: #ffffff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: #f1f5f9;
+            padding: 23px 27px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            color: #eb8023;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .feature-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .project-image {
+            height: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .project-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .tagline {
+            text-align: center;
+            margin: 60px 0;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .tagline-highlight {
+            color: #eb8023;
+            font-weight: 600;
+        }
+
+        .services-section {
+            padding: 5px 0;
+            background: white;
+        }
+
+        .services-list {
+            display: grid;
+            gap: 40px;
+        }
+
+        .service-item {
+            background: #f8f9fa;
+            padding: 3px;
+            padding-left: 25px;
+            border-left: 4px solid #eb8023;
+        }
+
+        .service-item h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .service-item p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .process-section {
+            padding: 80px 0 5px;
+            background: #f8f9fa;
+        }
+
+        .process-steps {
+            display: grid;
+            gap: 20px;
+        }
+
+        .process-step {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            transition: transform 0.3s;
+        }
+
+
+        .step-number {
+            background: #eb8023;
+            color: #1a1a1a;
+            width: 70px;
+            height: 70px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .step-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .faq-section {
+            padding: 8px 0;
+            background: white;
+        }
+
+        .faq-list {
+            max-width: 1185px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #f8f9fa;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 17px;
+            color: #1a1a1a;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #e5e7eb;
+        }
+
+        .faq-toggle {
+            font-size: 24px;
+            color: #eb8023;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 30px 25px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-images {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 105px;
+    right: 24px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(0.9);
+}
+.whatsapp-float i {
+    margin-top: 16px;
+    display: block;
+    color: white;
+}
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 77px;
+        right: 7px;
+    }
+}
+
+</style>
+<a href="https://wa.me/919880055230" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!-- END WHATSAPP BUTTON -->
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+</html>

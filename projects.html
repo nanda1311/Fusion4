@@ -1,0 +1,1052 @@
+<!DOCTYPE html><html lang="zxx"><head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Link of CSS files -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../css/scrollcue.min.css">
+        <link rel="stylesheet" href="../css/remixicon.css">
+        <link rel="stylesheet" href="../css/services.css">
+        <link rel="stylesheet" href="../css/projects.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="../css/dark-theme.css">
+
+        <title>Projects - Fusion4</title>
+        <link rel="icon" type="image/png" href="../images/favicon.png" width="16" height="16">
+    </head>
+    <body>
+
+       <!--  Preloader Start -->
+        <div class="preloader-area" id="preloader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--  Preloader End -->
+
+
+        <!-- Custom Cursor -->
+        <div class="cursor"><span class="cursor-text"></span></div>
+        <div class="cursor-inner"></div>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+<style>
+/* Navbar base */
+@media (min-width: 992px) and (max-width: 1024px) {
+    .navbar__section .container {
+      max-width: 812px !important;
+    }
+    .navbar__section .navbar-brand {
+      margin-left: -98px !important;
+    }
+}
+.navbar__section {
+    background-color: #18455c;
+}
+
+.navbar__section .navbar-brand img {
+    max-height: 65px;
+}
+
+/* Nav links */
+.navbar__section .nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar__section .nav-link:hover {
+    color: #eb8023;
+}
+
+.navbar__section .nav-link.active {
+    color: #eb8023;
+    font-weight: bold;
+}
+
+
+/* Desktop spacing fixes */
+.navbar__section .navbar-brand {
+    margin-left: -156px;
+}
+
+.navbar__section .navbar-nav {
+    margin-left: 50px;
+    gap: 5px;
+}
+
+/* CTA button spacing */
+.navbar__section .option-item.cta-btn {
+    margin-left: 20px;
+    margin-right: -85px;
+}
+
+/* ---------------- MOBILE STYLES ---------------- */
+@media (max-width: 991px) {
+
+    /* Reset desktop offsets */
+    .navbar__section .navbar-brand {
+        margin-left: -30px;
+    }
+
+    .navbar__section .navbar-nav {
+        margin-left: 0;
+    }
+
+    /* Make mobile menu SIDE BY SIDE */
+    .navbar__section .navbar-collapse {
+        background-color: #18455c;
+        padding: 15px;
+    }
+
+    .navbar__section .navbar-nav {
+        flex-direction: row;               /* KEY PART */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;                        /* Two items per row */
+        text-align: center;
+    }
+
+    .navbar__section .nav-link {
+        padding: 12px 10px;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    /* Hide desktop CTA button on mobile */
+    .navbar__section .option-item.cta-btn {
+        display: none;
+    }
+}
+/* -------- MOBILE FIX: SHOW CALL & CTA WITHOUT HTML CHANGES -------- */
+@media (max-width: 991px) {
+
+    /* Force show Call Us block */
+    .navbar__section .contact-link.d-none {
+        display: flex !important;
+        align-items: center;
+        background: rgba(255,255,255,0.08);
+        border-radius: 6px;
+    }
+
+    /* Show text inside Call Us */
+    .navbar__section .contact-link .d-xl-inline {
+        display: block !important;
+    }
+
+    /* Force show Get In Touch button */
+    .navbar__section .option-item.cta-btn.d-none {
+        display: block !important;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 25%;
+        text-align: center;
+    }
+
+    /* Keep mobile nav items side-by-side */
+    .navbar__section .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar__section .nav-item {
+        width: 48%;
+        text-align: center;
+    }
+}
+/* ---------- COMPACT SIDE-BY-SIDE CALL & CTA ---------- */
+@media (max-width: 991px) {
+
+    .navbar__section .other-options {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center;
+        width: 87%;
+        }
+
+    .navbar__section .other-options .option-item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__section .contact-link {
+        width: 100%;
+        justify-content: center;
+        padding: 6px 8px;         /* reduced padding */
+        background: rgba(255,255,255,0.08);
+        border-radius: 5px;
+    }
+
+    .navbar__section .contact-link img {
+        width: 18px;              /* slightly smaller icon */
+    }
+
+    .navbar__section .cta-btn .btn {
+        width: 100%;
+        padding: -1px 8px;         /* reduced padding */
+        text-align: center;
+        margin-left: 65px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: 25px;
+    }
+}
+@media (max-width: 375px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 400px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar__section .cta-btn .btn {
+        margin-left: -11px;
+    }
+}
+
+
+</style>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body mobile__offcanvas">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="../services.html">Services</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Navbar Start -->
+<div class="navbar__section">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../images/FUSION 4-02 new.png" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="../services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="other-options d-flex flex-wrap align-items-center justify-content-end">
+
+                        <div class="option-item d-flex flex-wrap align-items-center">
+                            <div class="contact-link d-lg-flex d-none flex-wrap align-items-center position-relative">
+                                <span class="contact-icon rounded-circle">
+                                    <img src="../images/phone.png" alt="Icon">
+                                </span>
+                                <div class="d-xl-inline d-none">
+                                    <span class="text-white d-block">Call Us:</span>
+                                    <span class="text_primary fw-semibold">9880055230</span>
+                                </div>
+                                <a href="../contact.html" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            </div>
+                        </div>
+
+                        <div class="option-item cta-btn d-lg-block d-none">
+                            <a href="../contact.html" class="btn style-two">
+                                <span class="btn-text fw-semibold">Get In Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+
+<section class="projects-section">
+  <div class="projects-header">
+    <div class="header-left">
+      <span class="section-label">
+       OUR PROJECTS
+      </span>
+      <h2>A showcase of architecture that inspires and endures</h2>
+    </div>
+
+  </div>
+
+  <!-- Filters -->
+  <div class="project-filters">
+    <span class="filter-option active" data-filter="all">All</span>
+    <span class="dot-sep"></span>
+    <span class="filter-option" data-filter="residential">Residential</span>
+    <span class="dot-sep"></span>
+    <span class="filter-option" data-filter="commercial">Commercial</span>
+    <span class="dot-sep"></span>
+    <span class="filter-option" data-filter="corporate">Corporate</span>
+    <span class="dot-sep"></span>
+    <span class="filter-option" data-filter="industrial">Industrial</span>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+    <!-- Residential Projects -->
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="residential">
+      <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Maplewood Apartments">
+      <div class="overlay">
+        <h4>Maplewood Apartments</h4>
+        <p>Residential Architecture</p>
+        <span class="project-category">Residential</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="residential">
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Riverside Villas">
+      <div class="overlay">
+        <h4>Riverside Villas</h4>
+        <p>Residential Architecture</p>
+        <span class="project-category">Residential</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="residential">
+      <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Skyline Towers">
+      <div class="overlay">
+        <h4>Skyline Towers</h4>
+        <p>Residential Architecture</p>
+        <span class="project-category">Residential</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <!-- Commercial Projects -->
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="residential">
+      <img src="https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Downtown Mall & Plaza">
+      <div class="overlay">
+        <h4>Downtown Mall & Plaza</h4>
+        <p>Commercial Architecture</p>
+        <span class="project-category">Commercial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="commercial">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Oceanview Resort">
+      <div class="overlay">
+        <h4>Oceanview Resort</h4>
+        <p>Commercial Architecture</p>
+        <span class="project-category">Commercial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="commercial">
+      <img src="https://images.unsplash.com/photo-1487956382158-bb926046304a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Urban Shopping Complex">
+      <div class="overlay">
+        <h4>Urban Shopping Complex</h4>
+        <p>Commercial Architecture</p>
+        <span class="project-category">Commercial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <!-- Corporate Projects -->
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="corporate">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="The Horizon Office Park">
+      <div class="overlay">
+        <h4>The Horizon Office Park</h4>
+        <p>Corporate Architecture</p>
+        <span class="project-category">Corporate</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="corporate">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Innovation Center">
+      <div class="overlay">
+        <h4>Tech Innovation Center</h4>
+        <p>Corporate Architecture</p>
+        <span class="project-category">Corporate</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="corporate">
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Global Finance Tower">
+      <div class="overlay">
+        <h4>Global Finance Tower</h4>
+        <p>Corporate Architecture</p>
+        <span class="project-category">Corporate</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <!-- Industrial Projects -->
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="industrial">
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Metro Industrial Hub">
+      <div class="overlay">
+        <h4>Metro Industrial Hub</h4>
+        <p>Industrial Architecture</p>
+        <span class="project-category">Industrial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="industrial">
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Green Energy Plant">
+      <div class="overlay">
+        <h4>Green Energy Plant</h4>
+        <p>Industrial Architecture</p>
+        <span class="project-category">Industrial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+
+    <a href="../projects/fusion4oyester.html" class="project-card" data-category="industrial">
+      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Advanced Manufacturing Center">
+      <div class="overlay">
+        <h4>Advanced Manufacturing Center</h4>
+        <p>Industrial Architecture</p>
+        <span class="project-category">Industrial</span>
+        <div class="view-project-btn">
+          View Details →
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="no-projects-message" style="display: none;">
+    <p>No projects found in this category.</p>
+  </div>
+</section>
+
+<style>
+  .projects-section {
+    padding: 90px 70px;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+  }
+
+  /* Header */
+  .projects-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .header-left {
+    max-width: 600px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .section-label .dot {
+    width: 6px;
+    height: 6px;
+    background: #ffd400;
+    border-radius: 50%;
+  }
+
+  .header-left h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .header-right {
+    max-width: 420px;
+  }
+
+  .header-right p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 26px;
+  }
+
+  /* Button */
+  .projects-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: #eb8023;
+    color: #000;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .projects-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 212, 0, 0.2);
+  }
+
+  .arrow-box {
+    width: 32px;
+    height: 32px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .projects-btn:hover .arrow-box {
+    transform: translateX(4px);
+  }
+
+  /* Filters */
+  .project-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 60px 0 40px;
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+
+  .project-filters span.filter-option {
+    color: #444;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .project-filters span.filter-option:hover {
+    color: #111;
+    background-color: rgba(43, 138, 255, 0.21);
+  }
+
+  .project-filters span.filter-option.active {
+    color: #111;
+    background-color: rgba(43, 138, 255, 0.21);
+    font-weight: 600;
+  }
+
+  .project-filters span.filter-option.highlight {
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .project-filters .dot-sep {
+    width: 6px;
+    height: 6px;
+    background: #ddd;
+    border-radius: 50%;
+  }
+
+  /* Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    transition: all 0.3s ease;
+  }
+
+  /* Cards */
+  .project-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 460px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Overlay */
+  .project-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 26px;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+    color: #fff;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+
+  .project-card:hover .overlay {
+    padding-bottom: 32px;
+  }
+
+  .overlay h4 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-bottom: 8px;
+  }
+
+  .project-category {
+    display: inline-block;
+    background-color: #eb8023;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+
+  .view-project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .project-card:hover .view-project-btn {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateX(4px);
+  }
+
+  /* No projects message */
+  .no-projects-message {
+    text-align: center;
+    padding: 60px;
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .projects-header {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects-section {
+      padding: 60px 30px;
+    }
+    
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .header-left h2 {
+      font-size: 34px;
+    }
+    
+    .project-filters {
+      gap: 12px;
+      margin: 40px 0 30px;
+    }
+    
+    .project-filters .dot-sep {
+      display: none;
+    }
+    
+    .project-filters span.filter-option {
+      font-size: 13px;
+      padding: 5px 10px;
+    }
+    
+    .project-card {
+      height: 380px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projects-section {
+      padding: 40px 20px;
+    }
+    
+    .header-left h2 {
+      font-size: 28px;
+    }
+    
+    .project-card {
+      height: 320px;
+    }
+    
+    .view-project-btn {
+      padding: 6px 12px;
+      font-size: 11px;
+    }
+  }
+</style>
+
+<script>
+  // Filtering functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get DOM elements
+    const filterOptions = document.querySelectorAll('.filter-option');
+    const projectCards = document.querySelectorAll('.project-card');
+    const noProjectsMessage = document.querySelector('.no-projects-message');
+    const projectsGrid = document.querySelector('.projects-grid');
+
+    // Function to filter projects
+    function filterProjects(category) {
+      let visibleCards = 0;
+      
+      // Show/hide cards based on category
+      projectCards.forEach(card => {
+        const cardCategory = card.getAttribute('data-category');
+        
+        if (category === 'all' || cardCategory === category) {
+          card.style.display = 'block';
+          visibleCards++;
+          
+          // Add a fade-in animation
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 10);
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      
+      // Show/hide no projects message
+      if (visibleCards === 0) {
+        noProjectsMessage.style.display = 'block';
+      } else {
+        noProjectsMessage.style.display = 'none';
+      }
+      
+      // Update grid layout for smooth transitions
+      projectsGrid.style.minHeight = projectsGrid.offsetHeight + 'px';
+    }
+
+    // Function to update active filter
+    function updateActiveFilter(selectedFilter) {
+      // Remove active class from all filters
+      filterOptions.forEach(option => {
+        option.classList.remove('active');
+        option.classList.remove('highlight');
+      });
+      
+      // Add active class to selected filter
+      const selectedOption = document.querySelector(`[data-filter="${selectedFilter}"]`);
+      if (selectedOption) {
+        selectedOption.classList.add('active');
+        
+        // If selected filter is residential, add highlight class
+        if (selectedFilter === 'residential') {
+          selectedOption.classList.add('highlight');
+        }
+      }
+    }
+
+    // Add event listeners to filter options
+    filterOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        const filterValue = this.getAttribute('data-filter');
+        updateActiveFilter(filterValue);
+        filterProjects(filterValue);
+      });
+    });
+
+    // Add smooth animation to all cards on page load
+    window.addEventListener('load', function() {
+      projectCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 100 + (index * 100));
+      });
+    });
+  });
+</script>
+
+
+
+
+                <!-- Footer Section Start -->
+                <footer class="footer-area style-one bg-optional position-relative z-1 pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center pb-90">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget mb-30" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Quick Links</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services.html">Service</a></li>
+                                        <li><a href="../about.html">About Us</a></li>
+                                        <li><a href="../projects.html">Projects</a></li>
+                                        <li><a href="../blog.html">Blogs</a></li>
+                                        <li><a href="../contact.html">Contact Us</a></li>
+                                        <li><a href="../privacy-and-policy.html">Privacy Policy</a></li>
+                                        <li><a href="../terms-and-conditions.html">Terms of Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Services</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../services/turnkey-construction-solutions.html">Turnkey Construction Solutions</a></li>
+                                        <li><a href="../services/joint-venture-and-development-partnerships.html">Joint Venture & Development Partnerships</a></li>
+                                        <li><a href="../services/bespoke-residential-construction.html">Bespoke Residential Construction</a></li>
+                                        <li><a href="../services/apartments-and-large-scale-residential-developments.html">Apartment & Large-Scale Residential Developments</a></li>
+                                        <li><a href="../services/commercial-construction-excellence.html">Commercial Construction Excellence</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-4" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Our Projects</h4>
+                                    <ul class="footer-menu style-one list-unstyled mb-0">
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Oyester</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">iris</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Fusion4 Pearl</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Shatayu</a></li>
+                                        <li><a href="../projects/fusion4oyester.html">Project 5</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                             <div class="col-lg-3 col-md-6 ps-xxl-5">
+                                <div class="footer-widget mb-30 ps-xxl-5" data-cue="slideInUp">
+                                    <h4 class="footer-widget-title position-relative fs-20 font-primary fw-bold text-white">Address</h4>
+                                    <ul class="contact-info-list list-unstyled mb-0">
+                                        <li><span class="fw-bold text-white me-1">Address:</span> SAN SQUARE, #22, 3rd Floor, 1st Main Road, Mathikere, Bengaluru, Karnataka-560054</li>
+                                        <li><span class="fw-bold text-white me-1">Email:</span><a href="info@fusion4construction.in">info@fusion4construction.in</a></li>
+                                        <li><span class="fw-bold text-white me-1">Phone:</span><a href="tel:9880055230">9880055230</a></li>
+                                    </ul>
+                                    <ul class="social-profile style-two list-unstyled mb-0">
+                                     <span class="text-alto fw-semibold me-2">Follow Us: </span>
+                                        <li><a href="https://www.instagram.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-instagram-line"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-facebook-fill"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-linkedin-fill"></i></a></li>
+                                        <li><a href="https://youtube.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle1"><i class="ri-youtube-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="footer-large-text font-optional fw-black round-10">
+                                    <span>F</span>
+                                    <span>U</span>
+                                    <span>S</span>
+                                    <span>I</span>
+                                    <span>O</span>
+                                    <span>N</span>
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="social-share d-flex flex-wrap align-items-center justify-content-md-start justify-content-center mb-sm-10 text-white">
+                                    <i class=" text-white me-4"></i>
+                                    <span class="text_secondary fw-medium text-white ms-0">©2026 fusion4 constructions.</span>
+                                    <span class="ms-2">All Rights Reserved</span>
+                                </div>
+                            </div>
+                              <div class="col-md-7 text-md-end text-center">
+                                  <p class="copyright-text mb-0 text-white">
+                                      <a  target="_blank" href="https://thinkb.agency/" class="link style-three fw-medium text-white me-5 pe-3">Designed & Developed by thinkB</a>
+                                  </p>
+                              </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+
+            </div>
+        </div>
+        <!-- Back to Top -->
+        <div id="progress-wrap" class="progress-wrap style-one">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+              <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+            </svg>
+        </div>
+
+        <!-- Link of JS files -->
+        <script data-cfasync="false" src="../js/email-decode.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/megamenu.js"></script>
+        <script src="../js/swiper-bundle.min.js"></script>
+        <script src="../js/fslightbox.js"></script>
+        <script src="../js/gsap.min.js"></script>
+        <script src="../js/scrollTrigger.min.js"></script>
+        <script src="../js/lenis.min.js"></script>
+        <script src="../js/scrollToPlugin.js"></script>
+        <script src="../js/SplitText.min.js"></script>
+        <script src="../js/customEase.js"></script>
+        <script src="../js/scrollcue.min.js"></script>
+        <script src="../js/main.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 105px;
+    right: 24px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(0.9);
+}
+.whatsapp-float i {
+    margin-top: 16px;
+    display: block;
+    color: white;
+}
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 77px;
+        right: 7px;
+    }
+}
+
+</style>
+<a href="https://wa.me/919880055230" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<!-- END WHATSAPP BUTTON -->
+
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b91f101cdde0e86',t:'MTc2NzYwNTI2Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+</body>
+</html>
